@@ -503,17 +503,17 @@
 @media(max-width:560px){.featured-archive .feature-intro h2{font-size:42px}.featured-archive .carousel-copy h3{font-size:28px}}
 
 /* Whimsical 404: a curious detour that still feels like the show. */
-.not-found{position:relative;isolation:isolate;min-height:calc(100vh - 84px);overflow:hidden;padding:clamp(120px,16vw,210px) 8% 120px;background:#050505;color:#f2f2f2}
+.not-found{position:relative;isolation:isolate;min-height:calc(100vh - 84px);overflow:hidden;padding:clamp(82px,10vw,135px) 8% 72px;background:#050505;color:#f2f2f2}
 .not-found:before{content:"";position:absolute;z-index:-1;width:min(62vw,720px);height:min(62vw,720px);right:-18%;top:8%;border:1px solid #292929;border-radius:50%;box-shadow:0 0 0 34px #ffffff03,0 0 0 90px #ffffff02,0 0 100px #fff00004}
 .not-found-orbit{position:absolute;right:16%;top:18%;width:clamp(100px,14vw,190px);aspect-ratio:1;border:1px solid #3a3a3a;border-radius:50%;display:grid;place-items:center;transform:rotate(-14deg);animation:not-found-float 5s ease-in-out infinite}
 .not-found-orbit:before,.not-found-orbit:after{content:"";position:absolute;border-radius:50%;background:#f2f2f2}.not-found-orbit:before{width:5px;height:5px;top:14%;left:18%}.not-found-orbit:after{width:3px;height:3px;bottom:18%;right:15%}
 .not-found-orbit span{font:800 clamp(58px,8vw,110px)/1 'Archivo',sans-serif;transform:rotate(14deg)}
 .not-found-code{margin:26px 0 10px;color:#777;font:700 11px 'Inter',sans-serif;letter-spacing:.2em}
-.not-found h1{max-width:760px;margin:0;font:700 clamp(56px,8vw,128px)/.88 'Archivo',sans-serif;letter-spacing:-.08em;text-transform:uppercase}.not-found h1 em{font:400 .92em/1 'Archivo',sans-serif;font-style:normal;color:#9a9a9a;text-transform:none;letter-spacing:-.065em}
-.not-found-copy{max-width:360px;margin:28px 0 34px;color:#999;font:400 14px/1.7 'Inter',sans-serif}
+.not-found h1{max-width:760px;margin:0;font:700 clamp(48px,6.4vw,100px)/.88 'Archivo',sans-serif;letter-spacing:-.08em;text-transform:uppercase}.not-found h1 em{font:400 .92em/1 'Archivo',sans-serif;font-style:normal;color:#9a9a9a;text-transform:none;letter-spacing:-.065em}
+.not-found-copy{max-width:360px;margin:20px 0 25px;color:#999;font:400 13px/1.6 'Inter',sans-serif}
 .not-found-link{display:inline-flex;align-items:center;gap:24px;border-bottom:1px solid #f2f2f2;padding-bottom:9px;font:700 11px 'Inter',sans-serif;letter-spacing:.1em;text-transform:uppercase}.not-found-link:hover{gap:32px}
 @keyframes not-found-float{0%,100%{transform:rotate(-14deg) translateY(0)}50%{transform:rotate(-10deg) translateY(-9px)}}
-@media(max-width:700px){.not-found{min-height:calc(100vh - 74px);padding:110px 7% 90px}.not-found-orbit{right:7%;top:10%;width:120px}.not-found h1{font-size:clamp(52px,14vw,82px)}.not-found-copy{font-size:13px}}
+@media(max-width:700px){.not-found{min-height:calc(100vh - 74px);padding:86px 7% 70px}.not-found-orbit{right:7%;top:8%;width:105px}.not-found h1{font-size:clamp(46px,12vw,72px)}.not-found-copy{font-size:12px;margin:16px 0 22px}}
 @media(prefers-reduced-motion:reduce){.not-found-orbit{animation:none}}
 
 /* Compact admin tools for browser-local site settings. */
