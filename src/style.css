@@ -134,3 +134,7 @@
 @media(max-width:800px){.contact-grid{grid-template-columns:1fr;gap:42px}.contact-info>p{max-width:560px}.contact-topics{display:grid;grid-template-columns:1fr 1fr;column-gap:22px}.contact-socials{max-width:520px}}
 @media(max-width:540px){.contact-page{padding-top:42px}.contact-form-row{grid-template-columns:1fr}.contact-title{font-size:clamp(58px,16vw,84px)}.contact-form,.contact-success{padding:22px 18px}.contact-topics{grid-template-columns:1fr}.contact-chips{gap:7px}.contact-chips label{padding:8px 11px}}
 @media(max-width:390px){.header{padding:0 10px}.brand{gap:6px}.brand-icon{width:30px;height:30px;font-size:22px}.brand-word{font-size:11px}.header-end{gap:7px}.nav-watch{gap:0;padding:8px;border:0}.nav-watch span{display:none}.menu-toggle{gap:4px}}
+.brand-word{justify-content:center;gap:1px;transform:translateY(2px);font:700 13px/.9 'Archivo',sans-serif;letter-spacing:.1em}
+.brand-word span{display:block}
+.brand-dot{display:none!important}
+.show-host{animation:none!important;object-fit:contain;mix-blend-mode:normal}
