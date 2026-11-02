@@ -46,3 +46,40 @@
 /* Keep the rotating home manifesto 40px below the show identity. */
 .show-hero-message{margin-top:40px!important;transform:none!important;align-self:flex-start}
 @media(max-width:900px){.show-hero-message{margin-top:40px!important;transform:none!important}}
+
+/* Brand and header system: a quiet monogram, clear routes, and a direct YouTube action. */
+.header{position:relative;z-index:20;display:grid;grid-template-columns:minmax(210px,1fr) auto minmax(220px,1fr);align-items:center;gap:24px;height:88px;padding:0 clamp(22px,5vw,76px);background:#050505;color:#f2f2f2;border-bottom:1px solid #262626}
+.brand{justify-self:start;display:flex;align-items:center;gap:11px;min-width:0;color:#f2f2f2;letter-spacing:normal;line-height:1}
+.brand-icon{width:38px;height:38px;flex:none;display:grid;place-items:center;border:1px solid #777;border-radius:9px;color:#f2f2f2}
+.brand-icon svg{width:29px;height:29px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.brand-word{display:flex;flex-direction:column;gap:5px;font-weight:400}
+.brand-name{font:700 14px/.9 'Archivo',sans-serif;letter-spacing:.04em;color:#f2f2f2}
+.brand-descriptor{font:500 8px/1 'Inter',sans-serif;letter-spacing:.11em;color:#999;white-space:nowrap}
+.brand-dot{color:#f2f2f2}
+.nav{position:static;display:flex;justify-self:center;align-items:center;gap:clamp(20px,3vw,40px);padding:0;background:transparent;color:#ccc;border:0;font:500 11px 'Inter',sans-serif;letter-spacing:.04em}
+.nav a{transition:color .18s ease}
+.nav a:hover{color:#fff;text-decoration:none}
+.header-end{justify-self:end;display:flex;align-items:center;gap:20px}
+.header-index{font:500 8px 'Inter',sans-serif;letter-spacing:.12em;color:#888;white-space:nowrap}
+.nav-watch{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:11px 14px;border:1px solid #555;border-radius:3px;background:transparent;color:#f2f2f2;font:600 9px 'Inter',sans-serif;letter-spacing:.11em;white-space:nowrap;transition:background .18s ease,color .18s ease,border-color .18s ease}
+.nav-watch svg{width:15px;height:15px;fill:currentColor}
+.nav-watch:hover{background:#f2f2f2;color:#050505;border-color:#f2f2f2}
+.nav-watch span{margin:0;color:inherit}
+.menu-toggle{display:none}
+@media(max-width:900px){.header{grid-template-columns:minmax(0,1fr) auto;gap:12px;padding:0 22px}.header-index{display:none}.nav{display:none;position:absolute;top:100%;left:0;right:0;z-index:15;align-items:stretch;gap:0;padding:10px 22px 18px;background:#080808;border-bottom:1px solid #303030}.nav.open{display:flex}.nav a{padding:15px 0;border-bottom:1px solid #222}.nav a:last-child{border-bottom:0}.header-end{gap:12px}.menu-toggle{display:flex;align-items:center;gap:7px;padding:8px 0;border:0;background:transparent;color:#eee;font:600 9px 'Inter',sans-serif;letter-spacing:.1em}.menu-toggle span{display:grid;place-items:center}.nav-watch{padding:10px 12px}}
+@media(max-width:480px){.header{height:76px;padding:0 15px;gap:8px}.brand{gap:8px}.brand-icon{width:34px;height:34px;border-radius:8px}.brand-icon svg{width:26px;height:26px}.brand-name{font-size:12px}.brand-descriptor{font-size:7px;letter-spacing:.08em}.header-end{gap:10px}.nav-watch{gap:7px;padding:9px 10px;font-size:8px}.nav-watch svg{width:13px;height:13px}.menu-toggle{font-size:8px}}
+@media(max-width:390px){.brand-descriptor{display:none}.brand-name{font-size:11px}}
+
+/* Keep the signup section within the site's black-and-white visual system. */
+.newsletter{background:#0b0b0b;color:#f2f2f2;border-top:1px solid #262626}
+.newsletter-kicker{color:#999}
+.newsletter-orbit{color:#f2f2f2}
+.newsletter h2,.newsletter h2 em{color:#f2f2f2}
+.newsletter-content>div>p{color:#aaa}
+.newsletter form>label{color:#aaa}
+.newsletter-input-row{border-color:#777}
+.newsletter-input-row input{color:#f2f2f2}
+.newsletter-input-row input::placeholder{color:#777}
+.newsletter-input-row button{background:#f2f2f2;color:#050505}
+.newsletter form small{color:#888}
+.newsletter .form-status{color:#f2f2f2}
