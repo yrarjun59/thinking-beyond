@@ -1,0 +1,85 @@
+{
+  "name": "Thinking Beyond",
+  "host": "Manisha Neupane",
+  "wordmark": "THINKING BEYOND",
+  "tagline": "Many questions. One deeper purpose.",
+  "motto": "Think deeper. Question better. Build beyond.",
+  "image": "/uploads/hero.png",
+  "logo": "/logo.webp",
+  "listen": [
+    {
+      "id": "youtube",
+      "label": "YouTube",
+      "url": "https://youtube.com/@manishaneupane?si=ZJV4MoXeoHaV0q0c"
+    },
+    {
+      "id": "spotify",
+      "label": "Spotify",
+      "url": "https://open.spotify.com/show/70au5RDTg9tm3AU6bX5R4R"
+    },
+    {
+      "id": "apple",
+      "label": "Apple Podcasts",
+      "url": "https://podcasts.apple.com/us/podcast/why-are-young-people-stuck-shaurab-lohani-expectations/id6823163378?i=1000796483869"
+    },
+    {
+      "id": "amazon",
+      "label": "Amazon Music",
+      "url": "https://music.amazon.com/podcasts/2c6cd2af-c11f-403f-b2d5-883051727b41/thinking-beyond-with-manisha-neupane"
+    },
+    {
+      "id": "podcastindex",
+      "label": "Podcast Index",
+      "url": "https://podcastindex.org/podcast/8074038"
+    }
+  ],
+  "social": [
+    {
+      "id": "instagram",
+      "label": "Instagram",
+      "url": "https://www.instagram.com/manishaneupanee?srtk=MWJ3YmNtaXZpdGVseQ%3D%3D&utm_source=qr"
+    },
+    {
+      "id": "facebook",
+      "label": "Facebook",
+      "url": "https://www.facebook.com/share/1SYBqp37iY/?mibextid=wwXIfr"
+    },
+    {
+      "id": "tiktok",
+      "label": "TikTok",
+      "url": "https://www.tiktok.com/@manishaneupanee?_r=1&_t=ZS-9AZaHQQ4Q8u"
+    }
+  ],
+  "about": {
+    "lead": "",
+    "paragraphs": [],
+    "closing": "",
+    "welcome": ""
+  },
+  "pillars": [
+    {
+      "title": "Business & Money",
+      "text": "Entrepreneurship, business survival, financial decisions, and the difficult realities of building companies that last."
+    },
+    {
+      "title": "Mindset & Growth",
+      "text": "Purpose, discipline, setbacks, decision-making, and the internal battles behind meaningful progress."
+    },
+    {
+      "title": "Health & Performance",
+      "text": "Human potential, fitness, focus, discipline, and the science of performing at your best."
+    },
+    {
+      "title": "Society & Perspectives",
+      "text": "Culture, technology, social issues, and the questions that challenge how we understand our world."
+    }
+  ],
+  "idea": {
+    "title": "The idea behind Thinking Beyond",
+    "paragraphs": [
+      "We believe curiosity is more than asking questions. It is the courage to challenge assumptions, the discipline to search for truth, and the imagination to see possibilities others overlook.",
+      "Every conversation should leave you with something valuable: a new perspective, a sharper question, a practical framework, or the courage to think differently."
+    ],
+    "quote": "Because the future belongs not only to those who know more, but to those willing to question more."
+  }
+}
