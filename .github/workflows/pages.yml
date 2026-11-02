@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: "17 2 * * *"
 
 permissions:
   contents: read
@@ -27,6 +29,16 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
+      - name: Refresh latest YouTube episodes
+        run: node scripts/update-channel-videos.mjs
+        continue-on-error: true
+      - name: Generate sitemap
+        run: node scripts/generate-sitemap.mjs
+      - name: Refresh public channel statistics
+        run: node scripts/channel-stats.mjs
+        continue-on-error: true
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
       - name: Build site
         run: npm run build
       - name: Prepare SPA fallback
