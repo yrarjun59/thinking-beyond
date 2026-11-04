@@ -32,6 +32,8 @@ jobs:
       - name: Refresh latest YouTube episodes
         run: node scripts/update-channel-videos.mjs
         continue-on-error: true
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
       - name: Generate sitemap
         run: node scripts/generate-sitemap.mjs
       - name: Refresh public channel statistics

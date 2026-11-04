@@ -4,7 +4,13 @@ import { Plus, Trash2, Save } from 'lucide-react';
 const SETTINGS_KEY = 'thinking-beyond-admin-settings';
 const fallback = {
   site: { name: 'Thinking Beyond', host: 'Manisha Neupane', tagline: 'Many questions. One deeper purpose.', description: '', logo: '' },
-  sponsor: { name: 'Golden Tech International', url: 'http://goldeninternational.tech/', logo: '' },
+  sponsor: { name: 'Golden Tech International', url: 'https://goldeninternational.tech/', logo: 'https://goldeninternational.tech/assets/real_images/color_logo.svg' },
+  sponsors: [
+    { name: 'Golden Tech International', url: 'https://goldeninternational.tech/', logo: 'https://goldeninternational.tech/assets/real_images/color_logo.svg' },
+    { name: 'GitHub', url: 'https://github.com', logo: 'https://cdn.simpleicons.org/github/ffffff' },
+    { name: 'Figma', url: 'https://www.figma.com', logo: 'https://cdn.simpleicons.org/figma/ffffff' },
+    { name: 'Vercel', url: 'https://vercel.com', logo: 'https://cdn.simpleicons.org/vercel/ffffff' }
+  ],
   social: []
 };
 
@@ -15,7 +21,7 @@ function readSettings() {
 export default function AdminPanel() {
   const saved = readSettings();
   const [site, setSite] = useState({ ...fallback.site, ...(saved.site || {}) });
-  const [sponsors, setSponsors] = useState(saved.sponsors || (saved.sponsor ? [saved.sponsor] : [fallback.sponsor]));
+  const [sponsors, setSponsors] = useState(saved.sponsors || (saved.sponsor ? [saved.sponsor] : fallback.sponsors));
   const [social, setSocial] = useState(saved.social || []);
   const [status, setStatus] = useState('');
   const setSiteValue = (key, value) => setSite(current => ({ ...current, [key]: value }));
