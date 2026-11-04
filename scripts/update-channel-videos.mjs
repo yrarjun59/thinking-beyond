@@ -58,6 +58,14 @@ rows = rows.map(item => {
 console.log(`Refreshed public YouTube view counts for ${[...publicViews.values()].filter(Number.isFinite).length} videos.`);
 
 const previous = JSON.parse(await readFile(targetFile, 'utf8'));
+const previousById = new Map(previous.map(item => [item.youtubeId, item]));
+rows = rows.map(item => {
+  const old = previousById.get(item.youtubeId);
+  if (Number.isFinite(Number(old?.views)) && Number(old.views) > Number(item.views || 0)) {
+    return { ...item, views: Number(old.views), viewsSource: old.viewsSource || 'youtube-watch-page', viewsFetchedAt: old.viewsFetchedAt };
+  }
+  return item;
+});
 await writeFile(targetFile, `${JSON.stringify(rows, null, 2)}\n`);
 console.log(`Updated ${rows.length} latest videos from ${feedUrl}`);
 if (JSON.stringify(previous) === JSON.stringify(rows)) console.log('No video changes detected.');
