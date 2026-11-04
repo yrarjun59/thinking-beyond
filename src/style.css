@@ -483,26 +483,6 @@
 .studio-composition .studio-host:after{left:43%;transform:rotate(-8deg)}
 .studio-composition .studio-guest:before{top:61%;left:8%;width:58%;height:15%;background:radial-gradient(ellipse at center,rgba(0,0,0,.64) 0%,rgba(0,0,0,.36) 44%,transparent 76%);filter:blur(8px)}
 .studio-composition .studio-guest:after{top:40%;left:13%;width:56%;height:23%;background:radial-gradient(ellipse at 60% 58%,rgba(0,0,0,.38) 0%,rgba(0,0,0,.2) 45%,transparent 80%);filter:blur(10px)}
-
-/* Current hero: 2D raster cutout plate, two aligned guest swaps, restrained motion. */
-.studio-stage-2d .studio-composition-2d{width:min(93cqw,95cqh);height:min(93cqw,95cqh);transform:translate(-50%,-52%) scale(1.12)}
-.studio-composition-2d .studio-room{object-fit:fill}
-.studio-composition-2d .studio-mics{display:none}
-.studio-composition-2d .studio-host-2d{left:0;top:0;right:auto;bottom:auto;width:100%;height:100%;transform:none;animation:none;z-index:4}
-.studio-composition-2d .studio-host-art{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;transform-origin:74% 59%;animation:cutout-host-breathe 7.4s ease-in-out infinite;filter:drop-shadow(0 2px 2px rgba(0,0,0,.22))}
-.studio-composition-2d .studio-host-label{top:31%;right:10%;gap:4px;padding:4px 7px;background:rgba(5,5,5,.72);border:1px solid rgba(255,255,255,.18);border-radius:2px}
-.studio-composition-2d .studio-host-label strong{font-size:8px}.studio-composition-2d .studio-host-label span{font-size:5px}
-.studio-composition-2d .studio-guest-2d{left:0;top:0;bottom:auto;width:100%;height:100%;aspect-ratio:auto;transform:none;animation:cutout-guest-swap 24s steps(1,end) infinite;z-index:3}
-.studio-composition-2d .studio-guest-2d .studio-guest-art{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;transform-origin:29% 57%;animation:cutout-guest-breathe 6.2s ease-in-out infinite;filter:drop-shadow(0 2px 2px rgba(0,0,0,.22))}
-.studio-composition-2d .studio-guest-2d .studio-role-label{top:31%;left:11%;transform:none;gap:4px;padding:4px 7px;background:rgba(5,5,5,.72);border:1px solid rgba(255,255,255,.18);border-radius:2px}
-.studio-composition-2d .studio-role-label span{font-size:5px}.studio-composition-2d .studio-role-label strong{font-size:8px}
-.studio-composition-2d .guest-2d-scientist{animation-delay:-12s}
-@keyframes cutout-guest-swap{0%,49.99%{opacity:1}50%,100%{opacity:0}}
-@keyframes cutout-host-breathe{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-1px) rotate(.12deg)}}
-@keyframes cutout-guest-breathe{0%,100%{transform:translateY(0) rotate(0)}46%{transform:translateY(-1px) rotate(-.15deg)}58%{transform:translateY(0) rotate(0)}}
-@media(max-width:900px){.studio-composition-2d{transform:translate(-50%,-52%) scale(1.08)!important}}
-@media(max-width:560px){.studio-composition-2d{transform:translate(-50%,-51%) scale(1.03)!important}.studio-composition-2d .studio-host-label,.studio-composition-2d .studio-guest-2d .studio-role-label{top:30%;padding:3px 5px}.studio-composition-2d .studio-host-label{right:8%}.studio-composition-2d .studio-guest-2d .studio-role-label{left:9%}}
-@media(prefers-reduced-motion:reduce){.studio-composition-2d .studio-host-art,.studio-composition-2d .studio-guest-2d,.studio-composition-2d .studio-guest-art{animation:none!important;transform:none!important}.studio-composition-2d .guest-2d-scientist{opacity:0}.studio-composition-2d .guest-2d-entrepreneur{opacity:1}}
 @media(max-width:900px){.studio-composition{transform:translate(-50%,-52%) scale(1.13)}.studio-composition .studio-monitor-brand{width:29%}}
 @media(max-width:560px){.studio-composition{transform:translate(-50%,-51%) scale(1.07)}.studio-composition .studio-guest{top:29.8%;transform:translate(5%,-1.5%) scale(1.04)}.studio-composition .studio-host{top:30.2%;transform:translate(2%,0) scale(1.1)}.studio-composition .studio-role-label,.studio-composition .studio-host-label{top:-11%;padding:4px 6px}.studio-composition .studio-role-label strong,.studio-composition .studio-host-label strong{font-size:8px}.studio-composition .studio-role-label span,.studio-composition .studio-host-label span{font-size:6px}.studio-composition .studio-monitor-brand{top:23%;width:32%;height:19%}}
 
