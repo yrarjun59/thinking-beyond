@@ -6,10 +6,7 @@ const fallback = {
   site: { name: 'Thinking Beyond', host: 'Manisha Neupane', tagline: 'Many questions. One deeper purpose.', description: '', logo: '' },
   sponsor: { name: 'Golden Tech International', url: 'https://goldeninternational.tech/', logo: 'https://goldeninternational.tech/assets/real_images/color_logo.svg' },
   sponsors: [
-    { name: 'Golden Tech International', url: 'https://goldeninternational.tech/', logo: 'https://goldeninternational.tech/assets/real_images/color_logo.svg' },
-    { name: 'GitHub', url: 'https://github.com', logo: 'https://cdn.simpleicons.org/github/ffffff' },
-    { name: 'Figma', url: 'https://www.figma.com', logo: 'https://cdn.simpleicons.org/figma/ffffff' },
-    { name: 'Vercel', url: 'https://vercel.com', logo: 'https://cdn.simpleicons.org/vercel/ffffff' }
+    { name: 'Golden Tech International', url: 'https://goldeninternational.tech/', logo: 'https://goldeninternational.tech/assets/real_images/color_logo.svg' }
   ],
   social: []
 };

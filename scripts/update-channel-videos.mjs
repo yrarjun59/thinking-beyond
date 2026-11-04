@@ -36,6 +36,27 @@ if (apiKey) {
   }
 }
 
+// The public watch page exposes the current view count even when the API key
+// is unavailable. Use it to correct stale values from the legacy episode feed.
+const pageStats = await Promise.all(rows.map(async item => {
+  try {
+    const page = await fetch(`https://www.youtube.com/watch?v=${item.youtubeId}`, { headers: { accept: 'text/html' }, signal: AbortSignal.timeout(12000) });
+    if (!page.ok) return [item.youtubeId, null];
+    const html = await page.text();
+    const match = html.match(/"viewCount":"?(\d+)"?/);
+    const views = match ? Number(match[1]) : NaN;
+    return [item.youtubeId, Number.isFinite(views) ? views : null];
+  } catch {
+    return [item.youtubeId, null];
+  }
+}));
+const publicViews = new Map(pageStats);
+rows = rows.map(item => {
+  const views = publicViews.get(item.youtubeId);
+  return Number.isFinite(views) ? { ...item, views, viewsSource: 'youtube-watch-page', viewsFetchedAt: new Date().toISOString() } : item;
+});
+console.log(`Refreshed public YouTube view counts for ${[...publicViews.values()].filter(Number.isFinite).length} videos.`);
+
 const previous = JSON.parse(await readFile(targetFile, 'utf8'));
 await writeFile(targetFile, `${JSON.stringify(rows, null, 2)}\n`);
 console.log(`Updated ${rows.length} latest videos from ${feedUrl}`);

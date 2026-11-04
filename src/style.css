@@ -673,3 +673,4 @@
 .views-highlight{font-family:'Archivo',sans-serif;font-weight:800;color:#d5fc5c;text-shadow:0 0 12px rgba(213,252,92,.25)}
 .sponsor-marquee-item{min-width:150px}
 .sponsor-marquee-item img[src*="goldeninternational"]{width:132px;height:56px;padding:7px;background:#fff;border-color:#fff;border-radius:5px}
+.sponsor-marquee:has(.sponsor-marquee-item:only-child) .sponsor-marquee-track{animation:none;transform:none;width:100%;justify-content:center}
