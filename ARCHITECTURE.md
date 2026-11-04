@@ -29,4 +29,6 @@ Source: publicly served HTML, JavaScript bundle, CSS, and API responses from the
 
 ## Current local status
 
-The `codebase` directory contains an early visual prototype. It does not reproduce the original backend or admin. Treat it as a design exploration; integrate or replace it against the reconstructed architecture above. Do not deploy it as a replacement for the live site until the missing behavior is implemented and verified.
+The `codebase` directory is a React/Vite redesign prototype with browser-local admin settings. It includes the public routes, responsive hero and archive layouts, YouTube playback and view refresh pipeline, footer listen/social/sponsor settings, and GitHub Pages deployment workflow described in `README.md`.
+
+The original production backend is still outside this repository. Admin edits remain local to the browser until settings are exported into source data/configuration and redeployed. Treat API-backed newsletter, contact, and production admin persistence as integration work rather than as guarantees of this static GitHub Pages build.

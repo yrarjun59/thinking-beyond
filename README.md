@@ -49,7 +49,7 @@ The redesign has two browser-local admin surfaces.
 ### `/admin`
 
 - Site name, host name, footer tagline, and site logo URL
-- Add/delete sponsor credits
+- Add/delete sponsor credits and store sponsor logo URLs
 - Sponsor name, website, and logo URL
 - Add/delete social links
 - Social label, URL, and optional custom icon URL
@@ -60,6 +60,7 @@ The redesign has two browser-local admin surfaces.
 - Hero message sequence with add/delete/edit controls
 - Explore topics with add/delete/edit controls
 - Footer social links
+- Footer listen links and their display order
 - Sponsor name and website
 - YouTube channel URL
 - Refresh and export the latest 14 episode records
@@ -90,6 +91,8 @@ The GitHub Pages workflow runs daily. It refreshes episodes and channel statisti
 
 The header displays subscribers, episode count, and views. Local Vite development provides `/api/channel-stats` with a five-minute cache. The server uses `YOUTUBE_API_KEY` when available and otherwise reads public YouTube About metadata scoped to the configured channel ID. YouTube public subscriber counts are rounded.
 
+Episode cards display compact YouTube-style view labels such as `5.7K` and `41.5K`. The value shown by the public site prefers verified static YouTube refresh data over a stale runtime feed value. On desktop pointer devices, episode cards and featured player covers can show a muted, delayed YouTube hover preview; touch devices retain the normal tap-to-play behavior.
+
 For a deployed API, set `VITE_CHANNEL_STATS_URL` to a public JSON endpoint matching `public/data/channel-stats.json`. Never expose `YOUTUBE_API_KEY` in a `VITE_` variable; use a server environment variable or GitHub Actions secret.
 
 ## GitHub Pages deployment
@@ -111,6 +114,14 @@ The workflow installs dependencies, pulls the latest 14 episodes, refreshes stat
 - `Seo` component: updates title, description, Open Graph title/description, and canonical URL for SPA routes
 
 Do not include `/admin` in the sitemap. It is disallowed in `robots.txt`.
+
+## Visual and responsive behavior
+
+- The home hero uses a 50/50 desktop split: editorial copy on the left and the studio illustration on the right.
+- At tablet and mobile widths, the hero stacks the copy above the visual and keeps the studio composition inside a mobile-safe crop.
+- The latest and archive conversation sections share the same player, thumbnail, and hover-preview behavior.
+- Sponsor credits are sourced from browser-local admin settings. A single sponsor is centered without marquee motion; multiple sponsors can rotate slowly in the footer.
+- Footer listen links, social links, sponsor name, sponsor URL, and sponsor logo URL are rendered from saved admin settings.
 
 ## Project structure
 
