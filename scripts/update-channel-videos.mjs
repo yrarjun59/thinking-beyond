@@ -43,8 +43,8 @@ const pageStats = await Promise.all(rows.map(async item => {
     const page = await fetch(`https://www.youtube.com/watch?v=${item.youtubeId}`, { headers: { accept: 'text/html' }, signal: AbortSignal.timeout(12000) });
     if (!page.ok) return [item.youtubeId, null];
     const html = await page.text();
-    const match = html.match(/"viewCount":"?(\d+)"?/);
-    const views = match ? Number(match[1]) : NaN;
+    const matches = [...html.matchAll(/"viewCount":"?(\d+)"?/g)].map(match => Number(match[1])).filter(Number.isFinite);
+    const views = matches.length ? Math.max(...matches) : NaN;
     return [item.youtubeId, Number.isFinite(views) ? views : null];
   } catch {
     return [item.youtubeId, null];
