@@ -29,6 +29,7 @@ const timeLabel = $('#time');
 const guestName = $('#guest-name');
 const status = $('#status');
 const book = $('.book');
+const audioSignal = $('.audio-transmission');
 const hostTimeline = [[0, 0], [1.15, 1], [1.34, 0], [2.35, 2], [3.05, 3], [3.23, 0], [4.8, 4], [5.8, 5], [6.5, 6], [7.5, 7], [8.7, 8], [10.1, 9], [11.4, 0]];
 const guestTimeline = [[0, 0], [.75, 1], [1.9, 2], [3.05, 1], [4.1, 2], [5.05, 4], [6.2, 0], [7.55, 3], [8.25, 0], [10.15, 4], [11.35, 0]];
 let selected = 0;
@@ -93,7 +94,6 @@ function paintBackground(context, side) {
 function updateGuestLabel() {
   const role = roles[selected];
   guestName.value = `${role.name} guest`;
-  $('#guest-role').textContent = role.name;
   book.setAttribute('aria-label', `Podcast conversation: ${role.name} guest on the left, Manisha, the host, on the right.`);
 }
 
@@ -111,6 +111,9 @@ function render() {
     drawCharacter(context, 'guest', roleIndex, sceneTime, hostClock + (pageIndex * 1.7));
   });
 
+  const speaker = turning ? 'turn' : (position < 4.5 || position >= 7.4 ? 'guest' : 'host');
+  if (audioSignal.dataset.speaker !== speaker) audioSignal.dataset.speaker = speaker;
+
   seek.value = String(Math.min(duration, position));
   timeLabel.value = `${Math.min(duration, position).toFixed(2)} s`;
 }
@@ -118,6 +121,7 @@ function render() {
 function onFlip({ data }) {
   if (resettingWrap) return;
   turning = false;
+  book.classList.remove('is-turning');
   const index = Number(data);
   selected = pageRoles[index] ?? 0;
   position = 0;
@@ -144,6 +148,7 @@ function tick(now) {
   if (!turning && position >= duration) {
     position = duration;
     turning = true;
+    book.classList.add('is-turning');
     pageFlip.flipNext('bottom');
   }
   render();
@@ -166,6 +171,7 @@ async function init() {
     emptyStudio = studio;
     guestPoses = Object.fromEntries(roles.map((role, index) => [role.id, guestLists[index]]));
     hostPoses = hosts;
+    await Promise.all(pageElements.map(page => page.querySelector('img').decode()));
 
     pageFlip = new PageFlip(guestPagesRoot, {
       width: 627,
