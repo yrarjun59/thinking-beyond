@@ -8,6 +8,7 @@ const replay = document.querySelector('#replay');
 const seek = document.querySelector('#seek');
 const time = document.querySelector('#time');
 const status = document.querySelector('#status');
+const guestPicker = document.querySelector('#guest-picker');
 
 // Paths are registered in pixels against the locked square reference.
 const host = {
@@ -172,14 +173,17 @@ function renderPerson(person, t, isHost) {
 }
 
 async function init() {
-  const [empty, master, speaking, accent, blink, gesture] = await Promise.all([
+  const roleAssets = Object.fromEntries(['businessman', 'philosopher', 'content-creator', 'sociologist', 'public-intellectual'].map(role => [role, load(art + `guest/${role}/conversation.webp`)]));
+  const [empty, master, speaking, accent, blink, gesture, ...roleImages] = await Promise.all([
     load(art + 'reference/empty-studio-2d.webp'),
     load(art + 'reference/master%20image.png'),
     load(art + 'host/pilot-speaking.webp'),
     load(art + 'host/pilot-accent.webp'),
     load(art + 'host/pilot-blink.webp'),
     load(art + 'guest/entrepreneur/pilot-gesture.webp'),
+    ...Object.values(roleAssets),
   ]);
+  const sceneByRole = Object.fromEntries(Object.keys(roleAssets).map((role, index) => [role, roleImages[index]]));
   const seated = [cutout(master, guest.seat), cutout(master, host.seat)];
   const puppets = [
     prepare(guest, master, speaking, accent, blink, gesture),
@@ -189,12 +193,23 @@ async function init() {
   let previous = 0;
   let frame = 0;
   let playing = false;
+  let selectedRole = 'entrepreneur';
 
   function render() {
-    context.drawImage(empty, 0, 0);
-    for (const base of seated) context.drawImage(base, 0, 0);
-    renderPerson(puppets[0], position, false);
-    renderPerson(puppets[1], position, true);
+    if (selectedRole === 'entrepreneur') {
+      context.drawImage(empty, 0, 0);
+      for (const base of seated) context.drawImage(base, 0, 0);
+      renderPerson(puppets[0], position, false);
+      renderPerson(puppets[1], position, true);
+    } else {
+      const scene = sceneByRole[selectedRole];
+      const breath = (1 - Math.cos(2 * Math.PI * position / 6)) / 2;
+      context.save();
+      context.translate(size / 2, size / 2 + breath * -1.2);
+      context.scale(1 + breath * .003, 1 + breath * .003);
+      context.drawImage(scene, -size / 2, -size / 2, size, size);
+      context.restore();
+    }
     const light = .017 * beat(position, 0, duration);
     const glow = context.createRadialGradient(130, 365, 20, 130, 365, 310);
     glow.addColorStop(0, `rgba(255,176,76,${light})`);
@@ -221,6 +236,12 @@ async function init() {
   }
 
   play.onclick = () => toggle(!playing);
+  guestPicker.onchange = () => {
+    selectedRole = guestPicker.value;
+    const roleName = guestPicker.selectedOptions[0].textContent;
+    canvas.setAttribute('aria-label', `Thinking Beyond studio with ${roleName} guest on the left and the woman host on the right`);
+    render();
+  };
   replay.onclick = () => { position = 0; render(); toggle(true); };
   seek.oninput = () => { toggle(false); position = Number(seek.value); render(); };
   document.querySelector('#full').onchange = event => {

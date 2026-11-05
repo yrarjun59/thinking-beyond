@@ -17,8 +17,12 @@
   canvas, #master { width: 100%; height: auto; display: block; }
   [hidden] { display: none !important; }
   body.embed main { max-width: none; padding: 0; }
-  body.embed h1, body.embed .controls, body.embed #status { display: none; }
+  body.embed h1, body.embed #status { display: none; }
+  body.embed .controls { display: flex; position: absolute; z-index: 2; margin: .75rem; }
+  body.embed .controls > :not(#guest-picker-wrap) { display: none; }
   body.embed .stage { width: 100%; margin: 0; }
+  body.embed #guest-picker { display: block; position: absolute; z-index: 2; top: .75rem; left: .75rem; padding: .4rem .6rem; border: 1px solid #83745f; background: #141210dd; color: #f5eee3; font-size: .75rem; }
+  body.embed .stage { position: relative; }
 </style>
 <main>
   <h1>Thinking Beyond · Motion pilot</h1>
@@ -28,6 +32,7 @@
     <label>Time <input id="seek" type="range" min="0" max="12" step=".01" value="0" disabled></label>
     <output id="time" for="seek">0.00 s</output>
     <label>View <select id="view"><option value="pilot">Pilot</option><option value="master">Locked master</option></select></label>
+    <label id="guest-picker-wrap">Guest <select id="guest-picker" aria-label="Choose guest"><option value="entrepreneur">Entrepreneur · animated pilot</option><option value="businessman">Businessman</option><option value="philosopher">Philosopher</option><option value="content-creator">Content creator</option><option value="sociologist">Sociologist</option><option value="public-intellectual">Public intellectual</option></select></label>
     <label><input id="full" type="checkbox" style="width:auto"> Full size</label>
   </div>
   <p id="status" role="status">Loading artwork…</p>
