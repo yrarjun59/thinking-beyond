@@ -16,6 +16,9 @@
   .stage.full { width: 100%; }
   canvas, #master { width: 100%; height: auto; display: block; }
   [hidden] { display: none !important; }
+  body.embed main { max-width: none; padding: 0; }
+  body.embed h1, body.embed .controls, body.embed #status { display: none; }
+  body.embed .stage { width: 100%; margin: 0; }
 </style>
 <main>
   <h1>Thinking Beyond · Motion pilot</h1>
@@ -34,4 +37,5 @@
   </div>
 </main>
 <script type="module" src="./src/hero-pilot.js"></script>
+<script>if(new URLSearchParams(location.search).has('embed'))document.body.classList.add('embed')</script>
 </html>
