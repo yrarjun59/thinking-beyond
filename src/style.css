@@ -1140,3 +1140,69 @@ body {
   .contact-info .contact-chips label,
   .contact-info .contact-chips label:last-child { width: 100%; min-width: 0; justify-self: stretch; }
 }
+
+/* The hero uses one text entrance and one square animation crop at every width. */
+.show-hero-message {
+  width: 100%;
+  max-width: 620px;
+  margin: auto 0 !important;
+  align-self: center !important;
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
+  animation: none !important;
+}
+.show-hero-message .eyebrow {
+  animation: hero-copy-flow .62s cubic-bezier(.2,.7,.2,1) both !important;
+}
+.show-hero-message h1,
+.show-hero-message p {
+  overflow: visible !important;
+  animation: none !important;
+}
+.show-hero-message .reveal-word {
+  animation: hero-word-flow .62s cubic-bezier(.2,.7,.2,1) both !important;
+  animation-delay: calc(var(--word-index) * 34ms + 110ms) !important;
+}
+.show-hero-message p .reveal-word {
+  animation-delay: calc(var(--word-index) * 34ms + 270ms) !important;
+}
+@keyframes hero-copy-flow {
+  from { opacity: 0; transform: translateY(10px); filter: blur(2px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+@keyframes hero-word-flow {
+  from { opacity: 0; transform: translateY(105%); filter: blur(2px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .show-hero-message,
+  .show-hero-message .eyebrow,
+  .show-hero-message h1,
+  .show-hero-message p,
+  .show-hero-message .reveal-word {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+}
+.show-hero-visual.show-hero-pilot {
+  align-self: center;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 1 / 1;
+  background: transparent;
+}
+.show-hero-visual.show-hero-pilot iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  background: transparent;
+}
+
+@media (max-width: 900px) {
+  .show-hero-visual.show-hero-pilot { aspect-ratio: 1 / 1 !important; }
+}

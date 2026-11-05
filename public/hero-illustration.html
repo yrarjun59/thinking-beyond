@@ -41,7 +41,7 @@
     background: #0c0a09;
     box-shadow: 0 30px 80px rgba(255, 150, 40, .12), 0 0 0 1px var(--line);
   }
-  .stage svg { position: absolute; left: 0; top: 50%; width: 100%; height: auto; aspect-ratio: 16 / 9; display: block; transform: translateY(-50%); }
+  .stage svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
 
   .caption {
     position: absolute; left: 3.2%; bottom: 16%;
@@ -73,9 +73,9 @@
     color: #fff; text-wrap: balance;
   }
   .person-tag {
-    position: absolute; z-index: 3; top: 30%;
+    position: absolute; z-index: 3; top: 31%;
     display: flex; flex-direction: column; align-items: center; gap: 4px;
-    width: min(28%, 260px); padding: 7px 10px 8px;
+    width: min(36%, 240px); padding: 8px 10px 9px;
     transform: translateX(-50%);
     color: #fff; text-align: center;
     background: rgba(5, 5, 5, .84);
@@ -85,10 +85,10 @@
     text-shadow: 0 1px 6px #000;
     pointer-events: none;
   }
-  .person-tag.host { left: 74%; border-top-color: var(--amber); }
-  .person-tag.guest { left: 26%; }
-  .person-tag span { color: #c6c0b8; font: 700 clamp(6px,.58vw,8px)/1.15 var(--font-body); letter-spacing: .18em; text-transform: uppercase; }
-  .person-tag strong { font: 700 clamp(8px,.82vw,12px)/1.1 var(--font-display); letter-spacing: .1em; text-transform: uppercase; }
+  .person-tag.host { left: 82%; border-top-color: var(--amber); }
+  .person-tag.guest { left: 18%; }
+  .person-tag span { color: #c6c0b8; font: 700 clamp(7px,.7vw,9px)/1.15 var(--font-body); letter-spacing: .15em; text-transform: uppercase; }
+  .person-tag strong { font: 700 clamp(9px,.95vw,13px)/1.15 var(--font-display); letter-spacing: .07em; text-transform: uppercase; }
   .stage.clean .caption { display: none; }
 
   body.embed { width:100%; height:100vh; padding:0; overflow:hidden; }
@@ -96,21 +96,21 @@
   body.embed header, body.embed #status { display:none; }
   body.embed .stage { width:100%; max-width:none; height:100%; aspect-ratio:auto; border-radius:0; box-shadow:none; }
   body.embed .caption { display:none !important; }
-  body.embed .person-tag { top:24%; }
+  body.embed .person-tag { top:31%; }
   @media (max-width:520px) {
     .caption { bottom:16%; width:42%; padding:6px 8px 7px; gap:3px; }
     .caption .who { font-size:7px; }
     .caption .line { font-size:clamp(8px,2.2vw,11px); }
-    .person-tag { top:30%; padding:5px 6px; }
-    .person-tag span { font-size:5px; }
-    .person-tag strong { font-size:clamp(6px,1.8vw,8px); }
+    .person-tag { top:31%; width:36%; padding:5px 6px; gap:3px; }
+    .person-tag span { font-size:6px; letter-spacing:.11em; }
+    .person-tag strong { font-size:clamp(7px,2vw,9px); letter-spacing:.04em; overflow-wrap:anywhere; }
   }
 
 </style>
 
 <div class="wrap">
   <div class="stage" id="stage">
-    <svg id="scene" viewBox="0 360 1280 720" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Illustrated podcast studio. The host on the right interviews a rotating set of guests on the left.">
+    <svg id="scene" viewBox="160 160 960 960" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Illustrated podcast studio. The host on the right interviews a rotating set of guests on the left.">
       <defs>
         <linearGradient id="wallG" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stop-color="#1a1411"/><stop offset="1" stop-color="#0b0908"/>
@@ -177,9 +177,9 @@
       <!-- TV with brand logo -->
       <rect x="452" y="104" width="376" height="212" rx="4" fill="#050505" stroke="#2b2b2b" stroke-width="3"/>
       <g id="logo">
-        <circle cx="640" cy="204" r="55" fill="#030303" stroke="#fff" stroke-width="5"/>
-        <text x="640" y="207" text-anchor="middle" font-family="Outfit, sans-serif" font-weight="700" font-size="86" fill="#fff">?</text>
-        <text x="640" y="238" text-anchor="middle" font-family="Outfit, sans-serif" font-weight="700" font-size="18" letter-spacing=".45" fill="#fff">thinking beyond</text>
+        <circle cx="640" cy="204" r="70" fill="#030303" stroke="#fff" stroke-width="5"/>
+        <text x="640" y="211" text-anchor="middle" font-family="Outfit, sans-serif" font-weight="700" font-size="100" fill="#fff">?</text>
+        <text x="640" y="247" text-anchor="middle" font-family="Outfit, sans-serif" font-weight="700" font-size="23" letter-spacing=".15" fill="#fff">thinking beyond</text>
       </g>
 
       <!-- shelf with small plant and trophy -->
