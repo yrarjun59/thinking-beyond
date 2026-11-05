@@ -5,4 +5,12 @@ import {channelStatsPlugin} from './scripts/channel-stats.mjs';
 export default defineConfig({
   plugins: [react(), channelStatsPlugin()],
   base: '/thinking-beyond/',
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        heroPilot: 'hero-pilot.html',
+      },
+    },
+  },
 });

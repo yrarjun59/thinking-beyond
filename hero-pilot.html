@@ -10,32 +10,43 @@
   main { max-width: 1254px; margin: auto; padding: 12px; }
   h1 { font-size: 1.1rem; margin: 0 0 10px; }
   .controls { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-bottom:10px; }
-  button, select { color:inherit; background:#171513; border:1px solid #655849; border-radius:4px; padding:6px 9px; font:inherit; }
+  button { color:inherit; background:#171513; border:1px solid #655849; border-radius:4px; padding:6px 9px; font:inherit; }
   button:disabled { opacity:.45; }
   input { width:min(38vw, 20rem); accent-color:#d5aa74; vertical-align:middle; }
   output { min-width:5ch; font-variant-numeric:tabular-nums; }
-  .stage { width:min(100%, 670px); margin:auto; }
-  .book { position:relative; width:100%; aspect-ratio:1; overflow:hidden; background:#15120f; perspective:1800px; box-shadow:0 18px 60px #0009; }
-  .page { position:absolute; top:0; width:50%; height:100%; overflow:hidden; }
-  .guest-leaf { left:0; z-index:2; transform-origin:right center; transform-style:preserve-3d; }
-  .guest-leaf.is-turning { animation:page-turn 1.12s cubic-bezier(.6,.02,.35,1) both; }
-  .host-page { right:0; z-index:5; }
-  .leaf-face { position:absolute; inset:0; width:100%; height:100%; display:block; backface-visibility:hidden; }
-  .host-page canvas { display:block; width:100%; height:100%; }
-  .leaf-back { transform:rotateY(180deg); }
-  .spine { position:absolute; z-index:6; top:0; bottom:0; left:50%; width:2px; transform:translateX(-1px); background:linear-gradient(90deg,#100d0b,#d6b98e66,#171310); box-shadow:0 0 12px #0009; pointer-events:none; }
-  .book:after { content:""; position:absolute; z-index:3; inset:0; background:linear-gradient(90deg,#0002,transparent 45%,#0002); pointer-events:none; }
-  @keyframes page-turn { 0% { transform:rotateY(0); filter:brightness(1); } 42% { filter:brightness(.7); } 100% { transform:rotateY(-180deg); filter:brightness(1); } }
+  .stage { width:min(100%, 1254px); margin:auto; }
+  .book { position:relative; display:grid; grid-template-columns:1fr 1fr; width:100%; aspect-ratio:16/9; overflow:hidden; background:#15120f; box-shadow:0 18px 60px #0009; isolation:isolate; }
+  .guest-side,.host-page { position:relative; min-width:0; height:100%; overflow:hidden; }
+  .guest-side { z-index:2; }
+  .guest-pages { position:absolute; inset:0; width:100%; height:100%; min-width:0 !important; min-height:0 !important; overflow:hidden; }
+  .guest-page { position:relative; display:none; width:100%; height:100%; overflow:hidden; background:#15120f; }
+  .guest-page canvas,.host-page canvas { display:block; width:100%; height:100%; }
+  .host-page { z-index:1; }
+  .host-page canvas { position:absolute; inset:0; }
+  .host-light { position:absolute; inset:0; pointer-events:none; background:radial-gradient(ellipse at 78% 42%,rgba(255,190,95,.08),transparent 52%); mix-blend-mode:screen; animation:studio-light 8s ease-in-out infinite alternate; }
+  .spine { position:absolute; z-index:8; top:0; bottom:0; left:50%; width:1px; background:linear-gradient(90deg,#100d0b,#d6b98e55,#171310); box-shadow:0 0 10px #0008; pointer-events:none; }
+  .highlight { position:absolute; z-index:9; left:3.2%; top:5.5%; max-width:44%; display:flex; flex-direction:column; gap:5px; pointer-events:none; text-shadow:0 2px 15px #000; }
+  .highlight-label { font-size:clamp(7px,.75vw,10px); font-weight:700; letter-spacing:.2em; color:#d9b98f; }
+  .highlight-line { width:max-content; max-width:100%; padding:4px 8px; color:#fff6e9; background:linear-gradient(90deg,rgba(16,13,10,.88),rgba(16,13,10,.34)); border-left:2px solid #d4ad79; font:italic 500 clamp(12px,1.4vw,20px)/1.15 Georgia,serif; }
+  .highlight-line.animate { animation:highlight-in .5s ease both; }
+  .highlight-line span { color:#f1c780; }
   #status { color:#c6aa87; font-size:12px; }
   [hidden] { display:none !important; }
   body.embed main { max-width:none; height:100vh; padding:0; display:grid; align-content:center; }
   body.embed h1, body.embed #status { display:none; }
-  body.embed .controls { position:absolute; z-index:6; top:8px; left:8px; margin:0; }
+  body.embed .controls { position:absolute; z-index:12; top:8px; left:8px; margin:0; }
   body.embed .controls > :not(#play) { display:none; }
   body.embed #play { padding:5px 9px; font-size:11px; background:#171513dd; }
-  body.embed #guest-picker { font-size:11px; padding:5px 7px; background:#171513dd; }
-  body.embed .stage { width:min(100vw, 100vh); height:min(100vw, 100vh); aspect-ratio:1; margin:0 auto; }
-  @media (prefers-reduced-motion:reduce) { .guest-leaf.is-turning { animation-duration:.01ms; } }
+  body.embed .stage { width:min(100vw, 177.78vh); margin:0 auto; }
+  @keyframes studio-light { from { opacity:.45; } to { opacity:1; } }
+  @keyframes highlight-in { from { opacity:0; transform:translateY(5px); } to { opacity:1; transform:translateY(0); } }
+  @media (max-aspect-ratio: 1/1) {
+    body.embed .stage { width:100vw; }
+    .highlight { left:2.8%; top:4%; }
+  }
+  @media (prefers-reduced-motion:reduce) {
+    *,*::before,*::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; scroll-behavior:auto !important; }
+  }
 </style>
 <main>
   <h1>Thinking Beyond · Open book pilot</h1>
@@ -48,12 +59,15 @@
   </div>
   <p id="status" role="status">Loading the studio and pose artwork…</p>
   <div class="stage">
-    <div class="book" role="img" aria-label="Open book podcast studio. Guest on the left page and host on the right page.">
-      <div class="page guest-leaf" id="guest-leaf">
-        <canvas class="leaf-face leaf-front" id="guest-front" width="627" height="1254" aria-hidden="true"></canvas>
-        <canvas class="leaf-face leaf-back" id="guest-back" width="627" height="1254" aria-hidden="true"></canvas>
-      </div>
-      <div class="page host-page"><canvas id="host-canvas" width="627" height="1254" aria-hidden="true"></canvas></div>
+    <div class="book" role="img" aria-label="Podcast conversation, guest on the left and host on the right.">
+      <div class="guest-side" id="guest-side"><div class="guest-pages" id="guest-pages">
+        <div class="guest-page" data-density="soft"><canvas width="627" height="706" aria-hidden="true"></canvas></div>
+        <div class="guest-page" data-density="soft"><canvas width="627" height="706" aria-hidden="true"></canvas></div>
+        <div class="guest-page" data-density="soft"><canvas width="627" height="706" aria-hidden="true"></canvas></div>
+        <div class="guest-page" data-density="soft"><canvas width="627" height="706" aria-hidden="true"></canvas></div>
+      </div></div>
+      <div class="host-page"><canvas id="host-canvas" width="627" height="706" aria-hidden="true"></canvas><span class="host-light" aria-hidden="true"></span></div>
+      <div class="highlight" aria-hidden="true"><span class="highlight-label">CONVERSATION THREAD</span><span class="highlight-line" id="highlight-line"><span id="highlight-prefix">Building</span> <span id="highlight-focus">what comes next</span></span></div>
       <i class="spine" aria-hidden="true"></i>
     </div>
   </div>
