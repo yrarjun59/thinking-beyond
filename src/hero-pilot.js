@@ -1,14 +1,15 @@
 import { PageFlip } from 'page-flip';
 
 const duration = 12;
-const cropTop = 60;
-const cropHeight = 706;
+// Crop off the ceiling while keeping the logo, chair frames, and seated poses.
+const cropTop = 129;
+const cropHeight = 1125;
 const canvasWidth = 627;
 const assetRoot = './images/hero-ist/';
 const roles = [
-  { id: 'entrepreneur', name: 'Entrepreneur', prefix: 'Building', focus: 'what comes next', count: 5 },
-  { id: 'businessman', name: 'Businessman', prefix: 'Leadership', focus: 'through decisions', count: 5 },
-  { id: 'philosopher', name: 'Philosopher', prefix: 'Ideas', focus: 'worth questioning', count: 5 },
+  { id: 'entrepreneur', name: 'Entrepreneur', count: 5 },
+  { id: 'businessman', name: 'Businessman', count: 5 },
+  { id: 'philosopher', name: 'Philosopher', count: 5 },
 ];
 // The final page repeats the first guest so the library can perform a real curl
 // at the end of every cycle, then reset invisibly to page zero.
@@ -21,24 +22,17 @@ const pageElements = [...document.querySelectorAll('.guest-page')];
 const pageCanvases = pageElements.map(element => element.querySelector('canvas'));
 const hostCanvas = $('#host-canvas');
 const hostContext = hostCanvas.getContext('2d');
-const hostSide = $('.host-page');
 const guestPagesRoot = $('#guest-pages');
-const guestSide = $('#guest-side');
-const playButton = $('#play');
 const replayButton = $('#replay');
 const seek = $('#seek');
 const timeLabel = $('#time');
 const guestName = $('#guest-name');
 const status = $('#status');
-const highlightPrefix = $('#highlight-prefix');
-const highlightFocus = $('#highlight-focus');
-const highlightLine = $('#highlight-line');
 const book = $('.book');
 const hostTimeline = [[0, 0], [1.15, 1], [1.34, 0], [2.35, 2], [3.05, 3], [3.23, 0], [4.8, 4], [5.8, 5], [6.5, 6], [7.5, 7], [8.7, 8], [10.1, 9], [11.4, 0]];
 const guestTimeline = [[0, 0], [.75, 1], [1.9, 2], [3.05, 1], [4.1, 2], [5.05, 4], [6.2, 0], [7.55, 3], [8.25, 0], [10.15, 4], [11.35, 0]];
 let selected = 0;
 let position = 0;
-let playing = false;
 let turning = false;
 let hostClock = 0;
 let previous = 0;
@@ -65,7 +59,7 @@ function timelineIndex(timeline, time) {
   while (event + 1 < timeline.length && timeline[event + 1][0] <= t) event += 1;
   const index = timeline[event][1];
   const following = timeline[event + 1];
-  const fadeDuration = .025;
+  const fadeDuration = .18;
   const blend = following && t >= following[0] - fadeDuration
     ? Math.min(1, (t - (following[0] - fadeDuration)) / fadeDuration)
     : 0;
@@ -77,8 +71,8 @@ function drawCharacter(context, side, roleIndex, sceneTime, movementTime) {
   const poses = side === 'host' ? hostPoses : guestPoses[role.id];
   const sourceX = side === 'host' ? canvasWidth : 0;
   const { index, nextIndex, blend } = timelineIndex(side === 'host' ? hostTimeline : guestTimeline, sceneTime);
-  const offsetX = Math.sin(movementTime * (side === 'host' ? .63 : .48)) * 1.1;
-  const offsetY = Math.sin(movementTime * (side === 'host' ? 1.35 : 1.06)) * 1.55;
+  const offsetX = Math.sin(movementTime * (side === 'host' ? .31 : .25)) * .7;
+  const offsetY = Math.sin(movementTime * (side === 'host' ? .82 : .67)) * 1.2;
   context.save();
   context.translate(offsetX, offsetY);
   context.globalAlpha = 1 - blend;
@@ -96,14 +90,10 @@ function paintBackground(context, side) {
   context.drawImage(emptyStudio, sourceX, cropTop, canvasWidth, cropHeight, 0, 0, canvasWidth, cropHeight);
 }
 
-function updateHighlight() {
+function updateGuestLabel() {
   const role = roles[selected];
-  highlightPrefix.textContent = role.prefix;
-  highlightFocus.textContent = role.focus;
-  highlightLine.classList.remove('animate');
-  void highlightLine.offsetWidth;
-  highlightLine.classList.add('animate');
   guestName.value = `${role.name} guest`;
+  $('#guest-role').textContent = role.name;
   book.setAttribute('aria-label', `Podcast conversation: ${role.name} guest on the left, Manisha, the host, on the right.`);
 }
 
@@ -131,7 +121,7 @@ function onFlip({ data }) {
   const index = Number(data);
   selected = pageRoles[index] ?? 0;
   position = 0;
-  updateHighlight();
+  updateGuestLabel();
 
   // Page four repeats page one, so the curl is visible even on the wraparound.
   // Re-index the same four pages without a visual change after it lands.
@@ -145,7 +135,6 @@ function onFlip({ data }) {
 }
 
 function tick(now) {
-  if (!playing) return;
   if (previous) {
     const delta = Math.min(.08, (now - previous) / 1000);
     hostClock += delta;
@@ -162,18 +151,9 @@ function tick(now) {
 }
 
 function start() {
-  playing = true;
-  playButton.textContent = 'Pause';
   cancelAnimationFrame(raf);
   previous = 0;
   raf = requestAnimationFrame(tick);
-}
-
-function pause() {
-  playing = false;
-  playButton.textContent = 'Play';
-  previous = 0;
-  cancelAnimationFrame(raf);
 }
 
 async function init() {
@@ -189,12 +169,12 @@ async function init() {
 
     pageFlip = new PageFlip(guestPagesRoot, {
       width: 627,
-      height: 706,
+      height: cropHeight,
       size: 'stretch',
       minWidth: 400,
       maxWidth: 1000,
       minHeight: 300,
-      maxHeight: 1125,
+      maxHeight: cropHeight,
       usePortrait: true,
       flippingTime: matchMedia('(prefers-reduced-motion: reduce)').matches ? 1 : 1100,
       drawShadow: true,
@@ -209,32 +189,34 @@ async function init() {
     pageFlip.loadFromHTML(pageElements);
     pageFlip.on('flip', onFlip);
 
-    playButton.disabled = replayButton.disabled = seek.disabled = false;
+    replayButton.disabled = seek.disabled = false;
     status.hidden = true;
-    updateHighlight();
+    updateGuestLabel();
     render();
+    // Reduced-motion visitors retain the still first pose and skip autoplay.
     if (!matchMedia('(prefers-reduced-motion: reduce)').matches) start();
   } catch (error) {
     status.textContent = `Could not load the pilot artwork: ${error.message}`;
-    playButton.disabled = replayButton.disabled = seek.disabled = true;
+    replayButton.disabled = seek.disabled = true;
     console.error(error);
   }
 }
 
-playButton.addEventListener('click', () => playing ? pause() : start());
 replayButton.addEventListener('click', () => {
-  pause();
+  cancelAnimationFrame(raf);
   if (pageFlip.getCurrentPageIndex() !== 0) pageFlip.turnToPage(0);
   selected = 0;
   position = 0;
-  updateHighlight();
+  updateGuestLabel();
   render();
   start();
 });
 seek.addEventListener('input', () => {
-  pause();
   position = Number(seek.value);
   render();
+});
+seek.addEventListener('change', () => {
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) start();
 });
 
 init();

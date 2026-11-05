@@ -723,6 +723,6 @@
   .footer-links a { font-size: 10px; }
 }
 
-/* Fit the wide animation cleanly inside the hero visual at each viewport. */
-.show-hero-visual.show-hero-pilot { height:auto; min-height:0; aspect-ratio:16/9; }
+/* The framed open-book hero is a square composition. */
+.show-hero-visual.show-hero-pilot { height:auto; min-height:0; aspect-ratio:1/1; }
 .show-hero-visual.show-hero-pilot iframe { height:100%; min-height:0; }

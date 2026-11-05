@@ -14,44 +14,49 @@
   button:disabled { opacity:.45; }
   input { width:min(38vw, 20rem); accent-color:#d5aa74; vertical-align:middle; }
   output { min-width:5ch; font-variant-numeric:tabular-nums; }
-  .stage { width:min(100%, 1254px); margin:auto; }
-  .book { position:relative; display:grid; grid-template-columns:1fr 1fr; width:100%; aspect-ratio:16/9; overflow:hidden; background:#15120f; box-shadow:0 18px 60px #0009; isolation:isolate; }
-  .guest-side,.host-page { position:relative; min-width:0; height:100%; overflow:hidden; }
+  .stage { width:min(100%, 900px); aspect-ratio:1; margin:auto; perspective:1600px; }
+  .book { position:relative; display:grid; grid-template-columns:1fr 1fr; width:100%; height:100%; padding:6.5% 1.5%; overflow:visible; background:linear-gradient(145deg,#4a321e 0%,#24180f 22%,#49311d 50%,#21160f 78%,#624329 100%); border:1px solid #9a7043; border-radius:8px 12px 12px 8px; box-shadow:0 24px 54px #000b, inset 0 0 0 3px #1b120b, inset 0 0 0 5px #785331; isolation:isolate; transform-style:preserve-3d; transform:rotateX(1deg) rotateY(-.7deg); }
+  .book:before { content:""; position:absolute; z-index:-1; inset:1.2% -1.1% .4%; border:1px solid #6e4a2b; border-radius:8px 13px 13px 8px; background:linear-gradient(145deg,#3a2819,#160f0a 60%,#442d19); box-shadow:0 26px 30px #000b; transform:translateZ(-16px); pointer-events:none; }
+  .book:after { content:""; position:absolute; z-index:9; inset:0; border:1px solid #d0a66d77; border-radius:8px 12px 12px 8px; box-shadow:inset 0 0 0 1px #1a100a; pointer-events:none; }
+  .guest-side,.host-page { position:relative; min-width:0; height:100%; overflow:hidden; box-shadow:inset 0 0 20px #0005; }
   .guest-side { z-index:2; }
   .guest-pages { position:absolute; inset:0; width:100%; height:100%; min-width:0 !important; min-height:0 !important; overflow:hidden; }
-  .guest-page { position:relative; display:none; width:100%; height:100%; overflow:hidden; background:#15120f; }
+  .guest-page { position:relative; display:none; width:100%; height:100%; overflow:hidden; background:#17120d; }
   .guest-page canvas,.host-page canvas { display:block; width:100%; height:100%; }
   .host-page { z-index:1; }
   .host-page canvas { position:absolute; inset:0; }
   .host-light { position:absolute; inset:0; pointer-events:none; background:radial-gradient(ellipse at 78% 42%,rgba(255,190,95,.08),transparent 52%); mix-blend-mode:screen; animation:studio-light 8s ease-in-out infinite alternate; }
-  .spine { position:absolute; z-index:8; top:0; bottom:0; left:50%; width:1px; background:linear-gradient(90deg,#100d0b,#d6b98e55,#171310); box-shadow:0 0 10px #0008; pointer-events:none; }
-  .highlight { position:absolute; z-index:9; left:3.2%; top:5.5%; max-width:44%; display:flex; flex-direction:column; gap:5px; pointer-events:none; text-shadow:0 2px 15px #000; }
-  .highlight-label { font-size:clamp(7px,.75vw,10px); font-weight:700; letter-spacing:.2em; color:#d9b98f; }
-  .highlight-line { width:max-content; max-width:100%; padding:4px 8px; color:#fff6e9; background:linear-gradient(90deg,rgba(16,13,10,.88),rgba(16,13,10,.34)); border-left:2px solid #d4ad79; font:italic 500 clamp(12px,1.4vw,20px)/1.15 Georgia,serif; }
-  .highlight-line.animate { animation:highlight-in .5s ease both; }
-  .highlight-line span { color:#f1c780; }
+  .spine { position:absolute; z-index:8; top:6.5%; bottom:6.5%; left:50%; width:1.15%; transform:translateX(-50%) translateZ(5px); background:linear-gradient(90deg,#180f09,#c69b6377 35%,#21150c 72%,#77502c); box-shadow:0 0 13px #000a, inset 1px 0 #e0bb8266; pointer-events:none; }
+  .role-tag { position:absolute; z-index:9; top:9%; display:flex; flex-direction:column; gap:4px; color:#f7f0e5; text-shadow:0 2px 9px #000; pointer-events:none; }
+  .role-tag small { color:#d5b891; font:700 clamp(7px,.68vw,10px)/1.15 system-ui,sans-serif; letter-spacing:.17em; }
+  .role-tag strong { font:700 clamp(10px,1vw,15px)/1.1 system-ui,sans-serif; letter-spacing:.06em; }
+  .guest-tag { left:4.2%; align-items:flex-start; }
+  .host-tag { right:4.2%; align-items:flex-end; text-align:right; }
+  .audio-transmission { position:absolute; z-index:10; left:43.7%; top:41%; width:12.6%; height:5.5%; display:flex; align-items:center; justify-content:center; gap:clamp(2px,.42vw,6px); pointer-events:none; }
+  .audio-transmission:before,.audio-transmission:after { content:""; position:absolute; top:50%; width:35%; height:1px; background:linear-gradient(90deg,transparent,#e6bd78aa); box-shadow:0 0 8px #dfaa5d88; }
+  .audio-transmission:before { right:68%; transform-origin:right; animation:signal-send-left 1.45s ease-in-out infinite; }
+  .audio-transmission:after { left:68%; transform-origin:left; transform:scaleX(-1); animation:signal-send-right 1.45s ease-in-out infinite; }
+  .audio-transmission i { display:block; width:clamp(2px,.3vw,4px); height:var(--bar,12px); border-radius:99px; background:linear-gradient(#f5d99d,#bb8244); box-shadow:0 0 7px #eabf76a8; transform:scaleY(.48); transform-origin:center; animation:audio-pulse .72s ease-in-out infinite alternate; animation-delay:var(--delay,0s); }
+  .audio-transmission i:nth-child(1),.audio-transmission i:nth-child(9) { --bar:8px; }
+  .audio-transmission i:nth-child(2),.audio-transmission i:nth-child(8) { --bar:15px; }
+  .audio-transmission i:nth-child(3),.audio-transmission i:nth-child(7) { --bar:24px; }
+  .audio-transmission i:nth-child(4),.audio-transmission i:nth-child(6) { --bar:32px; }
+  .audio-transmission i:nth-child(5) { --bar:21px; }
+  .audio-transmission i:nth-child(1) { --delay:-.51s; }.audio-transmission i:nth-child(2) { --delay:-.18s; }.audio-transmission i:nth-child(3) { --delay:-.39s; }.audio-transmission i:nth-child(4) { --delay:-.08s; }.audio-transmission i:nth-child(5) { --delay:-.32s; }.audio-transmission i:nth-child(6) { --delay:-.22s; }.audio-transmission i:nth-child(7) { --delay:-.46s; }.audio-transmission i:nth-child(8) { --delay:-.11s; }.audio-transmission i:nth-child(9) { --delay:-.29s; }
   #status { color:#c6aa87; font-size:12px; }
   [hidden] { display:none !important; }
   body.embed main { max-width:none; height:100vh; padding:0; display:grid; align-content:center; }
-  body.embed h1, body.embed #status { display:none; }
-  body.embed .controls { position:absolute; z-index:12; top:8px; left:8px; margin:0; }
-  body.embed .controls > :not(#play) { display:none; }
-  body.embed #play { padding:5px 9px; font-size:11px; background:#171513dd; }
-  body.embed .stage { width:min(100vw, 177.78vh); margin:0 auto; }
+  body.embed h1, body.embed #status, body.embed .controls { display:none; }
+  body.embed .stage { width:min(100vw,100vh); height:min(100vw,100vh); }
   @keyframes studio-light { from { opacity:.45; } to { opacity:1; } }
-  @keyframes highlight-in { from { opacity:0; transform:translateY(5px); } to { opacity:1; transform:translateY(0); } }
-  @media (max-aspect-ratio: 1/1) {
-    body.embed .stage { width:100vw; }
-    .highlight { left:2.8%; top:4%; }
-  }
-  @media (prefers-reduced-motion:reduce) {
-    *,*::before,*::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; scroll-behavior:auto !important; }
-  }
+  @keyframes audio-pulse { from { transform:scaleY(.3); opacity:.48; } to { transform:scaleY(1); opacity:1; } }
+  @keyframes signal-send-left { 0%,100% { opacity:.25; transform:scaleX(.25); } 50% { opacity:.9; transform:scaleX(1); } }
+  @keyframes signal-send-right { 0%,100% { opacity:.25; transform:scaleX(-.25); } 50% { opacity:.9; transform:scaleX(-1); } }
+  @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; scroll-behavior:auto !important; } }
 </style>
 <main>
   <h1>Thinking Beyond · Open book pilot</h1>
   <div class="controls">
-    <button id="play" type="button" disabled>Pause</button>
     <button id="replay" type="button" disabled>Replay</button>
     <label>Time <input id="seek" type="range" min="0" max="12" step=".01" value="0" disabled></label>
     <output id="time" for="seek">0.00 s</output>
@@ -59,15 +64,17 @@
   </div>
   <p id="status" role="status">Loading the studio and pose artwork…</p>
   <div class="stage">
-    <div class="book" role="img" aria-label="Podcast conversation, guest on the left and host on the right.">
+    <div class="book" role="img" aria-label="Open book studio: guest on the left page and host on the right page.">
       <div class="guest-side" id="guest-side"><div class="guest-pages" id="guest-pages">
-        <div class="guest-page" data-density="soft"><canvas width="627" height="706" aria-hidden="true"></canvas></div>
-        <div class="guest-page" data-density="soft"><canvas width="627" height="706" aria-hidden="true"></canvas></div>
-        <div class="guest-page" data-density="soft"><canvas width="627" height="706" aria-hidden="true"></canvas></div>
-        <div class="guest-page" data-density="soft"><canvas width="627" height="706" aria-hidden="true"></canvas></div>
+        <div class="guest-page" data-density="soft"><canvas width="627" height="1125" aria-hidden="true"></canvas></div>
+        <div class="guest-page" data-density="soft"><canvas width="627" height="1125" aria-hidden="true"></canvas></div>
+        <div class="guest-page" data-density="soft"><canvas width="627" height="1125" aria-hidden="true"></canvas></div>
+        <div class="guest-page" data-density="soft"><canvas width="627" height="1125" aria-hidden="true"></canvas></div>
       </div></div>
-      <div class="host-page"><canvas id="host-canvas" width="627" height="706" aria-hidden="true"></canvas><span class="host-light" aria-hidden="true"></span></div>
-      <div class="highlight" aria-hidden="true"><span class="highlight-label">CONVERSATION THREAD</span><span class="highlight-line" id="highlight-line"><span id="highlight-prefix">Building</span> <span id="highlight-focus">what comes next</span></span></div>
+      <div class="host-page"><canvas id="host-canvas" width="627" height="1125" aria-hidden="true"></canvas><span class="host-light" aria-hidden="true"></span></div>
+      <div class="role-tag guest-tag"><small>IN CONVERSATION WITH</small><strong id="guest-role">Entrepreneur</strong></div>
+      <div class="role-tag host-tag"><strong>MANISHA NEUPANE</strong><small>HOST · THINKING BEYOND</small></div>
+      <div class="audio-transmission" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
       <i class="spine" aria-hidden="true"></i>
     </div>
   </div>
