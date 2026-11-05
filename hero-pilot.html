@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thinking Beyond · Motion pilot</title>
+<style>
+  :root { color-scheme: dark; font: 16px/1.5 system-ui, sans-serif; background: #141210; color: #f5eee3; }
+  body { margin: 0; }
+  main { max-width: 1254px; margin: auto; padding: 1rem; }
+  h1 { font-size: 1.25rem; margin: 0 0 .8rem; }
+  .controls { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem; margin-bottom: 1rem; }
+  button, select { font: inherit; padding: .35rem .65rem; }
+  input { width: min(45vw, 23rem); }
+  output { min-width: 5ch; font-variant-numeric: tabular-nums; }
+  .stage { width: min(100%, 620px); margin: auto; }
+  .stage.full { width: 100%; }
+  canvas, #master { width: 100%; height: auto; display: block; }
+  [hidden] { display: none !important; }
+</style>
+<main>
+  <h1>Thinking Beyond · Motion pilot</h1>
+  <div class="controls">
+    <button id="play" type="button" disabled>Play</button>
+    <button id="replay" type="button" disabled>Replay</button>
+    <label>Time <input id="seek" type="range" min="0" max="12" step=".01" value="0" disabled></label>
+    <output id="time" for="seek">0.00 s</output>
+    <label>View <select id="view"><option value="pilot">Pilot</option><option value="master">Locked master</option></select></label>
+    <label><input id="full" type="checkbox" style="width:auto"> Full size</label>
+  </div>
+  <p id="status" role="status">Loading artwork…</p>
+  <div class="stage">
+    <canvas width="1254" height="1254" role="img" aria-label="Animated podcast studio with the woman host on the right and the entrepreneur guest on the left"></canvas>
+    <img id="master" src="./images/hero-ist/reference/master%20image.png" alt="Locked studio composition" width="1254" height="1254" hidden>
+  </div>
+</main>
+<script type="module" src="./src/hero-pilot.js"></script>
+</html>
