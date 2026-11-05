@@ -2,43 +2,60 @@
 <html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Thinking Beyond · Motion pilot</title>
+<title>Thinking Beyond · Open book animation pilot</title>
 <style>
-  :root { color-scheme: dark; font: 16px/1.5 system-ui, sans-serif; background: #141210; color: #f5eee3; }
+  :root { color-scheme: dark; font: 14px/1.4 system-ui, sans-serif; background: #090807; color: #f5eee3; }
+  * { box-sizing: border-box; }
   body { margin: 0; }
-  main { max-width: 1254px; margin: auto; padding: 1rem; }
-  h1 { font-size: 1.25rem; margin: 0 0 .8rem; }
-  .controls { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem; margin-bottom: 1rem; }
-  button, select { font: inherit; padding: .35rem .65rem; }
-  input { width: min(45vw, 23rem); }
-  output { min-width: 5ch; font-variant-numeric: tabular-nums; }
-  .stage { width: min(100%, 620px); margin: auto; }
-  .stage.full { width: 100%; }
-  canvas, #master { width: 100%; height: auto; display: block; }
-  [hidden] { display: none !important; }
-  body.embed main { max-width: none; padding: 0; }
-  body.embed h1, body.embed #status { display: none; }
-  body.embed .controls { display: flex; position: absolute; z-index: 2; margin: .75rem; }
-  body.embed .controls > :not(#guest-picker-wrap) { display: none; }
-  body.embed .stage { width: 100%; margin: 0; }
-  body.embed #guest-picker { display: block; position: absolute; z-index: 2; top: .75rem; left: .75rem; padding: .4rem .6rem; border: 1px solid #83745f; background: #141210dd; color: #f5eee3; font-size: .75rem; }
-  body.embed .stage { position: relative; }
+  main { max-width: 1254px; margin: auto; padding: 12px; }
+  h1 { font-size: 1.1rem; margin: 0 0 10px; }
+  .controls { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-bottom:10px; }
+  button, select { color:inherit; background:#171513; border:1px solid #655849; border-radius:4px; padding:6px 9px; font:inherit; }
+  button:disabled { opacity:.45; }
+  input { width:min(38vw, 20rem); accent-color:#d5aa74; vertical-align:middle; }
+  output { min-width:5ch; font-variant-numeric:tabular-nums; }
+  .stage { width:min(100%, 670px); margin:auto; }
+  .book { position:relative; width:100%; aspect-ratio:1; overflow:hidden; background:#15120f; perspective:1800px; box-shadow:0 18px 60px #0009; }
+  .page { position:absolute; top:0; width:50%; height:100%; overflow:hidden; }
+  .guest-leaf { left:0; z-index:2; transform-origin:right center; transform-style:preserve-3d; }
+  .guest-leaf.is-turning { animation:page-turn 1.12s cubic-bezier(.6,.02,.35,1) both; }
+  .host-page { right:0; z-index:5; }
+  .leaf-face { position:absolute; inset:0; width:100%; height:100%; display:block; backface-visibility:hidden; }
+  .host-page canvas { display:block; width:100%; height:100%; }
+  .leaf-back { transform:rotateY(180deg); }
+  .spine { position:absolute; z-index:6; top:0; bottom:0; left:50%; width:2px; transform:translateX(-1px); background:linear-gradient(90deg,#100d0b,#d6b98e66,#171310); box-shadow:0 0 12px #0009; pointer-events:none; }
+  .book:after { content:""; position:absolute; z-index:3; inset:0; background:linear-gradient(90deg,#0002,transparent 45%,#0002); pointer-events:none; }
+  @keyframes page-turn { 0% { transform:rotateY(0); filter:brightness(1); } 42% { filter:brightness(.7); } 100% { transform:rotateY(-180deg); filter:brightness(1); } }
+  #status { color:#c6aa87; font-size:12px; }
+  [hidden] { display:none !important; }
+  body.embed main { max-width:none; height:100vh; padding:0; display:grid; align-content:center; }
+  body.embed h1, body.embed #status { display:none; }
+  body.embed .controls { position:absolute; z-index:6; top:8px; left:8px; margin:0; }
+  body.embed .controls > :not(#play) { display:none; }
+  body.embed #play { padding:5px 9px; font-size:11px; background:#171513dd; }
+  body.embed #guest-picker { font-size:11px; padding:5px 7px; background:#171513dd; }
+  body.embed .stage { width:min(100vw, 100vh); height:min(100vw, 100vh); aspect-ratio:1; margin:0 auto; }
+  @media (prefers-reduced-motion:reduce) { .guest-leaf.is-turning { animation-duration:.01ms; } }
 </style>
 <main>
-  <h1>Thinking Beyond · Motion pilot</h1>
+  <h1>Thinking Beyond · Open book pilot</h1>
   <div class="controls">
-    <button id="play" type="button" disabled>Play</button>
+    <button id="play" type="button" disabled>Pause</button>
     <button id="replay" type="button" disabled>Replay</button>
     <label>Time <input id="seek" type="range" min="0" max="12" step=".01" value="0" disabled></label>
     <output id="time" for="seek">0.00 s</output>
-    <label>View <select id="view"><option value="pilot">Pilot</option><option value="master">Locked master</option></select></label>
-    <label id="guest-picker-wrap">Guest <select id="guest-picker" aria-label="Choose guest"><option value="entrepreneur">Entrepreneur · animated pilot</option><option value="businessman">Businessman</option><option value="philosopher">Philosopher</option><option value="content-creator">Content creator</option><option value="sociologist">Sociologist</option><option value="public-intellectual">Public intellectual</option></select></label>
-    <label><input id="full" type="checkbox" style="width:auto"> Full size</label>
+    <output id="guest-name" aria-live="polite">Entrepreneur guest</output>
   </div>
-  <p id="status" role="status">Loading artwork…</p>
+  <p id="status" role="status">Loading the studio and pose artwork…</p>
   <div class="stage">
-    <canvas width="1254" height="1254" role="img" aria-label="Animated podcast studio with the woman host on the right and the entrepreneur guest on the left"></canvas>
-    <img id="master" src="./images/hero-ist/reference/master%20image.png" alt="Locked studio composition" width="1254" height="1254" hidden>
+    <div class="book" role="img" aria-label="Open book podcast studio. Guest on the left page and host on the right page.">
+      <div class="page guest-leaf" id="guest-leaf">
+        <canvas class="leaf-face leaf-front" id="guest-front" width="627" height="1254" aria-hidden="true"></canvas>
+        <canvas class="leaf-face leaf-back" id="guest-back" width="627" height="1254" aria-hidden="true"></canvas>
+      </div>
+      <div class="page host-page"><canvas id="host-canvas" width="627" height="1254" aria-hidden="true"></canvas></div>
+      <i class="spine" aria-hidden="true"></i>
+    </div>
   </div>
 </main>
 <script type="module" src="./src/hero-pilot.js"></script>
