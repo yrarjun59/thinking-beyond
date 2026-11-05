@@ -14,8 +14,8 @@
   button:disabled { opacity:.45; }
   input { width:min(38vw, 20rem); accent-color:#d5aa74; vertical-align:middle; }
   output { min-width:5ch; font-variant-numeric:tabular-nums; }
-  .stage { width:min(100%, 900px); aspect-ratio:1; margin:auto; perspective:1600px; }
-  .book { position:relative; display:grid; grid-template-columns:1fr 1fr; width:100%; height:100%; padding:6.5% 1.5%; overflow:visible; background:linear-gradient(145deg,#4a321e 0%,#24180f 22%,#49311d 50%,#21160f 78%,#624329 100%); border:1px solid #9a7043; border-radius:8px 12px 12px 8px; box-shadow:0 24px 54px #000b, inset 0 0 0 3px #1b120b, inset 0 0 0 5px #785331; isolation:isolate; transform-style:preserve-3d; transform:rotateX(1deg) rotateY(-.7deg); }
+  .stage { width:min(80%, 720px); aspect-ratio:1; margin:auto; perspective:1600px; perspective-origin:50% 25%; }
+  .book { position:relative; display:grid; grid-template-columns:1fr 1fr; width:100%; height:100%; padding:6.5% 1.5%; overflow:visible; background:linear-gradient(145deg,#4a321e 0%,#24180f 22%,#49311d 50%,#21160f 78%,#624329 100%); border:1px solid #9a7043; border-radius:8px 12px 12px 8px; box-shadow:0 24px 54px #000b, inset 0 0 0 3px #1b120b, inset 0 0 0 5px #785331; isolation:isolate; transform-style:preserve-3d; transform:rotateX(7deg) rotateY(-1.4deg); }
   .book:before { content:""; position:absolute; z-index:-1; inset:1.2% -1.1% .4%; border:1px solid #6e4a2b; border-radius:8px 13px 13px 8px; background:linear-gradient(145deg,#3a2819,#160f0a 60%,#442d19); box-shadow:0 26px 30px #000b; transform:translateZ(-16px); pointer-events:none; }
   .book:after { content:""; position:absolute; z-index:9; inset:0; border:1px solid #d0a66d77; border-radius:8px 12px 12px 8px; box-shadow:inset 0 0 0 1px #1a100a; pointer-events:none; }
   .guest-side,.host-page { position:relative; min-width:0; height:100%; overflow:hidden; border-top:2px solid #bfa278; border-bottom:2px solid #bfa278; box-shadow:0 5px 0 #8e704c,0 9px 0 #3b2818,inset 0 0 20px #0005; }
@@ -53,7 +53,7 @@
   [hidden] { display:none !important; }
   body.embed main { max-width:none; height:100vh; padding:0; display:grid; align-content:center; }
   body.embed h1, body.embed #status, body.embed .controls { display:none; }
-  body.embed .stage { width:min(100vw,100vh); height:min(100vw,100vh); }
+  body.embed .stage { width:min(80vw,80vh); height:min(80vw,80vh); }
   @keyframes studio-light { from { opacity:.45; } to { opacity:1; } }
   @keyframes audio-pulse { from { transform:scaleY(.3); opacity:.48; } to { transform:scaleY(1); opacity:1; } }
   @keyframes signal-send-left { 0%,100% { opacity:.25; transform:scaleX(.25); } 50% { opacity:.9; transform:scaleX(1); } }
