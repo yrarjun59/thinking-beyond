@@ -1,0 +1,558 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Thinking Beyond · Illustrated conversation</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@500;600;700&display=swap">
+<style>
+  /* Square hero canvas holding the complete, undistorted studio composition. */
+  :root {
+    --bg: #0b0908;
+    --panel: #15110f;
+    --line: #2b221d;
+    --fg: #f4ede4;
+    --muted: #a89b8e;
+    --amber: #ffb454;
+    --lime: #c6f432;
+    --font-display: "Outfit", "Segoe UI", system-ui, sans-serif;
+    --font-body: "DM Sans", "Segoe UI", system-ui, sans-serif;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); }
+  body {
+    margin: 0;
+    color: var(--fg);
+    font-family: var(--font-body);
+    font-size: 15px;
+    padding-block: 28px 40px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  .wrap { width: 100%; max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; }
+
+  .stage {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #0c0a09;
+    box-shadow: 0 30px 80px rgba(255, 150, 40, .12), 0 0 0 1px var(--line);
+  }
+  .stage svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+
+  .caption {
+    position: absolute; left: 3.2%; bottom: 16%;
+    width: min(40%, 420px);
+    display: flex; flex-direction: column; gap: 6px;
+    padding: 10px 14px 12px;
+    background: linear-gradient(90deg, rgba(8, 6, 5, .9), rgba(8, 6, 5, .72));
+    border-left: 3px solid var(--lime);
+    border-radius: 3px;
+    transition: opacity .45s ease, transform .6s cubic-bezier(.2,.7,.2,1);
+    min-height: 3.4em;
+  }
+  .caption.is-host {
+    left: auto; right: 3.2%;
+    border-left: 0; border-right: 3px solid var(--amber);
+    background: linear-gradient(270deg, rgba(8, 6, 5, .9), rgba(8, 6, 5, .72));
+    text-align: right;
+  }
+  .caption[hidden] { display: none !important; }
+  .caption.is-off { opacity: 0; transform: translateY(8px); }
+  .caption:not(.is-off) { opacity: 1; transform: translateY(0); }
+  .caption .who {
+    font: 700 clamp(9px, 1.15vw, 12px)/1 var(--font-body);
+    letter-spacing: .14em; text-transform: uppercase; color: var(--lime);
+  }
+  .caption.is-host .who { color: var(--amber); }
+  .caption .line {
+    font: 500 clamp(10px, 1.25vw, 17px)/1.35 var(--font-display);
+    color: #fff; text-wrap: balance;
+  }
+  .person-tag {
+    position: absolute; z-index: 3; top: 30%;
+    display: flex; flex-direction: column; align-items: center; gap: 4px;
+    width: min(28%, 260px); padding: 7px 10px 8px;
+    transform: translateX(-50%);
+    color: #fff; text-align: center;
+    background: rgba(5, 5, 5, .84);
+    border: 1px solid rgba(255,255,255,.28);
+    border-top: 2px solid var(--lime);
+    box-shadow: 0 5px 18px rgba(0,0,0,.48);
+    text-shadow: 0 1px 6px #000;
+    pointer-events: none;
+  }
+  .person-tag.host { left: 74%; border-top-color: var(--amber); }
+  .person-tag.guest { left: 26%; }
+  .person-tag span { color: #c6c0b8; font: 700 clamp(6px,.58vw,8px)/1.15 var(--font-body); letter-spacing: .18em; text-transform: uppercase; }
+  .person-tag strong { font: 700 clamp(8px,.82vw,12px)/1.1 var(--font-display); letter-spacing: .1em; text-transform: uppercase; }
+  .stage.clean .caption { display: none; }
+
+  body.embed { width:100%; height:100%; padding:0; overflow:hidden; }
+  body.embed .wrap { width:100%; max-width:none; height:100%; margin:0; display:grid; place-items:center; }
+  body.embed header, body.embed #status { display:none; }
+  body.embed .stage { width:100%; max-width:none; height:auto; aspect-ratio:1/1; border-radius:0; box-shadow:none; }
+  @media (max-width:520px) {
+    .caption { bottom:16%; width:42%; padding:6px 8px 7px; gap:3px; }
+    .caption .who { font-size:7px; }
+    .caption .line { font-size:clamp(8px,2.2vw,11px); }
+    .person-tag { top:30%; padding:5px 6px; }
+    .person-tag span { font-size:5px; }
+    .person-tag strong { font-size:clamp(6px,1.8vw,8px); }
+  }
+
+</style>
+
+<div class="wrap">
+  <div class="stage" id="stage">
+    <svg id="scene" viewBox="0 0 1280 1280" role="img" aria-label="Illustrated podcast studio. The host on the right interviews a rotating set of guests on the left.">
+      <defs>
+        <linearGradient id="wallG" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#1a1411"/><stop offset="1" stop-color="#0b0908"/>
+        </linearGradient>
+        <linearGradient id="floorG" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#1b1512"/><stop offset="1" stop-color="#0a0807"/>
+        </linearGradient>
+        <linearGradient id="woodG" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#9a6540"/><stop offset="1" stop-color="#5e3b27"/>
+        </linearGradient>
+        <linearGradient id="frondG" x1="0" y1="0" x2="0" y2="-1">
+          <stop offset="0" stop-color="#3f7a25"/><stop offset="1" stop-color="#a8cc3c"/>
+        </linearGradient>
+        <radialGradient id="amberG" cx=".5" cy=".5" r=".5">
+          <stop offset="0" stop-color="#ffb454" stop-opacity=".55"/><stop offset="1" stop-color="#ffb454" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="vig" cx=".5" cy=".5" r=".75">
+          <stop offset=".6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/>
+        </radialGradient>
+        <pattern id="slats" width="22" height="20" patternUnits="userSpaceOnUse">
+          <rect width="22" height="20" fill="#241812"/><rect width="11" height="20" fill="#6a4331"/>
+        </pattern>
+        <pattern id="foam" width="24" height="24" patternUnits="userSpaceOnUse">
+          <rect width="24" height="24" fill="#0d0b0a"/>
+          <path d="M0 0 L12 12 L0 24 Z" fill="#191412"/><path d="M24 0 L12 12 L24 24 Z" fill="#141010"/>
+        </pattern>
+        <pattern id="rugP" width="14" height="10" patternUnits="userSpaceOnUse">
+          <rect width="14" height="10" fill="#241d1a"/>
+          <circle cx="3" cy="3" r="1.4" fill="#3a2f2a"/><circle cx="10" cy="8" r="1.2" fill="#15110f"/>
+        </pattern>
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+      </defs>
+
+      <!-- Square canvas extends the intact wide scene without cropping or distortion. -->
+      <rect width="1280" height="1280" fill="url(#wallG)"/>
+      <rect y="1000" width="1280" height="280" fill="url(#floorG)"/>
+      <ellipse cx="640" cy="1070" rx="540" ry="190" fill="url(#amberG)" opacity=".12"/>
+      <g transform="translate(0 280)">
+      <!-- wall + side acoustic foam -->
+      <rect width="1280" height="590" fill="url(#wallG)"/>
+      <rect x="0" y="0" width="72" height="590" fill="url(#foam)"/>
+      <rect x="1208" y="0" width="72" height="590" fill="url(#foam)"/>
+
+      <!-- ceiling coffer + LED strip + downlights -->
+      <rect x="110" y="0" width="1060" height="80" fill="#0e0b0a"/>
+      <rect id="ledTop" x="150" y="72" width="980" height="6" rx="3" fill="#ffb454" filter="url(#glow)"/>
+      <rect x="150" y="73" width="980" height="4" rx="2" fill="#ffd089"/>
+      <g fill="#ffe3b5">
+        <circle cx="340" cy="34" r="8"/><circle cx="640" cy="34" r="8"/><circle cx="940" cy="34" r="8"/>
+      </g>
+      <g fill="url(#amberG)" opacity=".7">
+        <ellipse cx="340" cy="90" rx="90" ry="60"/><ellipse cx="640" cy="90" rx="90" ry="60"/><ellipse cx="940" cy="90" rx="90" ry="60"/>
+      </g>
+
+      <!-- centre wall panel, slat panels and side LED edges -->
+      <rect x="392" y="96" width="496" height="464" fill="#1a1512"/>
+      <rect x="200" y="96" width="190" height="464" fill="url(#slats)"/>
+      <rect x="890" y="96" width="190" height="464" fill="url(#slats)"/>
+      <rect class="led" x="188" y="96" width="5" height="464" rx="2" fill="#ffb454" filter="url(#glow)"/>
+      <rect class="led" x="1086" y="96" width="5" height="464" rx="2" fill="#ffb454" filter="url(#glow)"/>
+      <rect x="189" y="96" width="3" height="464" fill="#ffd089"/>
+      <rect x="1087" y="96" width="3" height="464" fill="#ffd089"/>
+
+      <!-- TV with brand logo -->
+      <rect x="452" y="104" width="376" height="212" rx="4" fill="#050505" stroke="#2b2b2b" stroke-width="3"/>
+      <g id="logo">
+        <circle cx="640" cy="204" r="55" fill="#030303" stroke="#fff" stroke-width="5"/>
+        <text x="640" y="207" text-anchor="middle" font-family="Outfit, sans-serif" font-weight="700" font-size="86" fill="#fff">?</text>
+        <text x="640" y="237" text-anchor="middle" font-family="Outfit, sans-serif" font-weight="700" font-size="14" letter-spacing=".45" fill="#fff">thinking beyond</text>
+      </g>
+
+      <!-- shelf with small plant and trophy -->
+      <rect x="330" y="344" width="620" height="22" fill="#0a0908"/>
+      <rect class="led" x="330" y="366" width="620" height="3" fill="#ffb454" filter="url(#glow)"/>
+      <rect x="330" y="366" width="620" height="2" fill="#ffd089"/>
+      <g>
+        <rect x="396" y="322" width="30" height="22" rx="3" fill="#121212"/>
+        <g fill="#7db52e"><ellipse cx="411" cy="308" rx="6" ry="15"/><ellipse cx="400" cy="312" rx="5" ry="13" transform="rotate(-40 400 312)"/><ellipse cx="422" cy="312" rx="5" ry="13" transform="rotate(40 422 312)"/></g>
+        <path d="M 452 344 L 452 330 Q 442 318 452 308 Q 462 298 456 290 Q 466 296 466 308 Q 466 320 456 330 L 456 344 Z" fill="#9a8c7c"/>
+      </g>
+
+      <!-- floor + rug -->
+      <rect x="0" y="590" width="1280" height="130" fill="url(#floorG)"/>
+      <polygon points="190,604 1090,604 1230,720 50,720" fill="url(#rugP)"/>
+
+      <!-- floor lamp -->
+      <circle cx="92" cy="300" r="230" fill="url(#amberG)" opacity=".4"/>
+      <rect x="89" y="268" width="6" height="318" fill="#101010"/>
+      <ellipse cx="92" cy="588" rx="34" ry="6" fill="#0a0a0a"/>
+      <path d="M 28 270 A 64 50 0 0 1 156 270 Z" fill="#0f0f0f"/>
+      <ellipse cx="92" cy="270" rx="58" ry="8" fill="#ffc36b"/>
+
+      <!-- tall palm (right) -->
+      <g id="palm" transform="translate(1196 528)"></g>
+      <path d="M 1164 524 L 1228 524 L 1218 590 L 1174 590 Z" fill="#141210"/>
+
+      <!-- chairs -->
+      <g id="chairL" transform="translate(330 0)"></g>
+      <g id="chairR" transform="translate(950 0)"></g>
+
+      <!-- guests (left) -->
+      <g id="guestLayer"></g>
+      <!-- host (right, mirrored) -->
+      <g id="hostLayer" transform="translate(950 0) scale(-1 1)"></g>
+
+      <!-- mics -->
+      <g>
+        <path d="M 560 540 L 560 442 L 486 350" fill="none" stroke="#161616" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <g transform="translate(452 340) rotate(-18)"><rect x="-36" y="-12" width="72" height="24" rx="12" fill="#151515"/><rect x="-36" y="-12" width="9" height="24" rx="4" fill="#c6f432"/></g>
+        <path d="M 720 540 L 720 442 L 794 350" fill="none" stroke="#161616" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <g transform="translate(828 340) rotate(18)"><rect x="-36" y="-12" width="72" height="24" rx="12" fill="#151515"/><rect x="27" y="-12" width="9" height="24" rx="4" fill="#c6f432"/></g>
+      </g>
+
+      <!-- speaking waves -->
+      <g id="waveG" fill="#c6f432" filter="url(#glow)" opacity="0"></g>
+      <g id="waveGc" fill="#c6f432" opacity="0"></g>
+      <g id="waveH" fill="#ffb454" filter="url(#glow)" opacity="0"></g>
+      <g id="waveHc" fill="#ffb454" opacity="0"></g>
+
+      <!-- coffee table -->
+      <g>
+        <rect x="506" y="538" width="268" height="7" fill="#101010"/>
+        <rect x="508" y="545" width="9" height="46" fill="#101010"/><rect x="763" y="545" width="9" height="46" fill="#101010"/>
+        <rect x="508" y="574" width="264" height="5" fill="#101010"/>
+        <rect x="498" y="520" width="284" height="18" rx="3" fill="url(#woodG)"/>
+        <path d="M 498 524 L 782 524" stroke="#c18a5c" stroke-opacity=".5" stroke-width="1.5"/>
+        <!-- table plant -->
+        <path d="M 622 484 L 658 484 L 654 520 L 626 520 Z" fill="#141414"/>
+        <g fill="#7fb52e">
+          <ellipse cx="640" cy="458" rx="11" ry="22"/><ellipse cx="620" cy="466" rx="10" ry="19" transform="rotate(-42 620 466)"/><ellipse cx="660" cy="466" rx="10" ry="19" transform="rotate(42 660 466)"/>
+          <ellipse cx="628" cy="450" rx="8" ry="16" transform="rotate(-18 628 450)" fill="#a2c93b"/><ellipse cx="652" cy="450" rx="8" ry="16" transform="rotate(18 652 450)" fill="#a2c93b"/>
+        </g>
+        <!-- water glasses -->
+        <g stroke="#ffffff" stroke-opacity=".4" stroke-width="1.5">
+          <rect x="520" y="490" width="22" height="30" rx="3" fill="#bcd4ff" fill-opacity=".1"/>
+          <rect x="738" y="490" width="22" height="30" rx="3" fill="#bcd4ff" fill-opacity=".1"/>
+        </g>
+        <rect x="522" y="504" width="18" height="15" fill="#bcd4ff" fill-opacity=".25"/>
+        <rect x="740" y="504" width="18" height="15" fill="#bcd4ff" fill-opacity=".25"/>
+      </g>
+
+      <rect width="1280" height="720" fill="url(#vig)" pointer-events="none"/>
+      </g>
+    </svg>
+
+    <div class="person-tag guest"><span>GUEST</span><strong id="guestRole">BUSINESS LEADER</strong></div>
+    <div class="person-tag host"><span>HOST · THINKING BEYOND</span><strong>MANISHA NEUPANE</strong></div>
+    <div class="caption is-off guest-caption" id="guestCaption" aria-live="off">
+      <span class="who" id="capWho"></span>
+      <span class="line" id="capLine"></span>
+    </div>
+    <div class="caption is-host is-off host-caption" id="hostCaption" aria-live="off">
+      <span class="who" id="hostCapWho"></span>
+      <span class="line" id="hostCapLine"></span>
+    </div>
+  </div>
+</div>
+
+<script>
+if (new URLSearchParams(location.search).has('embed')) document.body.classList.add('embed');
+(() => {
+  /* ---------- helpers ---------- */
+  const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+  const sm = (x, a, b) => { const k = clamp((x - a) / (b - a)); return k * k * (3 - 2 * k); };
+  const lerp = (a, b, k) => a + (b - a) * k;
+  function shade(hex, amt) {
+    const n = parseInt(hex.slice(1), 16);
+    let r = n >> 16, g = (n >> 8) & 255, b = n & 255;
+    const f = amt < 0 ? 0 : 255, p = Math.abs(amt);
+    r = Math.round(r + (f - r) * p); g = Math.round(g + (f - g) * p); b = Math.round(b + (f - b) * p);
+    return '#' + ((1 << 24) | (r << 16) | (g << 8) | b).toString(16).slice(1);
+  }
+
+  /* ---------- content: edit these ---------- */
+  const HOST_NAME = 'Manisha Neupane';
+  const GUESTS = [
+    { role: 'Business leader', q: 'What does it take to build something that lasts?', a: 'Patience, and the courage to question your own assumptions.',
+      skin: '#c68a5c', hair: '#1f1410', style: 'quiff', beard: 'full', glasses: true, top: '#3b302c', outfit: 'suit', shirt: '#efe6d6', pocket: '#c6f432', pants: '#2f2623', shoes: '#15110f' },
+    { role: 'Social activist', q: 'Where does real change begin?', a: 'In small rooms, with people willing to listen first.',
+      skin: '#b97a52', hair: '#1e130e', style: 'long', top: '#7d2230', outfit: 'shawl', shawl: '#dccbaa', trim: '#8b3a3a', pants: '#5b1a26', shoes: '#6a4630', earring: true },
+    { role: 'Content creator', q: 'How do you stay original online?', a: 'I stop chasing trends and share what I am curious about.',
+      skin: '#c4875c', hair: '#1b1311', style: 'curly', top: '#e9e1d3', outfit: 'sweater', pants: '#35527a', shoes: '#f1ede6' },
+    { role: 'Researcher', q: 'What should more people understand about science?', a: 'That being wrong is part of the method, not a failure of it.',
+      skin: '#c6916a', hair: '#8f8c8a', style: 'bun', glasses: true, top: '#8a2b34', outfit: 'shawl', shawl: '#b99d7c', trim: '#6b4a3a', pants: '#7a2530', shoes: '#6b4630', earring: true },
+    { role: 'Explorer', q: 'What have the mountains taught you?', a: 'That you reach the summit one honest step at a time.',
+      skin: '#b98763', hair: '#1b1613', style: 'silver', top: '#2b2724', outfit: 'fleece', plaid: '#5e6a8a', pants: '#9b855f', shoes: '#6a5a46' },
+    { role: 'Entrepreneur', q: 'What was your hardest lesson in business?', a: 'Hire people who disagree with you, then actually listen.',
+      skin: '#c18a62', hair: '#2a2420', style: 'short', beard: 'goatee', glasses: true, top: '#2f3d62', outfit: 'suit', shirt: '#bcd0e6', pocket: '#c45a7a', pants: '#b8a07f', shoes: '#4a2e1c' },
+    { role: 'Creative director', q: 'How do you turn an idea into work?', a: 'Start before you are ready and let the idea show you the way.',
+      skin: '#c48a63', hair: '#1b1210', style: 'bun', top: '#2d2927', outfit: 'jacket', tee: '#121010', pants: '#3a3532', shoes: '#efe8da', earring: true, skinArms: true }
+  ];
+  const HOST = { skin: '#c98d66', hair: '#2c1b12', style: 'pony', top: '#1c1816', outfit: 'plain', pants: '#1b1716', shoes: '#0f0d0c', skinArms: true };
+  const DUR = 8; // seconds per guest
+
+  /* ---------- figure builder (faces right; host is mirrored by the scene) ---------- */
+  const CAP = 'M -37 -4 C -42 -52 -8 -62 16 -54 C 38 -48 42 -28 37 -10 C 30 -26 20 -32 6 -31 C -8 -30 -26 -26 -37 -4 Z';
+  function hairParts(c) {
+    const H = c.hair;
+    const cap = `<path d="${CAP}" fill="${H}"/>`;
+    switch (c.style) {
+      case 'quiff': return { back: '', front: cap + `<path d="M -30 -44 C -20 -70 20 -72 34 -50 C 18 -56 -8 -56 -30 -44 Z" fill="${H}"/>` };
+      case 'curly': return { back: '', front: cap + [[-27,-24,14],[-13,-39,15],[6,-44,15],[25,-35,14],[35,-17,11],[-35,-7,11]].map(a => `<circle cx="${a[0]}" cy="${a[1]}" r="${a[2]}" fill="${H}"/>`).join('') };
+      case 'bun': return { back: `<circle cx="-32" cy="-40" r="16" fill="${H}"/>`, front: cap };
+      case 'long': return { back: `<path d="M -36 -10 C -62 10 -58 72 -42 108 L -6 98 C -22 62 -24 22 -30 0 Z" fill="${H}"/>`, front: cap };
+      case 'silver': return { back: '', front: cap + `<path d="M -36 -4 C -37 8 -35 16 -30 18 L -27 2 Z" fill="#8a8582"/><path d="M -20 -48 C -6 -56 12 -56 24 -50 C 10 -54 -8 -52 -20 -48 Z" fill="#6f6a66"/>` };
+      case 'pony': return { back: `<path d="M -34 -22 C -64 -14 -72 32 -56 66 C -48 42 -42 18 -34 4 Z" fill="${H}"/>`, front: cap };
+      default: return { back: '', front: cap };
+    }
+  }
+  function beardSvg(c) {
+    if (c.beard === 'full') return `<path d="M -32 8 C -34 52 26 58 36 14 C 30 26 24 34 14 30 C 6 28 0 30 -6 34 C -16 38 -28 28 -32 8 Z" fill="${c.hair}"/><path d="M 4 19 Q 17 13 30 19 Q 17 23 4 19 Z" fill="${c.hair}"/>`;
+    if (c.beard === 'goatee') return `<path d="M -6 30 C -2 50 24 52 30 30 C 22 38 6 38 -6 30 Z" fill="${c.hair}"/><path d="M 6 19 Q 17 15 28 19 Q 17 22 6 19 Z" fill="${c.hair}"/>`;
+    return '';
+  }
+  function extras(c) {
+    switch (c.outfit) {
+      case 'suit': { const d = shade(c.top, -.28);
+        return `<path d="M -18 318 L 0 374 L -34 404 L -54 352 Z" fill="${d}"/><path d="M 18 318 L 0 374 L 34 404 L 54 352 Z" fill="${d}"/><path d="M -17 317 L 17 317 L 0 370 Z" fill="${c.shirt}"/><rect x="26" y="364" width="14" height="9" rx="1" fill="${c.pocket}"/>`; }
+      case 'sweater': { const d = shade(c.top, -.12);
+        return `<path d="M -22 318 Q 0 342 22 318 L 20 313 Q 0 328 -20 313 Z" fill="${d}"/><rect x="-58" y="462" width="116" height="10" rx="4" fill="${d}"/>`; }
+      case 'shawl':
+        return `<path d="M -58 340 Q -52 316 -22 316 L 58 440 L 58 472 L 14 472 Z" fill="${c.shawl}"/><path d="M -44 332 L 50 462" stroke="${c.trim}" stroke-width="5" stroke-dasharray="3 6" fill="none"/><path d="M 28 472 l 0 14 M 36 472 l 0 14 M 44 472 l 0 14 M 52 472 l 0 14" stroke="${c.shawl}" stroke-width="3" stroke-linecap="round"/><path d="M -12 316 Q 0 332 12 316" fill="none" stroke="${shade(c.top, -.3)}" stroke-width="3"/>`;
+      case 'fleece':
+        return `<path d="M -22 316 L 22 316 L 18 336 L -18 336 Z" fill="${c.plaid}"/><path d="M 0 332 L 0 472" stroke="${shade(c.top, .18)}" stroke-width="2.5"/><rect x="-44" y="410" width="30" height="5" rx="2" fill="${shade(c.top, .14)}"/><rect x="14" y="410" width="30" height="5" rx="2" fill="${shade(c.top, .14)}"/>`;
+      case 'jacket':
+        return `<path d="M -18 316 L 18 316 L 24 472 L -24 472 Z" fill="${c.tee}"/><path d="M -14 322 Q 0 356 14 322" fill="none" stroke="#e6c56a" stroke-width="1.6"/><circle cx="0" cy="352" r="3" fill="#e6c56a"/>`;
+      default:
+        return `<path d="M -22 316 Q 0 336 22 316 L 18 313 Q 0 326 -18 313 Z" fill="${shade(c.top, .1)}"/>`;
+    }
+  }
+  function figure(c) {
+    const S = c.skin, sleeve = c.top, fore = c.skinArms ? S : sleeve;
+    const pd = shade(c.pants, -.3), hp = hairParts(c), hb = shade(c.hair, -.15);
+    return `
+    <g class="legs">
+      <path d="M 6 480 L 98 494 L 104 566" fill="none" stroke="${pd}" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="118" cy="574" rx="26" ry="11" fill="${shade(c.shoes, -.25)}"/>
+      <path d="M 6 470 L 122 476 L 130 556" fill="none" stroke="${c.pants}" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="146" cy="568" rx="28" ry="12" fill="${c.shoes}"/>
+    </g>
+    <g class="upper">
+      <rect x="-56" y="452" width="118" height="38" rx="16" fill="${c.pants}"/>
+      <rect x="-10" y="296" width="20" height="36" fill="${shade(S, -.12)}"/>
+      <path d="M -56 346 C -56 324 -42 318 -20 316 L 20 316 C 42 318 56 324 56 346 L 58 472 L -58 472 Z" fill="${c.top}"/>
+      ${extras(c)}
+      <path d="M -42 344 Q -68 394 -62 422 L -22 458" fill="none" stroke="${sleeve}" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="-16" cy="462" r="11" fill="${S}"/>
+      <g class="head" transform="translate(6 270)">
+        ${hp.back}
+        <ellipse cx="-33" cy="6" rx="6" ry="9" fill="${S}"/>
+        <ellipse cx="0" cy="0" rx="34" ry="40" fill="${S}"/>
+        <path d="M 31 0 Q 42 10 31 15" fill="none" stroke="${shade(S, -.22)}" stroke-width="2.4" stroke-linecap="round"/>
+        ${beardSvg(c)}
+        <ellipse class="mouth" cx="17" cy="24" rx="8" ry="2" fill="#4b1d1b"/>
+        <ellipse class="eye" cx="4" cy="-4" rx="3.3" ry="4.2" fill="#1a1210"/>
+        <ellipse class="eye" cx="22" cy="-4" rx="3.3" ry="4.2" fill="#1a1210"/>
+        <path d="M -4 -15 Q 4 -19 11 -16 M 14 -16 Q 22 -19 29 -15" fill="none" stroke="${hb}" stroke-width="3" stroke-linecap="round"/>
+        ${c.glasses ? `<g fill="none" stroke="#14110f" stroke-width="2.6"><circle cx="4" cy="-4" r="8.5"/><circle cx="22" cy="-4" r="8.5"/><path d="M 12.5 -4 L 13.5 -4"/><path d="M -4.5 -5 L -33 -2"/></g>` : ''}
+        ${hp.front}
+        ${c.earring ? `<circle cx="-33" cy="18" r="3.2" fill="#e8c36a"/>` : ''}
+      </g>
+      <path d="M 40 344 Q 68 380 80 410" fill="none" stroke="${sleeve}" stroke-width="24" stroke-linecap="round"/>
+      <g class="fore">
+        <path d="M 80 410 L 146 410" fill="none" stroke="${fore}" stroke-width="22" stroke-linecap="round"/>
+        <circle cx="154" cy="410" r="11" fill="${S}"/>
+      </g>
+    </g>`;
+  }
+  function chair() {
+    return `
+      <rect x="-165" y="326" width="330" height="190" rx="46" fill="#2b2522"/>
+      <rect x="-165" y="326" width="330" height="26" rx="13" fill="#3a322e" opacity=".7"/>
+      <rect x="-150" y="468" width="300" height="56" rx="22" fill="#352e2a"/>
+      <rect x="-176" y="400" width="64" height="150" rx="30" fill="#2f2825"/>
+      <rect x="112" y="400" width="64" height="150" rx="30" fill="#2f2825"/>
+      <rect x="-150" y="548" width="18" height="38" rx="4" fill="#6a4630"/><rect x="132" y="548" width="18" height="38" rx="4" fill="#6a4630"/>
+      <g transform="translate(-122 394) rotate(-8)">
+        <rect x="-30" y="-30" width="60" height="60" rx="8" fill="#2e2927" stroke="#c6f432" stroke-width="2"/>
+        <g fill="#8d8279"><circle cx="-12" cy="-12" r="2.5"/><circle cx="12" cy="-12" r="2.5"/><circle cx="0" cy="0" r="2.5"/><circle cx="-12" cy="12" r="2.5"/><circle cx="12" cy="12" r="2.5"/></g>
+      </g>`;
+  }
+
+  /* ---------- build the scene ---------- */
+  const $ = id => document.getElementById(id);
+  $('chairL').innerHTML = chair();
+  $('chairR').innerHTML = chair();
+
+  const ref = root => ({
+    root,
+    upper: root.querySelector('.upper'),
+    head: root.querySelector('.head'),
+    mouth: root.querySelector('.mouth'),
+    eyes: [...root.querySelectorAll('.eye')],
+    fore: root.querySelector('.fore')
+  });
+
+  const guestRefs = GUESTS.map(g => {
+    const w = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    w.setAttribute('display', 'none');
+    w.innerHTML = figure(g);
+    $('guestLayer').appendChild(w);
+    return ref(w);
+  });
+  const hostWrap = $('hostLayer');
+  hostWrap.innerHTML = figure(HOST);
+  const hostRef = ref(hostWrap);
+
+  // palm fronds
+  const fronds = [];
+  [-76, -54, -32, -10, 12, 34, 56, 78].forEach((a, i) => {
+    const len = 170 + ((i * 37) % 60);
+    const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    g.innerHTML = `<path d="M 0 0 Q 17 ${-len * .45} 0 ${-len} Q -17 ${-len * .45} 0 0 Z" fill="url(#frondG)"/><path d="M 0 0 L 0 ${-len * .92}" stroke="#2f5d1b" stroke-width="1.5" opacity=".6"/>`;
+    $('palm').appendChild(g);
+    fronds.push({ g, a, i });
+  });
+
+  // wave bars
+  const BARS = 5;
+  function makeBars(layer, cx) {
+    const out = [];
+    for (let i = 0; i < BARS; i++) {
+      const r = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+      r.setAttribute('x', cx + (i - 2) * 10 - 3); r.setAttribute('width', 6); r.setAttribute('rx', 3);
+      layer.appendChild(r); out.push(r);
+    }
+    return out;
+  }
+  const barsG = [makeBars($('waveG'), 452), makeBars($('waveGc'), 452)];
+  const barsH = [makeBars($('waveH'), 828), makeBars($('waveHc'), 828)];
+
+
+  /* ---------- animation ---------- */
+  function updateFigure(r, o) {
+    const { t, speak, gest, listen, seed, restAngle } = o;
+    const breath = Math.sin(t * 1.8 + seed) * 1.2;
+    r.upper.setAttribute('transform', `translate(0 ${breath.toFixed(2)})`);
+
+    let rot = Math.sin(t * 1.3 + seed) * 1.0;
+    rot += speak * Math.sin(t * 5.2 + seed) * 1.8;
+    rot += listen * 3 * Math.pow(Math.max(0, Math.sin(t * 1.7 + seed)), 2);
+    r.head.setAttribute('transform', `translate(6 270) rotate(${rot.toFixed(2)} -6 40)`);
+
+    const syllable = Math.abs(Math.sin(t * 7.2 + seed) * Math.cos(t * 2.65 + seed * .4));
+    const open = speak * (0.22 + 0.58 * syllable);
+    r.mouth.setAttribute('ry', (1.7 + open * 6.5).toFixed(2));
+    r.mouth.setAttribute('rx', (8 - open * 1.6).toFixed(2));
+
+    const bt = (t + seed * 3) % 3.6;
+    const blink = bt < 0.15 ? Math.sin(bt / 0.15 * Math.PI) : 0;
+    const ry = (4.2 * (1 - blink) + 0.4).toFixed(2);
+    r.eyes.forEach(e => e.setAttribute('ry', ry));
+
+    const gesture = Math.sin(t * 2.05 + seed) * 15 + Math.sin(t * .92 + seed * .6) * 6;
+    const swing = -30 + gesture;
+    const ang = lerp(restAngle, swing, gest);
+    r.fore.setAttribute('transform', `rotate(${ang.toFixed(1)} 80 410)`);
+  }
+
+  function updateBars(sets, amt, t, seed) {
+    sets.forEach(layer => {
+      layer.forEach((r, i) => {
+        const h = 3 + amt * (5 + 18 * Math.abs(Math.sin(t * 5.4 + i * .9 + seed)));
+        r.setAttribute('height', h.toFixed(1));
+        r.setAttribute('y', (340 - h / 2).toFixed(1));
+      });
+    });
+    sets[0][0].parentNode.setAttribute('opacity', amt.toFixed(2));
+    sets[1][0].parentNode.setAttribute('opacity', amt.toFixed(2));
+  }
+
+  const logo = $('logo'), guestCaption = $('guestCaption'), guestCapWho = $('capWho'), guestCapLine = $('capLine');
+  const hostCaption = $('hostCaption'), hostCapWho = $('hostCapWho'), hostCapLine = $('hostCapLine'), guestRole = $('guestRole');
+  const leds = [...document.querySelectorAll('.led'), $('ledTop')];
+  let shown = -1, t = 3.2, last = performance.now();
+
+  const reduced = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function render(t) {
+    const idx = Math.floor(t / DUR) % GUESTS.length;
+    const L = t % DUR;
+    const g = GUESTS[idx];
+
+    if (idx !== shown) {
+      guestRefs.forEach((r, i) => r.root.setAttribute('display', i === idx ? 'inline' : 'none'));
+      guestRole.textContent = g.role;
+      shown = idx;
+    }
+
+    // phases: enter 0-.8 | host asks .9-2.7 | guest answers 2.8-6.9 | exit 7.1-8
+    const enter = sm(L, 0, 0.8), exit = sm(L, 7.1, 8);
+    const present = enter * (1 - exit);
+    const travel = sm(L, 0, .82) * (1 - sm(L, 7.08, 8));
+    const dx = -260 * (1 - travel);
+    const hostSpeak = sm(L, 0.9, 1.1) * (1 - sm(L, 2.6, 2.8));
+    const guestSpeak = sm(L, 2.8, 3.0) * (1 - sm(L, 6.8, 7.0));
+
+    const gr = guestRefs[idx];
+    gr.root.setAttribute('transform', `translate(${(330 + dx).toFixed(1)} 0)`);
+    gr.root.setAttribute('opacity', present.toFixed(2));
+
+    updateFigure(gr, { t, speak: guestSpeak, gest: guestSpeak, listen: hostSpeak * 0.6, seed: idx * 1.7, restAngle: 130 });
+    updateFigure(hostRef, { t, speak: hostSpeak, gest: hostSpeak * 0.7, listen: guestSpeak, seed: 0.5, restAngle: 130 });
+
+    updateBars(barsG, guestSpeak, t, 0);
+    updateBars(barsH, hostSpeak, t, 2);
+
+    // ambient motion
+    fronds.forEach(f => f.g.setAttribute('transform', `rotate(${(f.a + Math.sin(t * 0.8 + f.i) * 1.8).toFixed(2)})`));
+    const s = 1 + 0.012 * Math.sin(t * 1.5);
+    logo.setAttribute('transform', `translate(640 204) scale(${s.toFixed(4)}) translate(-640 -204)`);
+    const led = 0.82 + 0.18 * Math.sin(t * 1.1);
+    leds.forEach(e => e.setAttribute('opacity', led.toFixed(2)));
+
+    // captions
+    let who = '', line = '', host = false, prog = 0;
+    if (L >= 0.9 && L < 2.75) {
+      host = true; who = `${HOST_NAME} · Host`; line = g.q; prog = (L - 0.9) / 1.4;
+    } else if (L >= 2.75 && L < 7.3) {
+      who = `Guest · ${g.role}`; line = g.a; prog = (L - 2.8) / 3.4;
+    }
+    guestCaption.classList.add('is-off');
+    hostCaption.classList.add('is-off');
+    if (who) {
+      const activeCaption = host ? hostCaption : guestCaption;
+      const activeWho = host ? hostCapWho : guestCapWho;
+      const activeLine = host ? hostCapLine : guestCapLine;
+      activeWho.textContent = who;
+      activeLine.textContent = reduced ? line : line.slice(0, Math.ceil(line.length * clamp(prog)));
+      activeCaption.classList.remove('is-off');
+    }
+  }
+
+  function frame(now) {
+    const dt = Math.min(0.05, (now - last) / 1000);
+    last = now;
+    if (!document.hidden && !reduced) t += dt;
+    render(t);
+    if (!reduced) requestAnimationFrame(frame);
+  }
+  render(t);
+  if (!reduced) requestAnimationFrame(frame);
+  document.addEventListener('visibilitychange', () => { last = performance.now(); });
+})();
+</script>
+
+</body></html>
