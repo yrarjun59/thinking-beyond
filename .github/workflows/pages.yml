@@ -34,6 +34,14 @@ jobs:
         continue-on-error: true
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      - name: Generate search/AI keyword set
+        run: node scripts/generate-keywords.mjs
+      - name: Generate RSS feed
+        run: node scripts/generate-rss.mjs
+      - name: Generate AI visibility files
+        run: node scripts/generate-llms.mjs
+      - name: Generate YouTube channel SEO kit
+        run: node scripts/generate-youtube-kit.mjs
       - name: Generate sitemap
         run: node scripts/generate-sitemap.mjs
       - name: Refresh public channel statistics
@@ -43,6 +51,8 @@ jobs:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
       - name: Build site
         run: npm run build
+        env:
+          SITE_BASE: /
       - name: Prepare SPA fallback
         run: cp dist/index.html dist/404.html
       - name: Upload Pages artifact

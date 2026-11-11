@@ -1,0 +1,4 @@
+Contact: https://thethinkingbeyond.com/contact
+Expires: 2027-01-01T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://thethinkingbeyond.com/.well-known/security.txt

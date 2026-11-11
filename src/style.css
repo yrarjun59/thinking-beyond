@@ -821,6 +821,20 @@
 }
 @media(max-width:600px){.show-hero-copy{padding-top:10px!important}.show-brand-title{margin-bottom:42px!important}}
 
+/* Sponsor marquee - matches GitHub Pages style */
+.footer-sponsors{margin-top:32px;padding:24px 0;border-top:1px solid #333;overflow:hidden}
+.footer-sponsors-label{text-align:center;color:#f2f2f2;font-size:10px;font-weight:800;letter-spacing:.16em;margin-bottom:20px}
+.sponsor-marquee{overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.sponsor-marquee-track{display:flex;width:max-content;animation:sponsor-marquee 42s linear infinite}
+.sponsor-marquee-item{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;margin-right:72px;color:#f2f2f2;font-size:12px;font-weight:700;white-space:nowrap;transition:color .2s}
+.sponsor-marquee-item:hover{color:#d5fc5c}
+.sponsor-marquee-item img,.sponsor-logo-fallback{width:48px;height:48px;object-fit:contain;border-radius:50%;border:1px solid #444;background:#111}
+.sponsor-logo-fallback{display:grid;place-items:center;color:#d5fc5c;font:800 18px/1 'Archivo',sans-serif}
+.sponsor-marquee:hover .sponsor-marquee-track{animation-play-state:paused}
+@keyframes sponsor-marquee{to{transform:translateX(-50%)}}
+@media(max-width:700px){.footer-sponsors{margin-top:24px;padding:16px 0}.sponsor-marquee-item{margin-right:38px;font-size:11px}.sponsor-marquee-item img,.sponsor-logo-fallback{width:40px;height:40px}}
+@media(prefers-reduced-motion:reduce){.sponsor-marquee-track{animation:none;transform:none;flex-wrap:wrap;justify-content:center;width:100%;gap:12px}.sponsor-marquee-item{margin-right:18px}}
+
 /* Footer balance: keep the sponsor rail close to the link area and give it room to breathe. */
 .site-footer{padding-top:58px;overflow:hidden}
 .footer-main{grid-template-columns:minmax(0,1fr) minmax(360px,.9fr);gap:8%;padding-bottom:34px}
@@ -828,10 +842,9 @@
 .footer-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:42px;align-items:start}
 .footer-links div{min-width:130px}
 .footer-links span{display:block;padding-bottom:10px;border-bottom:1px solid #333}
-.footer-sponsors{margin-top:30px;padding-top:26px;padding-bottom:48px}
-.sponsor-marquee-item img,.sponsor-logo-fallback{width:56px;height:56px;border-radius:8px;padding:7px}
-.sponsor-logo-fallback{padding:0}
-@media(max-width:700px){.site-footer{padding-top:48px}.footer-main{grid-template-columns:1fr;gap:44px;padding-bottom:28px}.footer-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}.footer-links div{min-width:0}.footer-sponsors{margin-top:28px}}
+.footer-bottom{margin-top:24px;padding-top:26px;border-top:1px solid #333;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.footer-top-link{background:none;border:0;color:#aaa;font-size:10px;font-weight:700;letter-spacing:.1em}
+@media(max-width:700px){.site-footer{padding-top:48px}.footer-main{grid-template-columns:1fr;gap:44px;padding-bottom:28px}.footer-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}.footer-links div{min-width:0}.footer-bottom{margin-top:20px;flex-direction:column;align-items:flex-start;gap:16px}}
 
 /* Short browser panes should still show the complete footer, including the real sponsor. */
 @media (min-width: 701px) and (max-height: 520px) {
@@ -846,9 +859,10 @@
   .footer-links span { padding-bottom: 6px; margin-bottom: 1px; }
   .footer-links a { font-size: 10px; }
   .footer-sponsors { margin-top: 16px; padding: 12px 0 16px; }
-  .footer-sponsors-label { margin-bottom: 10px; font-size: 8px; }
-  .sponsor-marquee-item { gap: 5px; font-size: 9px; }
-  .sponsor-marquee-item img[src*="goldeninternational"] { width: 92px; height: 34px; padding: 4px; }
+  .footer-powered { opacity: .8; }
+  .footer-powered:hover { opacity: 1; }
+  .footer-powered span { color: #fff; font-size: 12px; font-family: Inter, sans-serif; letter-spacing: .03em; white-space: nowrap; }
+  .footer-powered-logo { height: 36px; width: auto; display: block; filter: brightness(0) invert(1); }
   .footer-bottom { padding-top: 10px; font-size: 8px; }
 }
 
@@ -969,3 +983,19 @@
 .show-hero-visual{aspect-ratio:1.35/1!important}
 .studio-stage{aspect-ratio:1.35/1!important}
 @media(max-width:600px){.show-hero-visual{aspect-ratio:1.35/1!important}.studio-stage{aspect-ratio:1.35/1!important}}
+
+/* Hero copy clearance: the header is absolutely positioned over the hero, so the
+   copy column must start below it instead of hiding behind it. */
+.show-hero-copy{padding-top:clamp(106px,13vh,142px)!important}
+.show-brand-title{margin-bottom:clamp(26px,4vh,44px)!important}
+@media(max-width:900px){.show-hero-copy{padding-top:96px!important}}
+@media(max-width:600px){
+  .show-hero-copy{padding-top:84px!important}
+  .show-hero-message h1{line-height:1.06!important}
+}
+
+/* Inner pages: titles must clear the absolute header too (contact/episodes/detail). */
+.inner{padding-top:clamp(104px,12vh,132px)!important}
+
+/* Sponsor logo: show it clearly on a white plate like the original site's footer. */
+.sponsor-marquee-item img{width:132px!important;height:56px!important;padding:7px!important;background:#fff!important;border:1px solid #fff!important;border-radius:5px!important;object-fit:contain!important}
