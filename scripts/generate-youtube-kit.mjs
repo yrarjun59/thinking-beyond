@@ -68,5 +68,5 @@ ${rows}
 - [ ] Site RSS/sitemap/llms regenerate daily from the same data (GitHub Actions)
 `;
 
-await writeFile(resolve(process.cwd(), '..', 'YOUTUBE-CHANNEL-SEO.md'), markdown);
-console.log(`Wrote YOUTUBE-CHANNEL-SEO.md (${seoVideos.length} videos, ${channelKeywords.split(',').length} channel keywords).`);
+await writeFile(resolve(process.cwd(), 'YOUTUBE-CHANNEL-SEO.md'), markdown);
+console.log(`Wrote YOUTUBE-CHANNEL-SEO.md (${seoVideos.length} videos, ${channelKeywords.split(',').length} channel keywords) into repo root.`);

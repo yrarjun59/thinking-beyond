@@ -36,9 +36,37 @@ const initial=fallback.months.flatMap(m=>m.episodes);
 function normalizeViewCount(value){const count=Number(value);return Number.isFinite(count)&&count>0?count:null}
 function mergeEpisodeViews(liveEpisode,storedEpisode){return normalizeViewCount(storedEpisode?.views)||normalizeViewCount(liveEpisode?.views)||undefined}
 function mergeEpisodeData(storedEpisodes,liveEpisodes){const storedById=new Map(storedEpisodes.map(episode=>[episode.youtubeId,episode]));liveEpisodes.forEach(episode=>storedById.set(episode.youtubeId,{...storedById.get(episode.youtubeId),...episode}));return [...storedById.values()].map(episode=>({...episode,views:mergeEpisodeViews(episode,storedEpisodes.find(stored=>stored.youtubeId===episode.youtubeId))})).sort((a,b)=>String(b.publishedAt||'').localeCompare(String(a.publishedAt||'')))}
-// Only the latest 17 videos are actual podcast episodes; older channel videos are different content.
-const PODCAST_EPISODE_COUNT = 17;
-function useEpisodes(){const [eps,setEps]=useState([...channelVideos].sort((a,b)=>String(b.publishedAt||'').localeCompare(String(a.publishedAt||''))).slice(0,PODCAST_EPISODE_COUNT));useEffect(()=>{let cancelled=false;const load=()=>fetch(`${API}/episodes?sort=new`).then(r=>r.ok?r.json():Promise.reject()).then(d=>{if(cancelled)return;const liveEpisodes=Array.isArray(d.episodes)?d.episodes:(d.months||[]).flatMap(m=>m.episodes||[]);setEps(mergeEpisodeData(channelVideos,liveEpisodes).slice(0,PODCAST_EPISODE_COUNT))}).catch(()=>{});load();const timer=window.setInterval(load,5*60*1000);return()=>{cancelled=true;window.clearInterval(timer)}},[]);return eps}
+// Only podcast episodes are shown on the show — they are the videos from the
+// point where the podcast content begins onward. The boundary is detected dynamically
+// from the video metadata (guest name, episode number, or episode summary). Older
+// channel videos (interviews, events, etc.) are automatically excluded and omitted
+// from the UI, sitemap, and RSS. This window shifts forward when new videos are uploaded.
+//
+// getPodcastEpisodes() — single source of truth for episode boundary:
+//   1. Scans all videos newest‑first for the last video that has site metadata
+//   2. Returns only videos from the start up to and including that boundary
+//   3. Falls back to the most recent 17 if no metadata is found yet
+//   4. Requires zero maintenance as the channel grows
+function getPodcastEpisodes(allVideos) {
+  // Find the oldest video (newest‑first index highest) that has metadata.
+  // We search from the end of the array so the boundary is the “last podcast episode”.
+  let boundaryIdx = -1;
+  for (let i = allVideos.length - 1; i >= 0; i--) {
+    const v = allVideos[i];
+    if (v.number !== undefined || v.guest !== undefined || v.summary !== undefined) {
+      boundaryIdx = i;
+      break;
+    }
+  }
+  // Fallback: if no metadata found yet, use the most recent 17 videos.
+  if (boundaryIdx === -1) return allVideos.slice(0, 17);
+  // Return videos from newest up to and including the boundary video.
+  return allVideos.slice(0, boundaryIdx + 1);
+}
+
+function useEpisodes(){
+  const [eps,setEps]=useState(getPodcastEpisodes([...channelVideos].sort((a,b)=>String(b.publishedAt||'').localeCompare(String(a.publishedAt||'')))));
+  useEffect(()=>{let cancelled=false;const load=()=>fetch(`${API}/episodes?sort=new`).then(r=>r.ok?r.json():Promise.reject()).then(d=>{if(cancelled)return;const liveEpisodes=Array.isArray(d.episodes)?d.episodes:(d.months||[]).flatMap(m=>m.episodes||[]);setEps(getPodcastEpisodes(mergeEpisodeData(channelVideos,liveEpisodes)))}).catch(()=>{});load();const timer=window.setInterval(load,5*60*1000);return()=>{cancelled=true;window.clearInterval(timer)}},[]);return eps}
 function VideoThumbnail({episode,loading='lazy'}){const id=episode.youtubeId;const local=`${BASE_PATH}images/youtube-thumbnails/${id}.jpg`;return <img loading={loading} src={`https://i.ytimg.com/vi/${id}/maxresdefault.jpg`} onError={event=>{if(event.currentTarget.dataset.fallback==='local'){event.currentTarget.src=`https://i.ytimg.com/vi/${id}/hqdefault.jpg`;return}event.currentTarget.dataset.fallback='local';event.currentTarget.src=local}} alt=""/>}
 function formatDuration(episode){let seconds=Number(episode?.durationSec??episode?.durationSeconds);if(!Number.isFinite(seconds)||seconds<=0){const minutes=Number(episode?.durationMin);seconds=Number.isFinite(minutes)&&minutes>0?Math.round(minutes*60):0}if(!seconds)return '';const total=Math.floor(seconds),hours=Math.floor(total/3600),minutes=Math.floor((total%3600)/60),remainder=total%60;return hours?`${hours}:${String(minutes).padStart(2,'0')}:${String(remainder).padStart(2,'0')}`:`${minutes}:${String(remainder).padStart(2,'0')}`}
 function formatCompactViews(value){const count=normalizeViewCount(value);return count===null?'':new Intl.NumberFormat('en',{notation:'compact',maximumFractionDigits:1}).format(count)}

@@ -52,7 +52,9 @@ jobs:
       - name: Build site
         run: npm run build
         env:
-          SITE_BASE: /
+          # Default to project-site base for GitHub Pages;
+          # override with SITE_BASE=/ for custom domain (CNAME = thethinkingbeyond.com)
+          SITE_BASE: ${{ env.SITE_BASE || '/thinking-beyond/' }}
       - name: Prepare SPA fallback
         run: cp dist/index.html dist/404.html
       - name: Upload Pages artifact
