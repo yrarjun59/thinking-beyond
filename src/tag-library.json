@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-12T10:24:44.441Z",
+  "generatedAt": "2026-11-12T16:09:41.883Z",
   "canonicalTags": [
     {
       "name": "Sanjib Subba",
@@ -80,7 +80,7 @@
       "aliases": [],
       "type": "concept",
       "description": "",
-      "usageCount": 1,
+      "usageCount": 2,
       "status": "approved"
     },
     {
@@ -512,7 +512,7 @@
       "aliases": [],
       "type": "entity",
       "description": "",
-      "usageCount": 1,
+      "usageCount": 2,
       "status": "approved"
     },
     {
@@ -583,6 +583,132 @@
       "slug": "ai",
       "aliases": [],
       "type": "technology",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Dheeraj Kumar Agrawal",
+      "slug": "dheeraj-kumar-agrawal",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Ten Group",
+      "slug": "ten-group",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "400 crore business",
+      "slug": "400-cr-empire",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Adversity",
+      "slug": "adversity",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Trust Building",
+      "slug": "trust-building",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Ashima Poudyal",
+      "slug": "ashima-poudyal",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Into Aroma",
+      "slug": "into-aroma",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "9‑5 to entrepreneurship",
+      "slug": "9-5-to-entrepreneurship",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Failure",
+      "slug": "failure",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Depression",
+      "slug": "depression",
+      "aliases": [],
+      "type": "problem",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Apple company",
+      "slug": "apple-company",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 2,
+      "status": "approved"
+    },
+    {
+      "name": "Leadership lessons",
+      "slug": "leadership-lessons",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Mentally strong",
+      "slug": "mentally-strong",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Effective habits",
+      "slug": "effective-habits",
+      "aliases": [],
+      "type": "concept",
       "description": "",
       "usageCount": 1,
       "status": "approved"
@@ -1525,24 +1651,101 @@
     "ep-8-8e3931": {
       "episodeId": "ep-8-8e3931",
       "lastAttempt": {
-        "at": "2026-11-12T10:19:45.978Z",
-        "reason": "validation-empty"
+        "at": "2026-11-12T16:01:47.117Z",
+        "reason": "ai-unavailable"
       },
       "warnings": [
         "The AI response was not valid JSON. Re-run the request or paste a corrected response — nothing was stored.",
-        "The AI response produced no valid tags — will retry next cron."
+        "The AI response produced no valid tags — will retry next cron.",
+        "AI unavailable this run (AI HTTP 400: {\"success\":false,\"error\":{\"message\":\"The model exhausted its output token limit before producing an answer. Increase the token limit or reduce reasoning effort.\",\"code\":\"output_token_limit_exceeded\",\") — will retry next cron."
       ]
     },
     "ep-7-655da0": {
       "episodeId": "ep-7-655da0",
+      "title": "The Unseen Battle Behind the 400 Cr Empire |Ten Group|Adversity |Trust Building|",
+      "guest": "Dheeraj kumar Agrawal",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:\nIn this episode, We sat down with Dheeraj kumar Agrawal. No degree. No safety net.  Today, Dhiraj Kumar Agarwal, founder of Ten Group, runs a Rs 400 crore business empire in Nepal. Most people would have given up. \n\nDhiraj turned to the one thing the accident couldn't take from him: his mind. Starting in hardware in 2011, he built from zero, with no academic strength to lean on, only courage and a refusal to let adversity define him. Over the years, that mindset grew into one of Nepal's biggest business stories.In this conversation, he goes back to the beginning: the accident, the self-doubt, the people who underestimated him, the risks that could have ended everything, and how he built an empire with his mind.\n\n 🎙️ Host: Manisha Neupane\n🎧 Guest: Dheeraj Kumar Agrawal\n📍 Thinking Beyond\n\nThinking Beyond\nConversations that make you question the Status Quo. \n\nChapters:\n\n0:00 Intro\n2:21 Who is Dheeraj Kumar Agrawal ?\n3:43 The accident and what he went through\n9:09 Helping his father while growing up\n13:01 Self-doubt and education qualifications\n15:15 Did he lose his childhood?\n17:44 - regrets of not having childhood memory ?\n20:00 -Ambitious kid ?\n23:28 -Mind can move mountains \n24:11 - Does he like getting sympathy ?\n24:38 -Driving force ?\n29:40 -Ten Plast Business\n31:47 - High school Drop out ---- Self learner ?\n40:36  What he looks for when hiring employees\n40:18 Does competition matter?\n45:48 What he told his parents to convince them\n47:28 Moments of wanting to give up\n50:48 Differences in governance\n55:25 Why do youth go abroad?\n1:07:09 3 qualities every ambitious person must have\n1:15:58 Poverty and adversity: obstacle or fuel?\n1:18:18 Which Dhiraj is happier: today or at 13?\n1:20:00 closing message\n\n\n\nConnect with us:\n🎙️ Thinking Beyond: Conversations about mindset, growth & real-life experiences.\n\n📩 For business enquiries: [manishaneupane398@gmail.com]\n\nFollow us on social media:\n\ninsta: https://www.instagram.com/manishaneupanee?stkn=MWJ3YmNtaXZpdGVseQ%3D%3",
+      "transcriptChars": 2479,
+      "summary": "Dheeraj Kumar Agrawal recounts how an accident, relentless mindset, and trust-building turned Ten Group into a Rs 400 crore empire.",
+      "primaryTopic": "Building a multi‑crore business through adversity and mindset",
+      "updatedAt": "2026-11-12T16:00:55.978Z",
+      "tags": [
+        {
+          "name": "Dheeraj Kumar Agrawal",
+          "slug": "dheeraj-kumar-agrawal",
+          "type": "entity",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Guest, central figure",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Ten Group",
+          "slug": "ten-group",
+          "type": "entity",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Company discussed, core subject",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "400 crore business",
+          "slug": "400-cr-empire",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central business size highlighted",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Adversity",
+          "slug": "adversity",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Key theme of overcoming obstacles",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Trust Building",
+          "slug": "trust-building",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Explicitly mentioned in title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Hardware manufacturing",
+          "reason": "Mentioned but not central to episode focus"
+        },
+        {
+          "name": "High school dropout",
+          "reason": "Peripheral detail, not core subject"
+        },
+        {
+          "name": "Mindset",
+          "reason": "Generic tag — channel-level geo provides no episode distinction."
+        }
+      ],
+      "warnings": [],
       "lastAttempt": {
-        "at": "2026-11-12T10:18:54.383Z",
-        "reason": "validation-empty"
+        "at": "2026-11-12T16:00:55.978Z",
+        "reason": "ok"
       },
-      "warnings": [
-        "The AI response was not valid JSON. Re-run the request or paste a corrected response — nothing was stored.",
-        "The AI response produced no valid tags — will retry next cron."
-      ]
+      "transcriptSource": "metadata"
     },
     "ep-1-bdf430": {
       "episodeId": "ep-1-bdf430",
@@ -1625,14 +1828,86 @@
     },
     "ep-2-358491": {
       "episodeId": "ep-2-358491",
+      "title": "Ashima Poudyal (Into Aroma) 9-5 job into entrepreneurship | Failure | Mindset | Nepal | ",
+      "guest": "Ashima Poudyal",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:\nWhat happens when you choose entrepreneurship over the “safe” 9–5path?\nIn this episode of Thinking Beyond, we sit down with Ashima Poudel to unpack her journey from a conventional 9–5 career to building her own brand and stepping into entrepreneurship.\nWe talk about the reality of building a business in Nepal — the mindset, failures, uncertainty, financial pressure, and the moments when giving up feels easier than continuing.\nFrom being told “you’ll be nobody if you want to be an entrepreneur” to choosing to build anyway, Ashima shares the lessons, struggles and decisions that shaped her journey\n              \n          \n🎙️ Host: Manisha Neupane\n🎧 Guest:Ashima Poudyal \n📍 Thinking Beyond\n\nTHINKING BEYOND\nConversations that make you think deeper.\n\n\n\n\nChapters: \n00:00 Intro\n02:10 From 9–5 to Entrepreneurship\n08:47 Finding the Gap in Nepal’s Candel  Market\n11:37 What It Really Takes to Build a Brand\n14:07 Passion Doesn’t Pay the Bills\n17:07 You'll be nobody If you want to become an Enterprenuer. \n25:07 Leaving a Stable Career But Why ? \n31:07 How to Escape Your Comfort Zone\n34:07 The cost of not knowing how to fail?\n35:07 The Real Cost of Entrepreneurship ? \n42:07 How to Build for the Global Market\n49:07 The Biggest Problems Entrepreneurs Face in Nepal\n52:07 Entrepreneurship: Myth vs Reality ?\n58:07 How to Stay Motivated When It Gets Hard ?\n1:08:47 What Do Successful People See That Others Don’t? \n1:10:01 Nepalese Mindset Behind the failure \n01:16:00 Importance of Storytelling --Secret of building Brand\n\n\n    CONNECT WITH US\n🎙️ Thinking Beyond: Conversations about Mindset, Growth & Real Life Experiences.\n\n📩 For Business Enquiries: [manishaneupane398@gmail.com]\n________________________________________________\n\nTEAM\nHOST: Manisha Neupane\nEDITOR/PRODUCER: Tyajan Maharjan \n\n\n #EntrepreneurshipNepal #ThinkingBeyond #NepaliEntrepreneur #BusinessNepal #StartupNepal #Manishaneupane",
+      "transcriptChars": 2386,
+      "summary": "Ashima Poudyal discusses her transition from a 9‑5 job to building her own brand, exploring mindset, failure, and entrepreneurship in Nepal.",
+      "primaryTopic": "Entrepreneurship transition",
+      "updatedAt": "2026-11-12T16:03:46.405Z",
+      "tags": [
+        {
+          "name": "Ashima Poudyal",
+          "slug": "ashima-poudyal",
+          "type": "entity",
+          "relevanceScore": 95,
+          "evidence": "",
+          "reason": "Guest explicitly named",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Into Aroma",
+          "slug": "into-aroma",
+          "type": "entity",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Brand mentioned in title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "9‑5 to entrepreneurship",
+          "slug": "9-5-to-entrepreneurship",
+          "type": "concept",
+          "relevanceScore": 88,
+          "evidence": "",
+          "reason": "Core transition topic",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Failure",
+          "slug": "failure",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Explicitly highlighted in title and description",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Global brand building",
+          "slug": "global-brand-building",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Mentioned in chapters and existing channel tags",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Entrepreneurship Nepal",
+          "reason": "Not explicitly named; inferred from context"
+        },
+        {
+          "name": "Mindset",
+          "reason": "Generic tag — channel-level geo provides no episode distinction."
+        }
+      ],
+      "warnings": [],
       "lastAttempt": {
-        "at": "2026-11-12T10:20:37.825Z",
-        "reason": "validation-empty"
+        "at": "2026-11-12T16:03:46.405Z",
+        "reason": "ok"
       },
-      "warnings": [
-        "The AI response was not valid JSON. Re-run the request or paste a corrected response — nothing was stored.",
-        "The AI response produced no valid tags — will retry next cron."
-      ]
+      "transcriptSource": "metadata"
     },
     "yt-klCLHoCTZck": {
       "episodeId": "yt-klCLHoCTZck",
@@ -1783,6 +2058,161 @@
       "warnings": [],
       "lastAttempt": {
         "at": "2026-11-12T10:22:39.196Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-yNYIogOUGlo": {
+      "episodeId": "yt-yNYIogOUGlo",
+      "title": "How did a depressed man lead the most successful man on the earth ?  #applecompany #7lessons",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Examines how a depressed individual guided the world’s most successful man, revealing seven key lessons about leadership and Apple.",
+      "primaryTopic": "Leadership lessons",
+      "updatedAt": "2026-11-12T16:05:01.505Z",
+      "tags": [
+        {
+          "name": "Depression",
+          "slug": "depression",
+          "type": "problem",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Explicitly mentioned as a depressed man in title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Apple company",
+          "slug": "apple-company",
+          "type": "entity",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Hashtag #applecompany signals focus on Apple",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Leadership lessons",
+          "slug": "leadership-lessons",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Title promises lessons on leadership",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Seven lessons",
+          "reason": "Repetitive — overlaps \"Leadership lessons\"; the more precise label was kept."
+        }
+      ],
+      "warnings": [
+        "Only 3 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-12T16:05:01.505Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-sLkVz4OQHmc": {
+      "episodeId": "yt-sLkVz4OQHmc",
+      "title": "13 things mentally Strong people don't do 🤫  #Mentallystrong #effectivehabits",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Explores habits that mentally strong people avoid to maintain resilience.",
+      "primaryTopic": "Mental strength habits",
+      "updatedAt": "2026-11-12T16:07:21.744Z",
+      "tags": [
+        {
+          "name": "Mentally strong",
+          "slug": "mentally-strong",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Title focuses on habits of mentally strong people",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Effective habits",
+          "slug": "effective-habits",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Title includes hashtag #effectivehabits",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Mental resilience",
+          "reason": "Not explicitly named in title or description"
+        }
+      ],
+      "warnings": [
+        "Only 2 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-12T16:07:21.744Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-FoxsP-ECUAo": {
+      "episodeId": "yt-FoxsP-ECUAo",
+      "title": "Inside steve's mind 🤔 #applecompany #stevejobs",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "A deep dive into Steve Jobs' mindset and Apple company.",
+      "primaryTopic": "Steve Jobs",
+      "updatedAt": "2026-11-12T16:09:41.882Z",
+      "tags": [
+        {
+          "name": "Steve Jobs",
+          "slug": "steve-jobs",
+          "type": "entity",
+          "relevanceScore": 100,
+          "evidence": "",
+          "reason": "Central figure of episode",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Apple company",
+          "slug": "apple-company",
+          "type": "entity",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Key company discussed",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Inside Steve's mind",
+          "reason": "Repetitive — overlaps \"Steve Jobs\"; the more precise label was kept."
+        }
+      ],
+      "warnings": [
+        "Only 2 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-12T16:09:41.882Z",
         "reason": "ok"
       },
       "transcriptSource": "metadata"
