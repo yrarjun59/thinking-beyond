@@ -66,7 +66,7 @@ function getPodcastEpisodes(allVideos) {
 
 function useEpisodes(){
   const [eps,setEps]=useState(getPodcastEpisodes([...channelVideos].sort((a,b)=>String(b.publishedAt||'').localeCompare(String(a.publishedAt||'')))));
-  useEffect(()=>{let cancelled=false;const load=()=>fetch(`${API}/episodes?sort=new`).then(r=>r.ok?r.json():Promise.reject()).then(d=>{if(cancelled)return;const rawEpisodes=Array.isArray(d.episodes)?d.episodes:(d.months||[]).flatMap(m=>m.episodes||[]);if(!rawEpisodes.length)return;const validEpisodes=rawEpisodes.filter(e=>{const ytOk=e.youtubeId?.startsWith('yt-')||/^[A-Za-z0-9_-]{11}$/.test(e.youtubeId);const idOk=e.id?.startsWith('yt-')||e.id?.startsWith('ep-');return ytOk&&idOk;});if(validEpisodes.length<rawEpisodes.length*0.5)return;const liveEpisodes=validEpisodes;setEps(getPodcastEpisodes(mergeEpisodeData(channelVideos,liveEpisodes)))}).catch(()=>{});load();const timer=window.setInterval(load,5*60*1000);return()=>{cancelled=true;window.clearInterval(timer)}},[]);return eps}
+  useEffect(()=>{let cancelled=false;const load=()=>fetch(`${API}/episodes?sort=new`).then(r=>r.ok?r.json():Promise.reject()).then(d=>{if(cancelled)return;const rawEpisodes=Array.isArray(d.episodes)?d.episodes:(d.months||[]).flatMap(m=>m.episodes||[]);if(!rawEpisodes.length)return;const knownYtIds=new Set(channelVideos.map(v=>v.youtubeId).filter(Boolean));const validEpisodes=rawEpisodes.filter(e=>knownYtIds.has(e.youtubeId));if(!validEpisodes.length)return;const liveEpisodes=validEpisodes;setEps(getPodcastEpisodes(mergeEpisodeData(channelVideos,liveEpisodes)))}).catch(()=>{});load();const timer=window.setInterval(load,5*60*1000);return()=>{cancelled=true;window.clearInterval(timer)}},[]);return eps}
 function VideoThumbnail({episode,loading='lazy'}){const id=episode.youtubeId;const local=`${BASE_PATH}images/youtube-thumbnails/${id}.jpg`;return <img loading={loading} src={`https://i.ytimg.com/vi/${id}/maxresdefault.jpg`} onError={event=>{if(event.currentTarget.dataset.fallback==='local'){event.currentTarget.src=`https://i.ytimg.com/vi/${id}/hqdefault.jpg`;return}event.currentTarget.dataset.fallback='local';event.currentTarget.src=local}} alt=""/>}
 function formatDuration(episode){let seconds=Number(episode?.durationSec??episode?.durationSeconds);if(!Number.isFinite(seconds)||seconds<=0){const minutes=Number(episode?.durationMin);seconds=Number.isFinite(minutes)&&minutes>0?Math.round(minutes*60):0}if(!seconds)return '';const total=Math.floor(seconds),hours=Math.floor(total/3600),minutes=Math.floor((total%3600)/60),remainder=total%60;return hours?`${hours}:${String(minutes).padStart(2,'0')}:${String(remainder).padStart(2,'0')}`:`${minutes}:${String(remainder).padStart(2,'0')}`}
 function formatCompactViews(value){const count=normalizeViewCount(value);return count===null?'':new Intl.NumberFormat('en',{notation:'compact',maximumFractionDigits:1}).format(count)}
@@ -135,9 +135,8 @@ function Episodes(){
   const eps=useEpisodes();
   const [query,setQuery]=useState(''),[page,setPage]=useState(1),[selected,setSelected]=useState(null),[playing,setPlaying]=useState(false);
   const [searchParams,setSearchParams]=useSearchParams();
+  const [sort,setSortState]=useState('newest');
   const tagFilter=(searchParams.get('tag')||'').trim().toLowerCase();
-  const sort=new URLSearchParams(window.location.search).get('sort')||'newest';
-  function setSort(next){setSearchParams({...Object.fromEntries(searchParams),sort:next,page:undefined});setPage(1)}
   const filterTokens=tagFilter?tagFilter.split(/[^a-z0-9]+/).filter(t=>t.length>=3):[];
   useEffect(()=>{
     if(!selected)return;
@@ -160,7 +159,7 @@ function Episodes(){
   const currentPage=Math.min(page,pages);
   const shown=visible.slice((currentPage-1)*9,currentPage*9);
   function changePage(next){setPage(next);window.scrollTo({top:0,behavior:'smooth'})}
-  function setSort(next){setSearchParams({...Object.fromEntries(searchParams),sort:next,page:undefined});setPage(1)}
+  function setSort(next){setSortState(next);setPage(1)}
   function choose(episode){setSelected(episode);setPlaying(true)}
   const sortOptions=[['newest','Recent'],['most-viewed','Most watched'],['longest','Longest'],['oldest','Oldest']];
   return <main className="inner episodes-page">
