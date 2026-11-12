@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-12T07:34:35.839Z",
+  "generatedAt": "2026-11-12T07:44:12.786Z",
   "canonicalTags": [
     {
       "name": "Neppal Fintech",
@@ -35,7 +35,7 @@
       "aliases": [],
       "type": "technology",
       "description": "AI technologies and impact",
-      "usageCount": 1,
+      "usageCount": 2,
       "status": "approved"
     },
     {
@@ -100,6 +100,204 @@
       "description": "",
       "usageCount": 1,
       "status": "retired"
+    },
+    {
+      "name": "Satakshi Mishra",
+      "slug": "satakshi-mishra",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Real Estate",
+      "slug": "real-estate",
+      "aliases": [],
+      "type": "industry",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Home Inspection",
+      "slug": "home-inspection",
+      "aliases": [],
+      "type": "industry",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Skill Sewa",
+      "slug": "skill-sewa",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Multi-Millionaire",
+      "slug": "multi-millionaire",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Priya Sigdel",
+      "slug": "priya-sigdel",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Digital sovereignty",
+      "slug": "digital-sovereignty",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Women’s empowerment",
+      "slug": "women-empowerment",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Gen Z responsibilities",
+      "slug": "gen-z-responsibilities",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Saurav Dhakal",
+      "slug": "saurav-dhakal",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Golden Tech International",
+      "slug": "golden-tech-international",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Blockchain",
+      "slug": "blockchain",
+      "aliases": [],
+      "type": "technology",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Future of Work",
+      "slug": "future-of-work",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Neap Startup Ecosystem",
+      "slug": "neap-startup-ecosystem",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Yarsa Games",
+      "slug": "yarsa-games",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "NJ Subedi",
+      "slug": "nj-subedi",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Policy Reform",
+      "slug": "policy-reform",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Rekha Yadav",
+      "slug": "rekha-yadav",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Finance Awareness",
+      "slug": "finance-awareness",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Stock Market Trading",
+      "slug": "stock-market-trading",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Content Creation",
+      "slug": "content-creation",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Creator Economy Nepal",
+      "slug": "creator-economy-nepal",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
     }
   ],
   "episodes": {
@@ -263,6 +461,419 @@
       "warnings": [],
       "lastAttempt": {
         "at": "2026-11-12T07:34:35.253Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-5vXeUftZXPk": {
+      "episodeId": "yt-5vXeUftZXPk",
+      "lastAttempt": {
+        "at": "2026-11-12T07:37:50.860Z",
+        "reason": "validation-empty"
+      },
+      "warnings": [
+        "The AI response was not valid JSON. Re-run the request or paste a corrected response — nothing was stored.",
+        "The AI response produced no valid tags — will retry next cron."
+      ]
+    },
+    "ep-12-e8ab02": {
+      "episodeId": "ep-12-e8ab02",
+      "title": "Nepal’s Real state Multi-Millionaire: Future | Scams |Policy | Money | Satakshi Mishra| ",
+      "guest": "Satakshi Mishra",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:\nCo-Founder of Skill Sewa, Satakshi has been contributing to Nepal’s construction and real estate sector by providing professional services, including home inspections, construction-related solutions, and property services. What began with just four employees has grown into an organization employing hundreds of people directly and creating opportunities for thousands more through indirect and part-time employment.\n\n Skill Sewa is Nepal’s first home inspection company, offering a wide range of services, including interior design, renovation, construction, house design, waterproofing, and more. Here’s why Skill Sewa is your one-stop solution for home improvement. They have also introduced several new ventures, including the White Room and Colony concepts.\n\nHer journey reflects the importance of creating opportunities rather than simply waiting for them. Instead of limiting herself to traditional career expectations, she stepped into an industry where she saw room for improvement and innovation.\n\n🎙️ Host: Manisha Neupane\n🎧 Guest: Satakshi Mishra\n📍 Thinking Beyond\n\nThinking Beyond \nConversations that make you question the Status Quo. \n\nMeet satakshi Mishra\nhttps://www.instagram.com/satakshi3276?cplk=MXZvd3BjcG4xd3g4dg==\n\n\nChapters:\n00:00 Intro\n02:57 Tell Me About Your Failure?\n05:58 What Was One Thing That Pushed You?\n07:22 Which Gap Did You Fail Initially?\n10:45 Tell Me About Your First 100 Days When Starting the Company\n13:42 What Was the Worst-Case Scenario You Thought Of?\n15:04 How Many Hours Did You Work?\n19:05 In Which Phase Did Your Skill Start Making Money?\n20:35 Did You Ever Have the Option of Doing a Job?\n21:58 What Gap Do You See in the Market?\n24:51 How Is the Nepalese Consumer?\n26:20 In Which Places in Nepal Is Your Business Active?\n27:00 What Was Your Mindset Before, and What Is It Now?\n29:02 Didn’t You Fear Trusting Your Team?\n31:10 Are You Spiritual?\n31:25 Was There Any Disappointment in Work?\n32:25 Can You Share Those Moments?\n34:20 What Do You Look f",
+      "transcriptChars": 2479,
+      "summary": "Satakshi Mishra discusses her journey building Nepal’s first home inspection company, Skill Sewa, and the broader real‑estate landscape.",
+      "primaryTopic": "Real Estate",
+      "updatedAt": "2026-11-12T07:39:01.777Z",
+      "tags": [
+        {
+          "name": "Satakshi Mishra",
+          "slug": "satakshi-mishra",
+          "type": "entity",
+          "relevanceScore": 95,
+          "evidence": "",
+          "reason": "Guest explicitly named and central to episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Real Estate",
+          "slug": "real-estate",
+          "type": "industry",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Core topic of episode title and description",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Home Inspection",
+          "slug": "home-inspection",
+          "type": "industry",
+          "relevanceScore": 88,
+          "evidence": "",
+          "reason": "Skill Sewa’s primary service, highlighted in description",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Skill Sewa",
+          "slug": "skill-sewa",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Company discussed extensively in episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Multi-Millionaire",
+          "slug": "multi-millionaire",
+          "type": "concept",
+          "relevanceScore": 78,
+          "evidence": "",
+          "reason": "Title explicitly mentions multi‑millionaire status",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Innovation",
+          "reason": "Generic tag — provides no meaningful episode distinction."
+        }
+      ],
+      "warnings": [
+        "Unknown tag type \"organization\" on \"Skill Sewa\" — stored as concept."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-12T07:39:01.777Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "ep-10-745034": {
+      "episodeId": "ep-10-745034",
+      "title": "Digital sovereignty secretly manipulating ? |Power|System| Politics| Gen-z| Priya Sigdel |",
+      "guest": "Priya Sigdel",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:\nIn this episode of Thinking Beyond Podcast, we sit down with Priya Sigdel, associated with Miss Nepal Earth 2018, for a thought-provoking conversation about her experiences, ambition, personal growth, and the realities of Nepali society.\n\n\nThe founder of HattiHatti. From overcoming rejection and understanding the hunger for success to discussing women’s empowerment, superstition, and the challenges women face, we explore the ideas that shape individuals and communities. We also dive into Nepal’s political future, digital governance, government accountability, youth responsibility, and how Nepal can build a stronger digital identity.\n\n\n\nWe discuss maturity, fear, mistakes, regrets, comfort zones, and why meaningful growth often begins when we challenge ourselves and question conventional thinking.\n\n\n\n\n🎙️ Host: Manisha Neupane\n🎧 Guest: Priya Sigdel\n📍 Thinking Beyond\n\nThinking Beyond \nConversations that make you question the Status Quo. \n\nMeet Priya Sigdel:\nhttps://www.instagram.com/priya.sigdel_official?xtok=MXd3cjF2emEzamlxcA==\n\n\nChapters:\n\n00:00 Intro\n02:29 How Did You Handle Rejection?\n06:07 What Is Hati-Hati?\n08:00 How Did Your Hunger Build Up?\n09:56 Were You Ambitious From a Young Age?\n14:45 Women’s Empowerment From the Ground Level\n20:15 What Does Women’s Empowerment Mean to You?\n21:08 What Is the Source of Women’s Empowerment?\n22:00 Individual Hunger Matters\n26:55 How Do You See Superstition and Taboos in Society?\n27:48 Are Women Their Own Biggest Enemies?\n36:40 Tell Me About Your Kora Event\n40:25 Pros and Cons of Digital Government\n44:25 How Should Nepal Brand Itself Digitally?\n49:48 How Was the Government’s Performance After Six Months?\n53:08 Why Do Government Progress Figures Differ From Media Evaluations?\n55:40 What Difference Do You See After Six Months?\n01:03:48 Is the Government Focusing on the Core Problems?\n01:14:27 Responsibilities and Power of Gen Z\n01:24:38 What Is Your Biggest Fear?\n01:28:09 What Was Priya Like at 20?\n01:30:35 Does Maturity Come",
+      "transcriptChars": 2479,
+      "summary": "Priya Sigdel discusses digital sovereignty, women’s empowerment, digital governance, and Gen Z responsibilities in Nepal.",
+      "primaryTopic": "Digital sovereignty",
+      "updatedAt": "2026-11-12T07:40:15.812Z",
+      "tags": [
+        {
+          "name": "Priya Sigdel",
+          "slug": "priya-sigdel",
+          "type": "entity",
+          "relevanceScore": 95,
+          "evidence": "",
+          "reason": "Guest and focal point of conversation.",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Digital sovereignty",
+          "slug": "digital-sovereignty",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central theme of manipulation and control over digital space in Nepal.",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Women’s empowerment",
+          "slug": "women-empowerment",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Extensive discussion on women’s empowerment challenges and strategies.",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Gen Z responsibilities",
+          "slug": "gen-z-responsibilities",
+          "type": "concept",
+          "relevanceScore": 78,
+          "evidence": "",
+          "reason": "Focus on Gen Z's role and responsibilities in Nepal's future.",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Digital public infrastructure",
+          "reason": "Similar to digital governance, already covered."
+        },
+        {
+          "name": "Neppali Youth",
+          "reason": "Less specific than Gen Z responsibilities."
+        },
+        {
+          "name": "HattiHatti",
+          "reason": "Brand mentioned but not central to episode theme."
+        },
+        {
+          "name": "Miss Nepal Earth 2018",
+          "reason": "Guest title, but less central than her personal experiences."
+        },
+        {
+          "name": "Digital governance",
+          "reason": "Repetitive — overlaps \"Digital sovereignty\"; the more precise label was kept."
+        }
+      ],
+      "warnings": [],
+      "lastAttempt": {
+        "at": "2026-11-12T07:40:15.812Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "ep-11-065198": {
+      "episodeId": "ep-11-065198",
+      "title": "AI Masterclass:- Powerful AI tools | NEPAL | FUTURE | JOBs | EDUCATION | Saurav Dhakal |",
+      "guest": "Saurav Dhakal",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:\nIn this episode of Thinking Beyond, we sit down with Saurav Dhakal, Founder and CEO of Golden Tech International, to explore his journey in entrepreneurship, technology, and innovation.\nSpecializing in AI and blockchain solutions, Saurav is working to connect technology with real-world business needs. From his early days of freelancing to building a technology company that serves global businesses, his journey opens up important conversations about ambition, challenges, and the opportunities available to young entrepreneurs in Nepal.\n\n                We dive deep into the world of Artificial Intelligence, machine learning, AI agents, and blockchain, exploring how these technologies are transforming businesses and reshaping the future of work. Saurav also shares insights into working with international clients, building professional networks, and the challenges of creating a successful technology startup.\n\nCan Nepal build its own IT based unicorn company? Can someone without a coding background start an IT business? Will AI replace jobs, or create new opportunities? And what will Nepal’s technology industry look like in the next 10 years?\n\nWe also explore the potential of AI for everyday people and local businesses, the importance of continuous learning, and the mindset young people need to turn their ideas into reality.\n\n\n🎙️ Host: Manisha Neupane\n🎧 Guest: Saurav Dhakal\n📍 Thinking Beyond\n\nThinking Beyond \nConversations that make you question the Status Quo. \n\nMeet  Saurav Dhakal\nhttps://www.instagram.com/saurav___dhakal?rpxt=cWFycDJ1dXpoOWNu\n\nChapters:\n00:00 Intro\n03:07 Why Were You Not Comfortable with Jobs?\n03:51 When Did You Start Golden Tech?\n05:20 How Much Were You Making When Freelancing?\n06:49 How Supportive Was Your Family?\n09:31 How Was the First 100 Days of Golden Tech?\n12:15 Tell Me About One Setback\n14:30 What Was Pushing You?\n18:33 When Did Things Start Going Well?\n22:15 How Do You Deal with International Clients?\n23:38 Why Is It Different Working wit",
+      "transcriptChars": 2479,
+      "summary": "Saurav Dhakal discusses AI, blockchain, and Nepal's tech future with Golden Tech International.",
+      "primaryTopic": "Artificial Intelligence",
+      "updatedAt": "2026-11-12T07:41:35.357Z",
+      "tags": [
+        {
+          "name": "Saurav Dhakal",
+          "slug": "saurav-dhakal",
+          "type": "entity",
+          "relevanceScore": 100,
+          "evidence": "",
+          "reason": "Guest and CEO of Golden Tech International",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Artificial Intelligence",
+          "slug": "artificial-intelligence",
+          "type": "technology",
+          "relevanceScore": 95,
+          "evidence": "",
+          "reason": "Core focus of episode",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Golden Tech International",
+          "slug": "golden-tech-international",
+          "type": "entity",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Founder and CEO’s company discussed",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Blockchain",
+          "slug": "blockchain",
+          "type": "technology",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Technology solutions highlighted",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Future of Work",
+          "slug": "future-of-work",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Discussed AI impact on jobs",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [],
+      "lastAttempt": {
+        "at": "2026-11-12T07:41:35.357Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "ep-9-0c2dc9": {
+      "episodeId": "ep-9-0c2dc9",
+      "title": "Can Nepal Build a Unicorn? | Truth Behind Nepali Startup Ecosystem Nobody Talks | NJ Subedi | ",
+      "guest": "NJ Subedi",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:\nNJ Subedi’s journey is an inspiring example of how self-learning, experimentation, and persistence can turn ideas into successful businesses. After stepping away from college, he pursued his entrepreneurial ambitions.Through Yarsa Games, the company entered the global mobile gaming industry, reaching millions of users and demonstrating that products developed in Nepal can succeed internationally.\n\nBut his vision extends beyond gaming. Through Yarsa Tech, NJ is working toward expanding Nepal’s electronics and hardware manufacturing capabilities, with the ambition of creating technology products locally rather than relying heavily on imports\n\n        However, building technology businesses in Nepal comes with significant challenges, including high operating costs, taxes on imported components, limited payment infrastructure, and difficulties protecting intellectual property. NJ has called for policy reforms to reduce unnecessary costs, support IT exports, improve access to international payment systems, and create a more business-friendly environment for Nepali technology companies.\n\nHis journey raises an important question: Can Nepal become a country that not only consumes technology but also builds and exports it to the world?\n\n\n🎙️ Host: Manisha Neupane\n🎧 Guest: NJ Subedi \n📍 Thinking Beyond\n\nThinking Beyond \nConversations that make you question the Status Quo. \n\nFollow NJ Subedi:\nhttps://www.instagram.com/njsubedi?dlrf=M3YycHYyZmo0aTAx\n\nChapters:\n\n00:00 Intro\n01:29 Video Starts\n01:45 Why Did You Drop Out, and What Did You Have to Self-Learn That College Didn't Teach You?\n23:22 Was There Any Practical Education During Your College Course?\n25:08 How Did You Find Yarsa Labs?\n26:20 How Did You Feel When Ludo Crossed 200 Million Downloads?\n33:46 How Did You Look at Your Failure?\n35:06 Why Did You Shift into a Hardware Manufacturing Company?\n41:49 How Long Did It Take to Teach Them?\n47:49 But Yarsa Doesn't Make Money?\n49:13 How Did You Feel When the Government Didn't S",
+      "transcriptChars": 2479,
+      "summary": "NJ Subedi discusses Nepal’s potential to build a unicorn, his journey with Yarsa Games and Yarsa Tech, and the policy reforms needed for the country’s tech ecosystem.",
+      "primaryTopic": "Neap Startup Ecosystem",
+      "updatedAt": "2026-11-12T07:43:00.864Z",
+      "tags": [
+        {
+          "name": "Neap Startup Ecosystem",
+          "slug": "neap-startup-ecosystem",
+          "type": "concept",
+          "relevanceScore": 95,
+          "evidence": "",
+          "reason": "Core focus of episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Yarsa Games",
+          "slug": "yarsa-games",
+          "type": "entity",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Key company in mobile gaming success",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "NJ Subedi",
+          "slug": "nj-subedi",
+          "type": "entity",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Guest and central figure",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Policy Reform",
+          "slug": "policy-reform",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Central call for changes in Nepal’s tech environment",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Mobile Gaming",
+          "reason": "Not central to the episode’s main theme"
+        },
+        {
+          "name": "Electronics Manufacturing",
+          "reason": "Mentioned but not central to the episode’s focus"
+        },
+        {
+          "name": "Yarsa Tech",
+          "reason": "Repetitive — overlaps \"Yarsa Games\"; the more precise label was kept."
+        }
+      ],
+      "warnings": [],
+      "lastAttempt": {
+        "at": "2026-11-12T07:43:00.864Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "ep-4-68ecb0": {
+      "episodeId": "ep-4-68ecb0",
+      "title": "Rekha Yadav (Finance awareness creator) |Stock Market| Author",
+      "guest": "Rekha Yadav",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:\nToday’s guest is Rekha Yadav , She had a double degree in Economics and Finance, a stable job at Siddhartha Bank — and she walked away from it all to bet on herself.\n\n- In this episode of Thinking Beyond, we sit down with a young entrepreneur from Janakpur who turned financial uncertainty into financial freedom. From learning to trade on NEPSE to building a personal brand around financial awareness, her journey is proof that small-town beginnings don't limit big ambitions.\n\nToday, she is a stock market trader and financial awareness content creator, brand ambassador for three national and international companies, founder of her own IT company, and owner of her own clothing brand — living proof that leaving the \"safe path\" can lead somewhere far bigger. \n        In this conversation, we talk about the fear of quitting a secure job, learning to trade from scratch, building multiple businesses at once, and what it really takes to go from a small town in Janakpur to national recognition. If you've ever doubted whether you can build something of your own, this episode is for you.\n\n     Host: Manisha Neupane\n🎧 Guest:Rekha Yadav\n📍 Thinking Beyond\n\nTHINKING BEYOND\nConversations that make you think deeper.\n\n\n\n\nChapters: \n   00:00 → NIFRA IPO: How Radha Started Investing\n   01:43 - Double Degree on Economics and Finance \n04:20 —When Content Creation Journey Begins \n14:00 → Money: How Does It Shape Our Life?\n14:19 → Why You Must Keep Learning & Upgrading Yourself\n15:00 →Scarifice and Upgrade ? \n18:00 → What Would You Do Differently?\n19:00 - Ultra successful people are wounded  ? \n22:00 → Why Change Is Important in Life\n23:00 → The Creator Economy in Nepal\n24:00 → What Is the Future of Content Creator?\n25:00 - Biggest challenge for Creators ? \n40:00 - Biggest Sacrifice ?\n42:00 -Self driven Mindset ? Fuel ?\n44:00 - Why Double Degree ?\n1:04:00 → How Money Shapes Life: Her Upcoming Book\n1:08:50 → Content Creation, Authenticity & Personal Brand\n1:15:21 → Career Transition: Why Sh",
+      "transcriptChars": 2479,
+      "summary": "Rekha Yadav shares her journey from banking to becoming a finance awareness creator, stock trader, and entrepreneur.",
+      "primaryTopic": "Finance Awareness and Entrepreneurship",
+      "updatedAt": "2026-11-12T07:44:12.786Z",
+      "tags": [
+        {
+          "name": "Rekha Yadav",
+          "slug": "rekha-yadav",
+          "type": "entity",
+          "relevanceScore": 95,
+          "evidence": "",
+          "reason": "Guest and central figure",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Finance Awareness",
+          "slug": "finance-awareness",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Core focus of her brand and content",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Stock Market Trading",
+          "slug": "stock-market-trading",
+          "type": "concept",
+          "relevanceScore": 88,
+          "evidence": "",
+          "reason": "Primary activity discussed in episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Content Creation",
+          "slug": "content-creation",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Her role as content creator highlighted",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Creator Economy Nepal",
+          "slug": "creator-economy-nepal",
+          "type": "concept",
+          "relevanceScore": 82,
+          "evidence": "",
+          "reason": "Episode covers creator economy context in Nepal",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "NEPSE",
+          "reason": "Mentioned but not central to episode theme"
+        },
+        {
+          "name": "Siddhartha Bank",
+          "reason": "Mentioned as past job, not core subject"
+        },
+        {
+          "name": "Entrepreneurship",
+          "reason": "Generic tag — provides no meaningful episode distinction."
+        }
+      ],
+      "warnings": [],
+      "lastAttempt": {
+        "at": "2026-11-12T07:44:12.786Z",
         "reason": "ok"
       },
       "transcriptSource": "metadata"
