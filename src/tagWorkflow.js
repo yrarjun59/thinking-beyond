@@ -123,7 +123,8 @@ Do not assign a canonical tag to an episode unless the original transcript evide
 export const GENERIC_TAG_NAMES = new Set([
   'business','technology','motivation','success','life','education',
   'entrepreneurship','personal development','innovation','mindset',
-  'interview','podcast','lifestyle','episode'
+  'interview','podcast','lifestyle','episode',
+  'nepal','nepali','nepalese' // channel-level geo, not episode-specific
 ]);
 
 export const TAG_TYPES = new Set(['topic','concept','industry','entity','technology','problem','framework']);
@@ -238,8 +239,8 @@ export function validateTagResult(raw){
     const decision=['existing','new'].includes(String(candidate?.decision))?String(candidate?.decision):'new';
     const evidence=visible(candidate?.evidence).trim();
     const reason=visible(candidate?.reason).trim();
-    if(GENERIC_TAG_NAMES.has(slug)){
-      rejected.push({name,reason:'Generic tag — provides no meaningful episode distinction.'});continue;
+    if(GENERIC_TAG_NAMES.has(slug)||/^(nepal|nepali|nepalese)-/.test(slug)){
+      rejected.push({name,reason:'Generic tag — channel-level geo provides no episode distinction.'});continue;
     }
     if(!slug){
       rejected.push({name,reason:'Invalid or empty slug.'});continue;
@@ -262,11 +263,20 @@ export function validateTagResult(raw){
     }
     accepted.push({name:tag.name,slug:tag.slug,type:tag.type,relevanceScore:Math.round(tag.relevanceScore),evidence:tag.evidence,reason:tag.reason,decision:tag.decision});
   }
+  // Normalize person names: keep full name, drop first-name-only duplicate.
+function nameDedupe(existing, candidate){
+  const e=existing.slug.split('-'), c=candidate.slug.split('-');
+  if(e.length>=2 && c.length===1 && e[0]===c[0]) return true; // existing has full name, candidate is just first name
+  if(c.length>=2 && e.length===1 && c[0]===e[0]) return true; // candidate has full name, existing is just first name
+  return false;
+}
+
   // Exact and semantic duplicates: keep the higher-scoring label.
   // Repetition guard also collapses near-overlapping labels within one episode.
+  // Person-name deduplication: keep full name, drop first-name-only duplicate.
   const kept=[];
   for(const tag of [...accepted].sort((a,b)=>b.relevanceScore-a.relevanceScore)){
-    const duplicate=kept.find(existing=>existing.slug===tag.slug||jaccard(existing.slug,tag.slug)>SIMILARITY_LIMIT||tokenOverlap(existing.slug,tag.slug)>=0.5);
+    const duplicate=kept.find(existing=>existing.slug===tag.slug||jaccard(existing.slug,tag.slug)>SIMILARITY_LIMIT||tokenOverlap(existing.slug,tag.slug)>=0.5||nameDedupe(existing,tag));
     if(duplicate){
       rejected.push({name:tag.name,reason:`Repetitive — overlaps "${duplicate.name}"; the more precise label was kept.`});continue;
     }
