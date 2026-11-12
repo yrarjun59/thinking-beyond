@@ -163,8 +163,10 @@ export function splitTranscriptChunks(text,size=60000,overlap=2000){
 // Extract a JSON object from an LLM reply: strips code fences, locates the outermost object, repairs trailing commas.
 export function extractJson(text){
   const raw=String(text||'');
-  const unfenced=raw.replace(/```(?:json)?/gi,'```').split('```').map(s=>s.trim()).filter(Boolean);
-  const candidates=[raw,...unfenced];
+  // Strip invisible characters (soft hyphens U+00AD, zero-width) the model sometimes emits.
+  const cleaned=raw.replace(/[\u00AD\u200B-\u200D\uFEFF]/g,'');
+  const unfenced=cleaned.replace(/```(?:json)?/gi,'```').split('```').map(s=>s.trim()).filter(Boolean);
+  const candidates=[cleaned,...unfenced];
   for(const candidate of candidates){
     const begin=candidate.indexOf('{');
     const end=candidate.lastIndexOf('}');
@@ -194,6 +196,17 @@ function jaccard(a,b){
 }
 
 const SIMILARITY_LIMIT=0.6;
+const TAG_STOPWORDS=new Set(['the','and','of','in','for','to','a','an','with','on','at','by','from']);
+// Repetition guard: reject a tag when more than half of its meaningful tokens
+// overlap an already-kept tag (e.g. "Nepal Fintech" vs "Fintech Ecosystem").
+function tokenOverlap(a,b){
+  const clean=slug=>String(slug||'').split('-').filter(t=>t&&!TAG_STOPWORDS.has(t));
+  const A=clean(a),B=clean(b);
+  if(!A.length||!B.length)return 0;
+  const setB=new Set(B);
+  const shared=A.filter(t=>setB.has(t)).length;
+  return shared/Math.min(A.length,B.length);
+}
 
 // QC validation layer — enforces section 7 of the tagging spec.
 export function validateTagResult(raw){
@@ -203,29 +216,30 @@ export function validateTagResult(raw){
   }
   const data=parsed.json;
   const warnings=[];
-  for(const w of (Array.isArray(data.warnings)?data.warnings:[])) warnings.push(String(w));
-  const summary=String(data.episode_summary||'').trim();
-  const primaryTopic=String(data.primary_topic||'').trim();
+  // Strip invisible characters (soft hyphens, zero-width) the model sometimes emits.
+  const visible=s=>String(s??'').replace(/[\u00AD\u200B-\u200D\uFEFF]/g,'');
+  for(const w of (Array.isArray(data.warnings)?data.warnings:[])) warnings.push(visible(w));
+  const summary=visible(data.episode_summary).trim();
+  const primaryTopic=visible(data.primary_topic).trim();
   const candidates=Array.isArray(data.tags)?data.tags:[];
   const rejected=[];
   for(const item of (Array.isArray(data.rejected_candidates)?data.rejected_candidates:[])){
     if(item?.name)rejected.push({name:String(item.name),reason:String(item.reason||'Rejected by the model.')});
   }
-  const accepted=[];
+  // Parse and sanity-check every candidate first, so scale detection can run
+  // before the score threshold rejects anything.
+  const sanitized=[];
   for(const candidate of candidates){
-    const name=String(candidate?.name||'').trim();
+    const name=visible(candidate?.name).trim();
     if(!name){continue}
     const slug=slugify(candidate?.slug||name);
     const score=Number(candidate?.relevance_score);
     const type=TAG_TYPES.has(String(candidate?.type)) ? String(candidate?.type) : (String(candidate?.type)?(warnings.push(`Unknown tag type "${candidate?.type}" on "${name}" — stored as concept.`),'concept'):'concept');
     const decision=['existing','new'].includes(String(candidate?.decision))?String(candidate?.decision):'new';
-    const evidence=String(candidate?.evidence||'').trim();
-    const reason=String(candidate?.reason||'').trim();
+    const evidence=visible(candidate?.evidence).trim();
+    const reason=visible(candidate?.reason).trim();
     if(GENERIC_TAG_NAMES.has(slug)){
       rejected.push({name,reason:'Generic tag — provides no meaningful episode distinction.'});continue;
-    }
-    if(!Number.isFinite(score)||score<MIN_SCORE){
-      rejected.push({name,reason:`Relevance score ${Number.isFinite(score)?score:'missing'} is below the ${MIN_SCORE} threshold.`});continue;
     }
     if(!slug){
       rejected.push({name,reason:'Invalid or empty slug.'});continue;
@@ -233,14 +247,28 @@ export function validateTagResult(raw){
     if(!evidence&&!reason){
       rejected.push({name,reason:'No transcript evidence or justification provided.'});continue;
     }
-    accepted.push({name,slug,type,relevanceScore:Math.round(score),evidence,reason,decision});
+    sanitized.push({name,slug,type,relevanceScore:Number.isFinite(score)?score:0,evidence,reason,decision,rawScore:score});
+  }
+  // Small free-tier models sometimes answer on a 0–10 scale despite the prompt;
+  // if every candidate scored ≤10, interpret it as a 0–10 scale and rescale.
+  if(sanitized.length&&sanitized.every(t=>t.rawScore<=10)){
+    for(const tag of sanitized){tag.relevanceScore*=10}
+    warnings.push('Scores appeared to be on a 0–10 scale — rescaled to 0–100 before filtering.');
+  }
+  const accepted=[];
+  for(const tag of sanitized){
+    if(tag.relevanceScore<MIN_SCORE){
+      rejected.push({name:tag.name,reason:`Relevance score ${tag.relevanceScore} is below the ${MIN_SCORE} threshold.`});continue;
+    }
+    accepted.push({name:tag.name,slug:tag.slug,type:tag.type,relevanceScore:Math.round(tag.relevanceScore),evidence:tag.evidence,reason:tag.reason,decision:tag.decision});
   }
   // Exact and semantic duplicates: keep the higher-scoring label.
+  // Repetition guard also collapses near-overlapping labels within one episode.
   const kept=[];
   for(const tag of [...accepted].sort((a,b)=>b.relevanceScore-a.relevanceScore)){
-    const duplicate=kept.find(existing=>existing.slug===tag.slug||jaccard(existing.slug,tag.slug)>SIMILARITY_LIMIT);
+    const duplicate=kept.find(existing=>existing.slug===tag.slug||jaccard(existing.slug,tag.slug)>SIMILARITY_LIMIT||tokenOverlap(existing.slug,tag.slug)>=0.5);
     if(duplicate){
-      rejected.push({name:tag.name,reason:`Semantic duplicate of "${duplicate.name}" — the more precise label was kept.`});continue;
+      rejected.push({name:tag.name,reason:`Repetitive — overlaps "${duplicate.name}"; the more precise label was kept.`});continue;
     }
     kept.push(tag);
   }
@@ -291,6 +319,18 @@ export function composeExtractionInput({channel,episode,transcript,existingChann
 export function composeExtractionPrompt(input,extraInstruction=''){
   return `${EXTRACTION_SYSTEM_PROMPT}\n\n${extraInstruction?`${extraInstruction}\n\n`:''}Here is the episode data:\n\n${JSON.stringify(input,null,2)}\n\nReturn only the JSON object.`;
 }
+
+// Channel-level normalization pass — compact for the free tier's output budget.
+export const TAXONOMY_COMPACT_SYSTEM_PROMPT=`You manage the central tag taxonomy of a podcast channel.
+
+You receive per-episode candidate tags (with scores) and the existing canonical tags. Normalize without losing meaningful distinctions:
+1. Merge semantically equivalent tags (e.g. "Nepal Fintech" and "Fintech Ecosystem" → one canonical label, the clearer one). Keep different concepts separate ("AI" vs "Machine Learning" stay apart).
+2. Never merge tags merely because they share a broad category.
+3. Generic labels that add no discovery value → removed_tags.
+4. Do not remove a tag just because one episode uses it.
+
+Return valid JSON only, no prose, keep descriptions under 12 words:
+{"canonical_tags":[{"name":"","slug":"","aliases":[],"description":"","usage_count":0}],"episode_assignments":[{"episode_id":"","tags":["slug"]}],"merges":[{"from":"slug","to":"slug"}],"removed_tags":["slug"],"review_required":[]}`;
 
 // Channel-level second pass payload: titles, summaries, candidates, existing canonical tags, usage counts.
 export function composeTaxonomyPrompt(library,channel){

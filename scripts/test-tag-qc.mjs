@@ -41,7 +41,7 @@ test('generic tag rejected', bloatedResult.rejected.some(r=>r.name==='Motivation
 test('score below 75 rejected', bloatedResult.rejected.some(r=>r.name==='Low Score'));
 test('no-evidence tag rejected', bloatedResult.rejected.some(r=>r.name==='No Evidence'));
 test('semantic duplicate collapsed', bloatedResult.tags.length===1&&bloatedResult.tags[0].name==='AI Agents');
-test('duplicate reason recorded', bloatedResult.rejected.some(r=>r.name==='AI Agent Systems'&&r.reason.includes('Semantic duplicate')));
+test('duplicate reason recorded', bloatedResult.rejected.some(r=>r.name==='AI Agent Systems'&&r.reason.includes('Repetitive')));
 
 console.log('3 · fewer than four subjects is valid');
 const three=JSON.stringify({episode_summary:'s',primary_topic:'t',tags:[

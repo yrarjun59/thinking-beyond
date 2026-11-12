@@ -1,6 +1,271 @@
 {
   "version": 1,
-  "generatedAt": "",
-  "canonicalTags": [],
-  "episodes": {}
+  "generatedAt": "2026-11-12T07:34:35.839Z",
+  "canonicalTags": [
+    {
+      "name": "Neppal Fintech",
+      "slug": "nepal-fintech",
+      "aliases": [],
+      "type": "industry",
+      "description": "Fintech growth in Nepal",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Sanjib Subba",
+      "slug": "sanjib-subba",
+      "aliases": [],
+      "type": "entity",
+      "description": "Entrepreneur and speaker",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Digital Public Infrastructure",
+      "slug": "digital-public-infrastructure",
+      "aliases": [],
+      "type": "technology",
+      "description": "Nationwide digital services",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Artificial Intelligence",
+      "slug": "artificial-intelligence",
+      "aliases": [],
+      "type": "technology",
+      "description": "AI technologies and impact",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Neppali Youth",
+      "slug": "nepali-youth",
+      "aliases": [],
+      "type": "concept",
+      "description": "Youth development in Nepal",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Dashrath Sunar",
+      "slug": "dashrath-sunar",
+      "aliases": [],
+      "type": "entity",
+      "description": "Brand strategist and influencer",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "VFY Talks",
+      "slug": "vfy-talks",
+      "aliases": [],
+      "type": "concept",
+      "description": "Podcast brand and community",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Sponsorship",
+      "slug": "sponsorship",
+      "aliases": [],
+      "type": "problem",
+      "description": "",
+      "usageCount": 1,
+      "status": "retired"
+    },
+    {
+      "name": "Tourism",
+      "slug": "tourism",
+      "aliases": [],
+      "type": "industry",
+      "description": "",
+      "usageCount": 1,
+      "status": "retired"
+    },
+    {
+      "name": "Global Brand",
+      "slug": "global-brand",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "retired"
+    },
+    {
+      "name": "Digital Media",
+      "slug": "digital-media",
+      "aliases": [],
+      "type": "industry",
+      "description": "",
+      "usageCount": 1,
+      "status": "retired"
+    }
+  ],
+  "episodes": {
+    "yt-8xDKonsnhoM": {
+      "episodeId": "yt-8xDKonsnhoM",
+      "title": "Nepal’s Booming Fintech Sector: AI, Software, Money, and the Future of Nepali Youth | Sanjib Subba |",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:\nIn this episode of Thinking Beyond Podcast, we sit down with Sanjib Subba to explore the rapidly evolving world of financial technology, Nepal’s digital transformation, entrepreneurship, and the future of the country’s economy.\n\nWith extensive experience across banking, learning and development, and fintech, Sanjib shares his insights on how technology is transforming financial services and why Nepal has enormous potential to become a stronger player in the global fintech industry.\n\nWe also discuss Digital Public Infrastructure (DPI), artificial intelligence, the biggest challenges facing Nepal’s fintech ecosystem, and how young people can develop the skills needed to succeed in this rapidly changing industry.Beyond business and technology, the conversation takes a deeper turn into personal growth, career transitions, overcoming failure, finding opportunities, and the importance of leaving behind meaningful work.\n\n🎙️ Host: Manisha Neupane\n🎧 Guest: Sanjib Subba\n📍 Thinking Beyond\n\nThinking Beyond\nConversations that make you question the Status Quo. \n\nChapters:\n\n00:00 Intro\n00:04:51 Were You Figuring Things Out From a Young Age?\n00:07:40 How Do You Keep Your Inner Child Alive?\n00:09:17 What Influenced You?\n00:11:10 When Did You Start Your Journey in Fintech?\n00:16:10 Who Are Your Mental Models?\n00:16:59 What Exactly Is Fintech?\n00:19:22 Where Do You See Nepal’s Fintech Industry in 5 Years?\n00:21:22 What Is DPI?\n00:25:52 Fintech Explained in Simple Terms\n00:29:02 Where Does the Rest of the World Stand in Fintech?\n00:35:07 What Is the Biggest Challenge for Fintech in Nepal?\n00:36:40 Do You See Opportunities in Nepal?\n00:42:08 How Can We Change Our Mindset to See Opportunities in Nepal?\n00:48:21 Is It Possible to Build a Fintech Unicorn in Nepal?\n00:51:29 What Is the Biggest Challenge?\n00:55:33 Where Do You See Nepal’s Economy in the Next 5 Years?\n00:59:05 How Can Young People Build Fintech Skills Without Prior Exposure?\n01:01:21 Why Is AI Important Today?\n01:03:23 If",
+      "transcriptChars": 2479,
+      "summary": "Discussion on Nepal's fintech boom, AI, digital infrastructure, youth skill development, and personal growth with Sanjib Subba.",
+      "primaryTopic": "Fintech in Nepal",
+      "updatedAt": "2026-11-12T07:33:42.585Z",
+      "tags": [
+        {
+          "name": "Nepal Fintech",
+          "slug": "nepal-fintech",
+          "type": "industry",
+          "relevanceScore": 95,
+          "evidence": "",
+          "reason": "Central focus of episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Sanjib Subba",
+          "slug": "sanjib-subba",
+          "type": "entity",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Guest speaker",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Digital Public Infrastructure",
+          "slug": "digital-public-infrastructure",
+          "type": "technology",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Key topic discussed",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Artificial Intelligence",
+          "slug": "artificial-intelligence",
+          "type": "technology",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Explored in fintech context",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Nepali Youth",
+          "slug": "nepali-youth",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Youth skill development focus",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Fintech Ecosystem",
+          "reason": "Repetitive — overlaps \"Nepal Fintech\"; the more precise label was kept."
+        }
+      ],
+      "warnings": [],
+      "lastAttempt": {
+        "at": "2026-11-12T07:33:42.587Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-kJtqvI5pYFY": {
+      "episodeId": "yt-kJtqvI5pYFY",
+      "title": "The Race for Social Media Fame: Dashrath Sunar | Cheap Branding | Fake Hype | Nepal | Tourisim |",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:\nBehind one of Nepal's biggest YouTube talk shows: Dashrath Sunar, Founder  of VFY (Voice For Youth) Talks, joins Thinking Beyond Media for a long, honest conversation about media, money, sponsorship, tourism, and building a global brand from Nepal.\n\n\nOriginally from Kanchanpur in Sudurpashchim Province, he moved to Kathmandu and launched VFY Talks on YouTube. He chose a high-production, premium format at a time when most people expected talk shows to stay on television. His first guest was the legendary actor Rajesh Hamal. Since then the VFY family has grown to include VFY Global, VFY Hindi, and a tourism-focused show.\n\n\n\n🎙️ Host: Manisha Neupane\n🎧 Guest: Dashrath Sunar\n📍 Thinking Beyond\n\nThinking Beyond \nConversations that make you question the Status Quo.\n\nMeet Dashrath sunar:\n https://www.instagram.com/dashrath_sunar?obrf=NnFyZ29oeWV6OXM=\n\n\nChapters:\n\n00:00 Introduction\n02:30 Why you chose Media?\n03:31 Why Did YFY Talks Start?\n08:27 The Courage to Bring Rajesh Hamal as the First Guest\n10:59 The Journey of YFY\n15:29 How the Idea Was Born\n16:45 The Quality Behind It\n18:19 Bringing International Guests: The Pitch\n20:25 The Driving Force\n21:52 Building a Strong Team\n23:31 The Financial Reality Behind the Scenes\n25:13 Why There Is No Sponsorship in the Programs\n26:59 How Nepali Companies Think About Sponsorship\n36:49 Why Tourism?\n41:32 Expectations from the Government\n42:13 Key Points for the Government\n47:23 Which Phase Is Nepal's Tourism Industry In?\n49:58 Is Brand Story Missing in Branding Nepal?\n51:08 Managing the Social Media Algorithm\n53:43 How Creative Creators Should Handle It\n58:52 Which Stage Are Nepal's Content Creators In?\n1:01:33 How Digital Media Broke Traditional Media\n1:15:11 Building a Global Brand: The Biggest Challenge\n1:17:38 What Are You Fighting With?\n1:34:40 Framework for Young Nepalis to Start an International Media\n\n\n\n🎙️ Thinking Beyond: \nConversations about mindset, growth &amp; real-life\n\n\nConnect with us:\nexperiences. 📩 For business en",
+      "transcriptChars": 2479,
+      "summary": "Dashrath Sunar discusses building VFY Talks into a global brand, navigating sponsorship, tourism, and digital media in Nepal.",
+      "primaryTopic": "Social Media Fame",
+      "updatedAt": "2026-11-12T07:34:35.253Z",
+      "tags": [
+        {
+          "name": "Dashrath Sunar",
+          "slug": "dashrath-sunar",
+          "type": "entity",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Guest and central figure",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "VFY Talks",
+          "slug": "vfy-talks",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Primary show discussed",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Sponsorship",
+          "slug": "sponsorship",
+          "type": "problem",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Financial reality highlighted",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Tourism",
+          "slug": "tourism",
+          "type": "industry",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Key focus of VFY's expansion",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Global Brand",
+          "slug": "global-brand",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Goal of VFY's growth",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Digital Media",
+          "slug": "digital-media",
+          "type": "industry",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Central medium discussed",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [],
+      "lastAttempt": {
+        "at": "2026-11-12T07:34:35.253Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    }
+  }
 }
