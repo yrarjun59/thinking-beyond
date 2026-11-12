@@ -48,20 +48,21 @@ function mergeEpisodeData(storedEpisodes,liveEpisodes){const storedById=new Map(
 //   3. Falls back to the most recent 17 if no metadata is found yet
 //   4. Requires zero maintenance as the channel grows
 function getPodcastEpisodes(allVideos) {
-  // Find the oldest video (newest‑first index highest) that has metadata.
-  // We search from the end of the array so the boundary is the “last podcast episode”.
-  let boundaryIdx = -1;
-  for (let i = allVideos.length - 1; i >= 0; i--) {
+  // Podcast episodes are a contiguous block with metadata (guest/summary/number).
+  // The array is newest-first; podcast episodes may be in the middle (newer non-podcast uploads before them).
+  // Find the first and last index with metadata to get the contiguous podcast block.
+  let firstIdx = -1, lastIdx = -1;
+  for (let i = 0; i < allVideos.length; i++) {
     const v = allVideos[i];
     if (v.number !== undefined || v.guest !== undefined || v.summary !== undefined) {
-      boundaryIdx = i;
-      break;
+      if (firstIdx === -1) firstIdx = i;
+      lastIdx = i;
     }
   }
-  // Fallback: if no metadata found yet, use the most recent 17 videos.
-  if (boundaryIdx === -1) return allVideos.slice(0, 17);
-  // Return videos from newest up to and including the boundary video.
-  return allVideos.slice(0, boundaryIdx + 1);
+  // Fallback: if no metadata found, use the most recent 17 videos.
+  if (firstIdx === -1) return allVideos.slice(0, 17);
+  // Return the contiguous podcast block from first to last metadata.
+  return allVideos.slice(firstIdx, lastIdx + 1);
 }
 
 function useEpisodes(){
