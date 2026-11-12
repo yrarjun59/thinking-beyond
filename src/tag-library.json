@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-12T16:22:54.593Z",
+  "generatedAt": "2026-11-12T16:39:03.431Z",
   "canonicalTags": [
     {
       "name": "Sanjib Subba",
@@ -815,6 +815,60 @@
     {
       "name": "Beauty",
       "slug": "beauty",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Main problem",
+      "slug": "main-problem",
+      "aliases": [],
+      "type": "problem",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Soccer",
+      "slug": "soccer",
+      "aliases": [],
+      "type": "topic",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Bruce Lee",
+      "slug": "bruce-lee",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Quote",
+      "slug": "quote",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Let’s Grow Together",
+      "slug": "lets-grow-together",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Pain",
+      "slug": "pain",
       "aliases": [],
       "type": "concept",
       "description": "",
@@ -2598,13 +2652,189 @@
     "yt-WkQEfcUVsTA": {
       "episodeId": "yt-WkQEfcUVsTA",
       "lastAttempt": {
-        "at": "2026-11-12T16:22:54.593Z",
+        "at": "2026-11-12T16:31:40.939Z",
         "reason": "validation-empty"
       },
       "warnings": [
         "No tags passed validation — review the response or regenerate rather than guessing.",
         "The AI response produced no valid tags — will retry next cron."
       ]
+    },
+    "yt-o2FiUUQqoK0": {
+      "episodeId": "yt-o2FiUUQqoK0",
+      "lastAttempt": {
+        "at": "2026-11-12T16:33:28.899Z",
+        "reason": "validation-empty"
+      },
+      "warnings": [
+        "No explicit topics or guest names found in title or description.",
+        "The AI response produced no valid tags — will retry next cron."
+      ]
+    },
+    "yt-PbthMZ-4R3o": {
+      "episodeId": "yt-PbthMZ-4R3o",
+      "title": "What is the your  main problem ? 🤔",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Exploring the core issue faced by listeners.",
+      "primaryTopic": "Problem identification",
+      "updatedAt": "2026-11-12T16:35:06.380Z",
+      "tags": [
+        {
+          "name": "Main problem",
+          "slug": "main-problem",
+          "type": "problem",
+          "relevanceScore": 100,
+          "evidence": "",
+          "reason": "Central question of episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Problem",
+          "reason": "Too generic, repeats core idea"
+        }
+      ],
+      "warnings": [
+        "Only 1 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-12T16:35:06.380Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-z4xutcUu2CY": {
+      "episodeId": "yt-z4xutcUu2CY",
+      "title": "Who is he...? ⚽️⚽️",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Speculation about a soccer figure.",
+      "primaryTopic": "Soccer",
+      "updatedAt": "2026-11-12T16:36:26.179Z",
+      "tags": [
+        {
+          "name": "Soccer",
+          "slug": "soccer",
+          "type": "topic",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Soccer indicated by title and emojis",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Football",
+          "reason": "Duplicate of Soccer"
+        }
+      ],
+      "warnings": [
+        "Only 1 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-12T16:36:26.179Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-xYT9jiVDrog": {
+      "episodeId": "yt-xYT9jiVDrog",
+      "title": "One of the best quotes of Bruce Lee in Nepali #letsgrowtogether #brucelee #nepali",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "A Nepali rendition of a Bruce Lee quote shared to inspire growth.",
+      "primaryTopic": "Bruce Lee quote in Nepali",
+      "updatedAt": "2026-11-12T16:37:49.197Z",
+      "tags": [
+        {
+          "name": "Bruce Lee",
+          "slug": "bruce-lee",
+          "type": "entity",
+          "relevanceScore": 95,
+          "evidence": "",
+          "reason": "Central figure of the quote",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Quote",
+          "slug": "quote",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Core content of the episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Let’s Grow Together",
+          "slug": "lets-grow-together",
+          "type": "concept",
+          "relevanceScore": 88,
+          "evidence": "",
+          "reason": "Hashtag theme of the episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "NePali",
+          "reason": "Generic tag — channel-level geo provides no episode distinction."
+        }
+      ],
+      "warnings": [
+        "Only 3 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-12T16:37:49.197Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-unEHF9jp16k": {
+      "episodeId": "yt-unEHF9jp16k",
+      "title": "Are you in pain ?",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Discussion about experiencing pain.",
+      "primaryTopic": "Pain",
+      "updatedAt": "2026-11-12T16:39:03.431Z",
+      "tags": [
+        {
+          "name": "Pain",
+          "slug": "pain",
+          "type": "concept",
+          "relevanceScore": 100,
+          "evidence": "",
+          "reason": "Central theme of episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [
+        "Only 1 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-12T16:39:03.431Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
     }
   }
 }
