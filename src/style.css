@@ -999,3 +999,17 @@
 
 /* Sponsor logo: show it clearly on a white plate like the original site's footer. */
 .sponsor-marquee-item img{width:132px!important;height:56px!important;padding:7px!important;background:#fff!important;border:1px solid #fff!important;border-radius:5px!important;object-fit:contain!important}
+
+/* ---------- Tag system: pills, colors, filtering ---------- */
+.tag-pills{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.tag-pill{--tag-hue:140;display:inline-flex;align-items:center;padding:4px 11px;border-radius:999px;font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;line-height:1.25;background:hsla(var(--tag-hue),62%,48%,.14);color:hsl(var(--tag-hue),85%,74%);border:1px solid hsla(var(--tag-hue),62%,58%,.38);text-decoration:none;cursor:pointer;transition:background .15s,color .15s,border-color .15s,transform .15s}
+.tag-pill:hover{background:hsla(var(--tag-hue),62%,48%,.34);color:hsl(var(--tag-hue),95%,88%);border-color:hsla(var(--tag-hue),62%,62%,.6);transform:translateY(-1px)}
+.tag-pill:focus-visible{outline:2px solid hsl(var(--tag-hue),85%,70%);outline-offset:2px}
+.carousel-tags{margin:12px 0 2px}
+.detail-tags{margin:16px 0 4px}
+.tag-filter-bar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 18px;margin:0 0 22px;border:1px solid rgba(213,252,92,.35);border-radius:12px;background:rgba(213,252,92,.06)}
+.tag-filter-label{font-size:10px;font-weight:800;letter-spacing:.14em;color:#8a97ad;text-transform:uppercase}
+.tag-filter-value{font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#d5fc5c}
+.tag-filter-count{font-size:11px;font-weight:700;letter-spacing:.1em;color:#8a97ad;text-transform:uppercase}
+.tag-filter-clear{margin-left:auto;background:transparent;border:1px solid #3a3f4a;color:#cdd3de;font:inherit;font-size:10px;font-weight:800;letter-spacing:.12em;padding:7px 14px;border-radius:999px;cursor:pointer;text-transform:uppercase;transition:border-color .15s,color .15s}
+.tag-filter-clear:hover{border-color:#d5fc5c;color:#d5fc5c}
