@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-12T16:39:03.431Z",
+  "generatedAt": "2026-11-12T17:02:24.756Z",
   "canonicalTags": [
     {
       "name": "Sanjib Subba",
@@ -871,6 +871,96 @@
       "slug": "pain",
       "aliases": [],
       "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Practice",
+      "slug": "practice",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Growth",
+      "slug": "growth",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 2,
+      "status": "approved"
+    },
+    {
+      "name": "Knowledge",
+      "slug": "knowledge",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 2,
+      "status": "approved"
+    },
+    {
+      "name": "Growth together",
+      "slug": "growth-together",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Albert Einstein",
+      "slug": "albert-einstein",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Quotes",
+      "slug": "quotes",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Neapali",
+      "slug": "neapali",
+      "aliases": [],
+      "type": "topic",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Students",
+      "slug": "students",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Youth",
+      "slug": "youth",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 2,
+      "status": "approved"
+    },
+    {
+      "name": "Enemies",
+      "slug": "enemies",
+      "aliases": [],
+      "type": "problem",
       "description": "",
       "usageCount": 1,
       "status": "approved"
@@ -2652,7 +2742,7 @@
     "yt-WkQEfcUVsTA": {
       "episodeId": "yt-WkQEfcUVsTA",
       "lastAttempt": {
-        "at": "2026-11-12T16:31:40.939Z",
+        "at": "2026-11-12T16:55:59.740Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -2835,6 +2925,249 @@
         "reason": "ok"
       },
       "transcriptSource": "metadata"
+    },
+    "yt-hRwstFdJBbg": {
+      "episodeId": "yt-hRwstFdJBbg",
+      "title": "Practice makes a man perfect?? 🤔 #letsgrowtogether #nepali #nepali",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Exploring how consistent practice fuels personal growth and collective progress in Nepal.",
+      "primaryTopic": "Personal growth",
+      "updatedAt": "2026-11-12T16:57:12.013Z",
+      "tags": [
+        {
+          "name": "Practice",
+          "slug": "practice",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central to title phrase",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Growth",
+          "slug": "growth",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Derived from hashtag #letsgrowtogether",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "NePali",
+          "reason": "Generic tag — channel-level geo provides no episode distinction."
+        },
+        {
+          "name": "Community growth",
+          "reason": "Repetitive — overlaps \"Growth\"; the more precise label was kept."
+        }
+      ],
+      "warnings": [
+        "Only 2 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-12T16:57:12.013Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-EKJjowyBguI": {
+      "episodeId": "yt-EKJjowyBguI",
+      "title": "Don't only keep trying...!!! 🔥🔥#knowledge #keep #letsgrowtogether",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Encourages continuous learning and collaborative growth.",
+      "primaryTopic": "Knowledge and growth",
+      "updatedAt": "2026-11-12T16:58:25.258Z",
+      "tags": [
+        {
+          "name": "Knowledge",
+          "slug": "knowledge",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Explicitly named in title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Growth together",
+          "slug": "growth-together",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Explicitly named in title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [
+        "Only 2 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-12T16:58:25.259Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-dB8LPVnyabs": {
+      "episodeId": "yt-dB8LPVnyabs",
+      "title": "Albert Einstein quotes in nepali #students #youths #letsgrowtogether",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "A discussion of Albert Einstein quotes translated into Nepali aimed at students and youth to inspire growth.",
+      "primaryTopic": "Albert Einstein quotes",
+      "updatedAt": "2026-11-12T16:59:49.387Z",
+      "tags": [
+        {
+          "name": "Albert Einstein",
+          "slug": "albert-einstein",
+          "type": "entity",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central figure in episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Quotes",
+          "slug": "quotes",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Core content of episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Neapali",
+          "slug": "neapali",
+          "type": "topic",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Language used for quotes",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Students",
+          "slug": "students",
+          "type": "entity",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Target audience mentioned",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Youth",
+          "slug": "youth",
+          "type": "entity",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Target audience mentioned",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [],
+      "lastAttempt": {
+        "at": "2026-11-12T16:59:49.387Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-ZFwhgYZ_O7Q": {
+      "episodeId": "yt-ZFwhgYZ_O7Q",
+      "title": "3 things to know for youths #enemies #knowledge #letsgrowtogether",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Exploring three essential insights for youth to foster knowledge and growth.",
+      "primaryTopic": "Youth development",
+      "updatedAt": "2026-11-12T17:01:11.676Z",
+      "tags": [
+        {
+          "name": "Youth",
+          "slug": "youth",
+          "type": "topic",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Central to episode title",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Knowledge",
+          "slug": "knowledge",
+          "type": "topic",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Central to episode title",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Growth",
+          "slug": "growth",
+          "type": "topic",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Central to episode title",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Enemies",
+          "slug": "enemies",
+          "type": "problem",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Explicit hashtag in title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [],
+      "lastAttempt": {
+        "at": "2026-11-12T17:01:11.676Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-Q8ODtJ3smzU": {
+      "episodeId": "yt-Q8ODtJ3smzU",
+      "lastAttempt": {
+        "at": "2026-11-12T17:02:24.756Z",
+        "reason": "validation-empty"
+      },
+      "warnings": [
+        "No tags passed validation — review the response or regenerate rather than guessing.",
+        "The AI response produced no valid tags — will retry next cron."
+      ]
     }
   }
 }
