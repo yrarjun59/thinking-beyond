@@ -136,8 +136,8 @@ function Episodes(){
   const [query,setQuery]=useState(''),[page,setPage]=useState(1),[selected,setSelected]=useState(null),[playing,setPlaying]=useState(false);
   const [sort,setSortState]=useState('newest');
   const [tagFilter,setTagFilter]=useState('');
-  const filterTokens=tagFilter?tagFilter.split(/[^a-z0-9]+/).filter(t=>t.length>=3):[];
   function setSort(next){setSortState(next);setTagFilter('');setPage(1)}
+  const filterTokens=tagFilter?tagFilter.split(/[^a-z0-9]+/).filter(t=>t.length>=3):[];
   useEffect(()=>{
     if(!selected)return;
     const onKey=event=>{if(event.key==='Escape')close()};
