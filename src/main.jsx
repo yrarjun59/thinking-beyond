@@ -16,7 +16,7 @@ import channelVideos from './channel-videos.json';
 // Force channelVideos import to be retained by tree-shaker - use in side-effect
 if (typeof window !== 'undefined' && channelVideos.length > 0) console.debug('[TB] channelVideos loaded:', channelVideos.length);
 import siteKeywords from './site-keywords.json';
-import './style.css';
+import './style-responsive.css';
 import ChannelStats from './ChannelStats';
 import AdminPanel from './AdminPanel';
 const API=import.meta.env.VITE_API_BASE || 'https://thethinkingbeyond.com/api';
@@ -62,20 +62,20 @@ function getPodcastEpisodes(allVideos) {
   // Fallback: if no metadata found, use the most recent 17 videos.
   if (firstIdx === -1) return allVideos.slice(0, 17);
   // Return the contiguous podcast block from first to last metadata.
-  return allVideos.slice(firstIdx, lastIdx + 1);
+  const result = allVideos.slice(firstIdx, lastIdx + 1);
+  // Side effect that tree-shaker cannot eliminate
+  if (typeof console !== 'undefined') console.debug('[TB] getPodcastEpisodes:', result.length, 'episodes from', allVideos.length);
+  return result;
 }
 
 function useEpisodes(){
   // channelVideos is the sole source of truth for episodes & view counts
   // Updated daily by cron job (generates channel-videos.json from YouTube API)
-  const episodes = getPodcastEpisodes([...channelVideos].sort((a,b)=>String(b.publishedAt||'').localeCompare(String(a.publishedAt||''))));
-  // Force view counts to be retained - side effect tree-shaker can't eliminate
-  useEffect(()=>{const totalViews=episodes.reduce((sum,ep)=>sum+(Number(ep.views)||0),0);console.debug('[TB] episodes loaded:',episodes.length,'total views:',totalViews);},[]);
-  return episodes
+  return getPodcastEpisodes([...channelVideos].sort((a,b)=>String(b.publishedAt||'').localeCompare(String(a.publishedAt||''))));
 }
 function VideoThumbnail({episode,loading='lazy'}){const id=episode.youtubeId;const local=`${BASE_PATH}images/youtube-thumbnails/${id}.jpg`;return <img loading={loading} src={`https://i.ytimg.com/vi/${id}/maxresdefault.jpg`} onError={event=>{if(event.currentTarget.dataset.fallback==='local'){event.currentTarget.src=`https://i.ytimg.com/vi/${id}/hqdefault.jpg`;return}event.currentTarget.dataset.fallback='local';event.currentTarget.src=local}} alt=""/>}
 function formatDuration(episode){let seconds=Number(episode?.durationSec??episode?.durationSeconds);if(!Number.isFinite(seconds)||seconds<=0){const minutes=Number(episode?.durationMin);seconds=Number.isFinite(minutes)&&minutes>0?Math.round(minutes*60):0}if(!seconds)return '';const total=Math.floor(seconds),hours=Math.floor(total/3600),minutes=Math.floor((total%3600)/60),remainder=total%60;return hours?`${hours}:${String(minutes).padStart(2,'0')}:${String(remainder).padStart(2,'0')}`:`${minutes}:${String(remainder).padStart(2,'0')}`}
-function formatCompactViews(value){const count=normalizeViewCount(value);return count===null?'':new Intl.NumberFormat('en',{notation:'compact',maximumFractionDigits:1}).format(count)}
+function formatCompactViews(value){const count=normalizeViewCount(value);if(count===null)return'';if(count>=1e6)return (count/1e6).toFixed(1)+'M';if(count>=1e3)return (count/1e3).toFixed(1)+'K';return String(count)}
 function DurationBadge({episode}){const duration=formatDuration(episode);return duration?<span className="thumbnail-duration" aria-label={`Duration ${duration}`}>{duration}</span>:null}
 function ViewBadge({episode}){const views=formatCompactViews(episode?.views);return views?<span className="thumbnail-views" aria-label={`${views} views`}><span>{views}</span><Eye size={13} strokeWidth={2.6} aria-hidden="true"/></span>:null}
 function rankEpisodes(episodes){return new Map([...episodes].sort((a,b)=>(b.views||0)-(a.views||0)).map((episode,index)=>[episode.youtubeId,index+1]))}
