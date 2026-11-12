@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-12T07:58:55.343Z",
+  "generatedAt": "2026-11-12T08:08:20.646Z",
   "canonicalTags": [
     {
       "name": "Sanjib Subba",
@@ -35,7 +35,7 @@
       "aliases": [],
       "type": "technology",
       "description": "",
-      "usageCount": 1,
+      "usageCount": 2,
       "status": "approved"
     },
     {
@@ -131,6 +131,195 @@
     {
       "name": "Orbital Nepal",
       "slug": "orbital-nepal",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Priya Sigdel",
+      "slug": "priyaa-sigdel",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Digital sovereignty",
+      "slug": "digital-sovereignty",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Women’s empowerment",
+      "slug": "women-s-empowerment",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Gen Z",
+      "slug": "gen-z",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 2,
+      "status": "approved"
+    },
+    {
+      "name": "Saurav Dhakal",
+      "slug": "saurav-dhakal",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Blockchain",
+      "slug": "blockchain",
+      "aliases": [],
+      "type": "technology",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "AI and Jobs",
+      "slug": "ai-and-jobs",
+      "aliases": [],
+      "type": "problem",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "NJ Subedi",
+      "slug": "nj-subedi",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Yarsa Games",
+      "slug": "yarsa-games",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Mobile gaming",
+      "slug": "mobile-gaming",
+      "aliases": [],
+      "type": "industry",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Hardware manufacturing",
+      "slug": "hardware-manufacturing",
+      "aliases": [],
+      "type": "industry",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Startup ecosystem",
+      "slug": "startup-ecosystem",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Shivani Lama",
+      "slug": "shivani-lama",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Belly Fat",
+      "slug": "belly-fat",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "High-Protein Diets",
+      "slug": "high-protein-diets",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Obesity",
+      "slug": "obesity",
+      "aliases": [],
+      "type": "problem",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Nutrition",
+      "slug": "nutrition",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Dr Renu Adhikari",
+      "slug": "dr-ruen-adhikari",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Women’s safety in Nepal",
+      "slug": "womens-safety-in-nepal",
+      "aliases": [],
+      "type": "topic",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Rape culture",
+      "slug": "rape-culture",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "WOREC",
+      "slug": "worec",
       "aliases": [],
       "type": "entity",
       "description": "",
@@ -411,13 +600,409 @@
     "ep-12-e8ab02": {
       "episodeId": "ep-12-e8ab02",
       "lastAttempt": {
-        "at": "2026-11-12T07:58:55.343Z",
+        "at": "2026-11-12T08:01:29.854Z",
         "reason": "validation-empty"
       },
       "warnings": [
         "The AI response was not valid JSON. Re-run the request or paste a corrected response — nothing was stored.",
         "The AI response produced no valid tags — will retry next cron."
       ]
+    },
+    "ep-10-745034": {
+      "episodeId": "ep-10-745034",
+      "title": "Digital sovereignty secretly manipulating ? |Power|System| Politics| Gen-z| Priya Sigdel |",
+      "guest": "Priya Sigdel",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:\nIn this episode of Thinking Beyond Podcast, we sit down with Priya Sigdel, associated with Miss Nepal Earth 2018, for a thought-provoking conversation about her experiences, ambition, personal growth, and the realities of Nepali society.\n\n\nThe founder of HattiHatti. From overcoming rejection and understanding the hunger for success to discussing women’s empowerment, superstition, and the challenges women face, we explore the ideas that shape individuals and communities. We also dive into Nepal’s political future, digital governance, government accountability, youth responsibility, and how Nepal can build a stronger digital identity.\n\n\n\nWe discuss maturity, fear, mistakes, regrets, comfort zones, and why meaningful growth often begins when we challenge ourselves and question conventional thinking.\n\n\n\n\n🎙️ Host: Manisha Neupane\n🎧 Guest: Priya Sigdel\n📍 Thinking Beyond\n\nThinking Beyond \nConversations that make you question the Status Quo. \n\nMeet Priya Sigdel:\nhttps://www.instagram.com/priya.sigdel_official?xtok=MXd3cjF2emEzamlxcA==\n\n\nChapters:\n\n00:00 Intro\n02:29 How Did You Handle Rejection?\n06:07 What Is Hati-Hati?\n08:00 How Did Your Hunger Build Up?\n09:56 Were You Ambitious From a Young Age?\n14:45 Women’s Empowerment From the Ground Level\n20:15 What Does Women’s Empowerment Mean to You?\n21:08 What Is the Source of Women’s Empowerment?\n22:00 Individual Hunger Matters\n26:55 How Do You See Superstition and Taboos in Society?\n27:48 Are Women Their Own Biggest Enemies?\n36:40 Tell Me About Your Kora Event\n40:25 Pros and Cons of Digital Government\n44:25 How Should Nepal Brand Itself Digitally?\n49:48 How Was the Government’s Performance After Six Months?\n53:08 Why Do Government Progress Figures Differ From Media Evaluations?\n55:40 What Difference Do You See After Six Months?\n01:03:48 Is the Government Focusing on the Core Problems?\n01:14:27 Responsibilities and Power of Gen Z\n01:24:38 What Is Your Biggest Fear?\n01:28:09 What Was Priya Like at 20?\n01:30:35 Does Maturity Come",
+      "transcriptChars": 2479,
+      "summary": "Priya Sigdel discusses personal growth, women’s empowerment, and Nepal’s digital governance and sovereignty.",
+      "primaryTopic": "Digital sovereignty",
+      "updatedAt": "2026-11-12T08:02:42.987Z",
+      "tags": [
+        {
+          "name": "Priya Sigdel",
+          "slug": "priyaa-sigdel",
+          "type": "entity",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Guest explicitly named and central to episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Digital sovereignty",
+          "slug": "digital-sovereignty",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Title and description focus on sovereignty and digital governance",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Women’s empowerment",
+          "slug": "women-s-empowerment",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Discussed multiple times in episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Gen Z",
+          "slug": "gen-z",
+          "type": "entity",
+          "relevanceScore": 75,
+          "evidence": "",
+          "reason": "Episode mentions responsibilities and power of Gen Z",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Digital governance",
+          "reason": "Repetitive — overlaps \"Digital sovereignty\"; the more precise label was kept."
+        }
+      ],
+      "warnings": [],
+      "lastAttempt": {
+        "at": "2026-11-12T08:02:42.987Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "ep-11-065198": {
+      "episodeId": "ep-11-065198",
+      "title": "AI Masterclass:- Powerful AI tools | NEPAL | FUTURE | JOBs | EDUCATION | Saurav Dhakal |",
+      "guest": "Saurav Dhakal",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:\nIn this episode of Thinking Beyond, we sit down with Saurav Dhakal, Founder and CEO of Golden Tech International, to explore his journey in entrepreneurship, technology, and innovation.\nSpecializing in AI and blockchain solutions, Saurav is working to connect technology with real-world business needs. From his early days of freelancing to building a technology company that serves global businesses, his journey opens up important conversations about ambition, challenges, and the opportunities available to young entrepreneurs in Nepal.\n\n                We dive deep into the world of Artificial Intelligence, machine learning, AI agents, and blockchain, exploring how these technologies are transforming businesses and reshaping the future of work. Saurav also shares insights into working with international clients, building professional networks, and the challenges of creating a successful technology startup.\n\nCan Nepal build its own IT based unicorn company? Can someone without a coding background start an IT business? Will AI replace jobs, or create new opportunities? And what will Nepal’s technology industry look like in the next 10 years?\n\nWe also explore the potential of AI for everyday people and local businesses, the importance of continuous learning, and the mindset young people need to turn their ideas into reality.\n\n\n🎙️ Host: Manisha Neupane\n🎧 Guest: Saurav Dhakal\n📍 Thinking Beyond\n\nThinking Beyond \nConversations that make you question the Status Quo. \n\nMeet  Saurav Dhakal\nhttps://www.instagram.com/saurav___dhakal?rpxt=cWFycDJ1dXpoOWNu\n\nChapters:\n00:00 Intro\n03:07 Why Were You Not Comfortable with Jobs?\n03:51 When Did You Start Golden Tech?\n05:20 How Much Were You Making When Freelancing?\n06:49 How Supportive Was Your Family?\n09:31 How Was the First 100 Days of Golden Tech?\n12:15 Tell Me About One Setback\n14:30 What Was Pushing You?\n18:33 When Did Things Start Going Well?\n22:15 How Do You Deal with International Clients?\n23:38 Why Is It Different Working wit",
+      "transcriptChars": 2479,
+      "summary": "Saurav Dhakal discusses AI, blockchain, and entrepreneurship in Nepal, exploring tech tools, job impacts, and startup challenges.",
+      "primaryTopic": "Artificial Intelligence",
+      "updatedAt": "2026-11-12T08:04:02.622Z",
+      "tags": [
+        {
+          "name": "Saurav Dhakal",
+          "slug": "saurav-dhakal",
+          "type": "entity",
+          "relevanceScore": 100,
+          "evidence": "",
+          "reason": "Guest named in title and description",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Artificial Intelligence",
+          "slug": "artificial-intelligence",
+          "type": "technology",
+          "relevanceScore": 100,
+          "evidence": "",
+          "reason": "Core topic of episode",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Blockchain",
+          "slug": "blockchain",
+          "type": "technology",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Explicitly mentioned as solution focus",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "AI and Jobs",
+          "slug": "ai-and-jobs",
+          "type": "problem",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Impact of AI on jobs debated",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Future",
+          "reason": "Not explicitly discussed in episode"
+        },
+        {
+          "name": "Education",
+          "reason": "Not mentioned in episode"
+        },
+        {
+          "name": "AI tools",
+          "reason": "Not named as distinct topic beyond AI"
+        },
+        {
+          "name": "NEPAL",
+          "reason": "Generic location, covered by Nepal IT industry"
+        },
+        {
+          "name": "Entrepreneurship",
+          "reason": "Generic tag — channel-level geo provides no episode distinction."
+        },
+        {
+          "name": "Nepal IT industry",
+          "reason": "Generic tag — channel-level geo provides no episode distinction."
+        }
+      ],
+      "warnings": [],
+      "lastAttempt": {
+        "at": "2026-11-12T08:04:02.622Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "ep-9-0c2dc9": {
+      "episodeId": "ep-9-0c2dc9",
+      "title": "Can Nepal Build a Unicorn? | Truth Behind Nepali Startup Ecosystem Nobody Talks | NJ Subedi | ",
+      "guest": "NJ Subedi",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:\nNJ Subedi’s journey is an inspiring example of how self-learning, experimentation, and persistence can turn ideas into successful businesses. After stepping away from college, he pursued his entrepreneurial ambitions.Through Yarsa Games, the company entered the global mobile gaming industry, reaching millions of users and demonstrating that products developed in Nepal can succeed internationally.\n\nBut his vision extends beyond gaming. Through Yarsa Tech, NJ is working toward expanding Nepal’s electronics and hardware manufacturing capabilities, with the ambition of creating technology products locally rather than relying heavily on imports\n\n        However, building technology businesses in Nepal comes with significant challenges, including high operating costs, taxes on imported components, limited payment infrastructure, and difficulties protecting intellectual property. NJ has called for policy reforms to reduce unnecessary costs, support IT exports, improve access to international payment systems, and create a more business-friendly environment for Nepali technology companies.\n\nHis journey raises an important question: Can Nepal become a country that not only consumes technology but also builds and exports it to the world?\n\n\n🎙️ Host: Manisha Neupane\n🎧 Guest: NJ Subedi \n📍 Thinking Beyond\n\nThinking Beyond \nConversations that make you question the Status Quo. \n\nFollow NJ Subedi:\nhttps://www.instagram.com/njsubedi?dlrf=M3YycHYyZmo0aTAx\n\nChapters:\n\n00:00 Intro\n01:29 Video Starts\n01:45 Why Did You Drop Out, and What Did You Have to Self-Learn That College Didn't Teach You?\n23:22 Was There Any Practical Education During Your College Course?\n25:08 How Did You Find Yarsa Labs?\n26:20 How Did You Feel When Ludo Crossed 200 Million Downloads?\n33:46 How Did You Look at Your Failure?\n35:06 Why Did You Shift into a Hardware Manufacturing Company?\n41:49 How Long Did It Take to Teach Them?\n47:49 But Yarsa Doesn't Make Money?\n49:13 How Did You Feel When the Government Didn't S",
+      "transcriptChars": 2479,
+      "summary": "NJ Subedi discusses Nepal's potential to build a unicorn through Yarsa Games, Yarsa Tech, and policy reforms.",
+      "primaryTopic": "Startup ecosystem in Nepal",
+      "updatedAt": "2026-11-12T08:05:09.102Z",
+      "tags": [
+        {
+          "name": "NJ Subedi",
+          "slug": "nj-subedi",
+          "type": "entity",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Guest name",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Yarsa Games",
+          "slug": "yarsa-games",
+          "type": "entity",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Company mentioned",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Mobile gaming",
+          "slug": "mobile-gaming",
+          "type": "industry",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Industry focus",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Hardware manufacturing",
+          "slug": "hardware-manufacturing",
+          "type": "industry",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Industry focus",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Startup ecosystem",
+          "slug": "startup-ecosystem",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central theme",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Yarsa Tech",
+          "reason": "Repetitive — overlaps \"Yarsa Games\"; the more precise label was kept."
+        }
+      ],
+      "warnings": [],
+      "lastAttempt": {
+        "at": "2026-11-12T08:05:09.102Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "ep-3-4adeab": {
+      "episodeId": "ep-3-4adeab",
+      "title": "Nepali Gym Industry Is Selling You a Lie? | Shivani Lama | Belly Fat Burn-Sceince-Myths",
+      "guest": "Shivani Lama",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:\nIn this episode of Thinking Beyond, we sit down with Shivani Lama — Fitness Coach & Athlete Trainer — to break down the real science behind fitness, fat loss and nutrition.\n\nFrom protein, sugar, calories and belly fat to cardio, strength training and the reality of the Nepali diet, we separate science from fitness myths.\n\nWe also explore what research actually says about high-protein diets, obesity, lifestyle diseases, fat loss and sustainable fitness — and what truly matters beyond simply spending more time in the gym.\n\n🎙️ Host: Manisha Neupane\n🎧 Guest: Shivani Lama\n📍 Thinking Beyond\n\nThinking Beyond\nConversations that make you think deeper.\n\n\nChapters: \n\n00:00 — Intro\n03:30 — Lost 20 KG in 75 Days — Was It Healthy?\n10:17 — Do People Who Want to Lose Weight Need to Work Out More?\n12:30 — Depression into Gym?\n27:24 — Can Men & Women Still Build Their Body After 35?\n30:47 — How Do You Build Discipline to Go to the Gym?\n32:40 — My Early Gym Journey & Mindset\n45:50 —Nepali Diet\n1:29:40 — After Leaving the Gym, How Do You Maintain Your Body?\n1:32:00 — Most Underrated Foods in Nepal\n1:35:00 — Soyabeans and Men ? \n1:47:00 — How Does Social Media Influence Our Body Image?\n\n\n\n\nConnect with us\n\n🎙️ Thinking Beyond: Conversations about mindset, growth & real-life experiences.\n\n📩 For business enquiries: [manishaneupane398@gmail.com](mailto:manishaneupane398@gmail.com)\n\nTeam\n\nHost: Manisha Neupane\nEditor/Producer: Tyajan Maharjan\n\n#ThinkingBeyond #ThinkingBeyondPodcast #ManishaNeupane #ShivaniLama #FitnessNepal #FatLoss #Nutrition",
+      "transcriptChars": 2027,
+      "summary": "Shivani Lama debunks fitness myths in Nepal, focusing on belly fat, high‑protein diets, and sustainable fat loss.",
+      "primaryTopic": "Fitness Myths",
+      "updatedAt": "2026-11-12T08:06:30.612Z",
+      "tags": [
+        {
+          "name": "Shivani Lama",
+          "slug": "shivani-lama",
+          "type": "entity",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Guest named in title and description",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Belly Fat",
+          "slug": "belly-fat",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Central topic in title and description",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "High-Protein Diets",
+          "slug": "high-protein-diets",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Explicitly discussed in description",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Obesity",
+          "slug": "obesity",
+          "type": "problem",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Explicitly mentioned in research discussion",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Nutrition",
+          "slug": "nutrition",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Central to discussion of diets",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Fitness Coach",
+          "reason": "Role not central enough to warrant a tag"
+        },
+        {
+          "name": "Athlete Trainer",
+          "reason": "Role not central enough to warrant a tag"
+        },
+        {
+          "name": "Fat Loss",
+          "reason": "Repetitive — overlaps \"Belly Fat\"; the more precise label was kept."
+        }
+      ],
+      "warnings": [],
+      "lastAttempt": {
+        "at": "2026-11-12T08:06:30.612Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "ep-5-9148b8": {
+      "episodeId": "ep-5-9148b8",
+      "title": "Are Women Safe In Nepal? Dr Renu Adhikari | Rape|Sexual Violence| Nepal Police-Institutional Failure",
+      "guest": "Dr Renu Adhikari",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:\nDr. Renu Adhikari, founder of WOREC and women’s rights activist, reveals why women still face violence, harassment and insecurity in Nepal—and what society, institutions and the law are failing to address.\n\n\n She explains:\n◼ Are women actually safe in Nepal—? \n◼ Who is responsible when rape happens—the perpetrator, society, institutions, or a system that fails to protect survivors?\n◼ Why stricter laws alone may not be enough—and where Nepal’s justice system and institutions are failing\n◼ What should actually happen when a rape or sexual violence case is reported—and how survivors should be supported\n◼ What high-profile cases reveal about the gap between Nepal’s laws, institutions and reality\n\n\nAlso covered: Dr. Renu Adhikari, WOREC, women’s rights, women’s safety in Nepal, rape culture, sexual violence, sexual haras\n\n🎙️ Host: Manisha Neupane\n🎧 Guest: Dr. Renu Adhikari \n📍 Thinking Beyond\n\nThinking Beyond\nConversations that make you question the Status Quo. \n\n\n\nFollow Worec Nepal:\n━━━━━━━━━━━━━━━\nWomen’s Rehabilitation Center (WOREC) Balkumari, lalitpur, Nepal\n\nwww.worecnepal.org\nEmail: ics@worecnepal.org \nPhone:- +977-015186073, 5186374 \nHotline :- 16600178910\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nChapters:\n00:00 — Intro\n02:26 — Landing\n02:30 — Who Is Dr. Renu Adhikari?\n04:26 ICCPR and Rape: Why Should Rapists Be Hanged in Nepal?\n06:34 Is the Death Penalty a Solution?\n08:16 Nirbhaya Case, India 2012: Gang Rape\n11:03 ICCPR & Death Penalty Protocol\n17:05 Namita–Sunita Murder Case\n18:24 New Members of parliament \n18:40 Rape Culture\n22:27 Sexual Freedom and Sexual Violence\n24:17 Digital Era & Online Dating\n24:32 MRR and Toxic Masculinity\n27:30 Why Are Girls/Women Harassed by Teachers?\n28:48 Sexual Voice Inside Home\n29:14 Strong Law or Social Psychological Problem?\n30:30 Morality, Sex & Awareness Education\n31:54 Gen Z\n32:46 Nirmala Panta Case – July 2018\n35:44 Manipulation and Politics\n36:59 Digital Sexual Harassment\n40:02",
+      "transcriptChars": 2479,
+      "summary": "Dr Renu Adhikari discusses women’s safety, rape culture, institutional failures, and survivor support in Nepal.",
+      "primaryTopic": "Women’s safety in Nepal",
+      "updatedAt": "2026-11-12T08:08:20.646Z",
+      "tags": [
+        {
+          "name": "Dr Renu Adhikari",
+          "slug": "dr-ruen-adhikari",
+          "type": "entity",
+          "relevanceScore": 95,
+          "evidence": "",
+          "reason": "Guest and activist leading discussion",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Women’s safety in Nepal",
+          "slug": "womens-safety-in-nepal",
+          "type": "topic",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central theme of episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Rape culture",
+          "slug": "rape-culture",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Explicitly discussed in title and description",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "WOREC",
+          "slug": "worec",
+          "type": "entity",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Founder organization mentioned",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Gen Z",
+          "slug": "gen-z",
+          "type": "concept",
+          "relevanceScore": 78,
+          "evidence": "",
+          "reason": "Episode covers Gen Z issues",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [],
+      "lastAttempt": {
+        "at": "2026-11-12T08:08:20.646Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
     }
   }
 }
