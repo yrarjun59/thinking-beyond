@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-12T16:09:41.883Z",
+  "generatedAt": "2026-11-12T16:22:54.593Z",
   "canonicalTags": [
     {
       "name": "Sanjib Subba",
@@ -707,6 +707,114 @@
     {
       "name": "Effective habits",
       "slug": "effective-habits",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "New Year 2080",
+      "slug": "new-year-2080",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Learning",
+      "slug": "learning",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Happiness",
+      "slug": "happiness",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Time",
+      "slug": "time",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Massage",
+      "slug": "massage",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 2,
+      "status": "approved"
+    },
+    {
+      "name": "Bhagavad Gita",
+      "slug": "bhagavad-gita",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Book",
+      "slug": "book",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Reading",
+      "slug": "reading",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Must Watch",
+      "slug": "must-watch",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Forrest Gump",
+      "slug": "forrest-gump",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Boldness",
+      "slug": "boldness",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Beauty",
+      "slug": "beauty",
       "aliases": [],
       "type": "concept",
       "description": "",
@@ -2216,6 +2324,287 @@
         "reason": "ok"
       },
       "transcriptSource": "metadata"
+    },
+    "yt-ilA060VqaPM": {
+      "episodeId": "yt-ilA060VqaPM",
+      "title": "Learn before new year 2080. #motivational #newyear #Nepalimotivationalvedio",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Motivational learning tips for the upcoming New Year 2080 in Nepal.",
+      "primaryTopic": "Motivation",
+      "updatedAt": "2026-11-12T16:14:46.754Z",
+      "tags": [
+        {
+          "name": "New Year 2080",
+          "slug": "new-year-2080",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central event of the episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Learning",
+          "slug": "learning",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Primary action discussed",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Motivation",
+          "reason": "Generic tag — channel-level geo provides no episode distinction."
+        },
+        {
+          "name": "NePali Motivational Video",
+          "reason": "Generic tag — channel-level geo provides no episode distinction."
+        }
+      ],
+      "warnings": [
+        "Only 2 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-12T16:14:46.754Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-mD7UwF_X9YU": {
+      "episodeId": "yt-mD7UwF_X9YU",
+      "title": "When will you be happy ? #massage #Happiness #life #time",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Exploring when happiness arrives in life and the role of time and relaxation.",
+      "primaryTopic": "Happiness",
+      "updatedAt": "2026-11-12T16:15:58.189Z",
+      "tags": [
+        {
+          "name": "Happiness",
+          "slug": "happiness",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central question in title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Time",
+          "slug": "time",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Mentioned in title hashtag",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Massage",
+          "slug": "massage",
+          "type": "concept",
+          "relevanceScore": 75,
+          "evidence": "",
+          "reason": "Mentioned in title hashtag",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Life",
+          "reason": "Generic tag — channel-level geo provides no episode distinction."
+        }
+      ],
+      "warnings": [
+        "Only 3 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-12T16:15:58.189Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-PZA1qBD8RoQ": {
+      "episodeId": "yt-PZA1qBD8RoQ",
+      "title": "Must Watch : Before Reading Bhagwad Geeta Book 📖 #bhagwadgeeta #innepali",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Episode recommends watching a video before reading the Bhagavad Gita book.",
+      "primaryTopic": "Bhagavad Gita",
+      "updatedAt": "2026-11-12T16:18:29.922Z",
+      "tags": [
+        {
+          "name": "Bhagavad Gita",
+          "slug": "bhagavad-gita",
+          "type": "entity",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central spiritual text referenced in title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Book",
+          "slug": "book",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Title mentions 'Book'",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Reading",
+          "slug": "reading",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Title references 'Reading'",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Must Watch",
+          "slug": "must-watch",
+          "type": "concept",
+          "relevanceScore": 75,
+          "evidence": "",
+          "reason": "Title includes 'Must Watch'",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [],
+      "lastAttempt": {
+        "at": "2026-11-12T16:18:29.922Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-px3xFpzGChQ": {
+      "episodeId": "yt-px3xFpzGChQ",
+      "title": "Forrest Gump movie in nepali  #massage",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Exploring the Nepali adaptation of the Forrest Gump movie and its massage theme.",
+      "primaryTopic": "Forrest Gump",
+      "updatedAt": "2026-11-12T16:20:11.945Z",
+      "tags": [
+        {
+          "name": "Forrest Gump",
+          "slug": "forrest-gump",
+          "type": "entity",
+          "relevanceScore": 100,
+          "evidence": "",
+          "reason": "Central film title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Massage",
+          "slug": "massage",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Mentioned in episode title hashtag",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Nepali film",
+          "reason": "Generic tag — channel-level geo provides no episode distinction."
+        }
+      ],
+      "warnings": [
+        "Only 2 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-12T16:20:11.945Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-12mbblT9ns8": {
+      "episodeId": "yt-12mbblT9ns8",
+      "title": "be bold not just beautiful",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Exploring the importance of boldness over mere beauty.",
+      "primaryTopic": "Boldness",
+      "updatedAt": "2026-11-12T16:21:22.868Z",
+      "tags": [
+        {
+          "name": "Boldness",
+          "slug": "boldness",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central theme of episode title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Beauty",
+          "slug": "beauty",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Explicitly mentioned in episode title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Self-empowerment",
+          "reason": "Not explicitly named in title or description"
+        }
+      ],
+      "warnings": [
+        "Only 2 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-12T16:21:22.868Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-WkQEfcUVsTA": {
+      "episodeId": "yt-WkQEfcUVsTA",
+      "lastAttempt": {
+        "at": "2026-11-12T16:22:54.593Z",
+        "reason": "validation-empty"
+      },
+      "warnings": [
+        "No tags passed validation — review the response or regenerate rather than guessing.",
+        "The AI response produced no valid tags — will retry next cron."
+      ]
     }
   }
 }
