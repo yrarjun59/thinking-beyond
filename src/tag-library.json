@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-12T08:08:20.646Z",
+  "generatedAt": "2026-11-12T10:00:42.976Z",
   "canonicalTags": [
     {
       "name": "Sanjib Subba",
@@ -325,6 +325,141 @@
       "description": "",
       "usageCount": 1,
       "status": "approved"
+    },
+    {
+      "name": "Satakshi Mishra",
+      "slug": "satakshi-mishra",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Skill Sewa",
+      "slug": "skill-sewa",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Real estate",
+      "slug": "real-estate",
+      "aliases": [],
+      "type": "industry",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Construction",
+      "slug": "construction",
+      "aliases": [],
+      "type": "industry",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Home inspection",
+      "slug": "home-inspection",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Rekha Yadav",
+      "slug": "rekha-yadav",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Finance awareness creator",
+      "slug": "finance-awareness-creator",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Stock market trading",
+      "slug": "stock-market-trading",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Entrepreneur",
+      "slug": "entrepreneur",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 2,
+      "status": "approved"
+    },
+    {
+      "name": "NEPSE",
+      "slug": "nepse",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Content creation",
+      "slug": "content-creation",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Shaurab Lohani",
+      "slug": "shaurab-lohani",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Purpose",
+      "slug": "purpose",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Youth challenges",
+      "slug": "youth-challenges",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Risk taking",
+      "slug": "risk-taking",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
     }
   ],
   "episodes": {
@@ -599,14 +734,90 @@
     },
     "ep-12-e8ab02": {
       "episodeId": "ep-12-e8ab02",
+      "title": "Nepal’s Real state Multi-Millionaire: Future | Scams |Policy | Money | Satakshi Mishra| ",
+      "guest": "Satakshi Mishra",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:\nCo-Founder of Skill Sewa, Satakshi has been contributing to Nepal’s construction and real estate sector by providing professional services, including home inspections, construction-related solutions, and property services. What began with just four employees has grown into an organization employing hundreds of people directly and creating opportunities for thousands more through indirect and part-time employment.\n\n Skill Sewa is Nepal’s first home inspection company, offering a wide range of services, including interior design, renovation, construction, house design, waterproofing, and more. Here’s why Skill Sewa is your one-stop solution for home improvement. They have also introduced several new ventures, including the White Room and Colony concepts.\n\nHer journey reflects the importance of creating opportunities rather than simply waiting for them. Instead of limiting herself to traditional career expectations, she stepped into an industry where she saw room for improvement and innovation.\n\n🎙️ Host: Manisha Neupane\n🎧 Guest: Satakshi Mishra\n📍 Thinking Beyond\n\nThinking Beyond \nConversations that make you question the Status Quo. \n\nMeet satakshi Mishra\nhttps://www.instagram.com/satakshi3276?cplk=MXZvd3BjcG4xd3g4dg==\n\n\nChapters:\n00:00 Intro\n02:57 Tell Me About Your Failure?\n05:58 What Was One Thing That Pushed You?\n07:22 Which Gap Did You Fail Initially?\n10:45 Tell Me About Your First 100 Days When Starting the Company\n13:42 What Was the Worst-Case Scenario You Thought Of?\n15:04 How Many Hours Did You Work?\n19:05 In Which Phase Did Your Skill Start Making Money?\n20:35 Did You Ever Have the Option of Doing a Job?\n21:58 What Gap Do You See in the Market?\n24:51 How Is the Nepalese Consumer?\n26:20 In Which Places in Nepal Is Your Business Active?\n27:00 What Was Your Mindset Before, and What Is It Now?\n29:02 Didn’t You Fear Trusting Your Team?\n31:10 Are You Spiritual?\n31:25 Was There Any Disappointment in Work?\n32:25 Can You Share Those Moments?\n34:20 What Do You Look f",
+      "transcriptChars": 2479,
+      "summary": "Satakshi Mishra discusses her journey building Skill Sewa, Nepal’s first home inspection company, and her impact on the real estate and construction sectors.",
+      "primaryTopic": "Real estate and construction in Nepal",
+      "updatedAt": "2026-11-12T09:55:59.461Z",
+      "tags": [
+        {
+          "name": "Satakshi Mishra",
+          "slug": "satakshi-mishra",
+          "type": "entity",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Guest named and central",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Skill Sewa",
+          "slug": "skill-sewa",
+          "type": "entity",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Company discussed in detail",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Real estate",
+          "slug": "real-estate",
+          "type": "industry",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Core sector of discussion",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Construction",
+          "slug": "construction",
+          "type": "industry",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Core sector of discussion",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Home inspection",
+          "slug": "home-inspection",
+          "type": "concept",
+          "relevanceScore": 75,
+          "evidence": "",
+          "reason": "Primary service offered",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "White Room",
+          "reason": "Not explicitly central to episode focus"
+        },
+        {
+          "name": "Colony concepts",
+          "reason": "Not central to episode focus"
+        },
+        {
+          "name": "Innovation",
+          "reason": "Generic tag — channel-level geo provides no episode distinction."
+        }
+      ],
+      "warnings": [],
       "lastAttempt": {
-        "at": "2026-11-12T08:01:29.854Z",
-        "reason": "validation-empty"
+        "at": "2026-11-12T09:55:59.461Z",
+        "reason": "ok"
       },
-      "warnings": [
-        "The AI response was not valid JSON. Re-run the request or paste a corrected response — nothing was stored.",
-        "The AI response produced no valid tags — will retry next cron."
-      ]
+      "transcriptSource": "metadata"
     },
     "ep-10-745034": {
       "episodeId": "ep-10-745034",
@@ -1003,6 +1214,220 @@
         "reason": "ok"
       },
       "transcriptSource": "metadata"
+    },
+    "ep-4-68ecb0": {
+      "episodeId": "ep-4-68ecb0",
+      "title": "Rekha Yadav (Finance awareness creator) |Stock Market| Author",
+      "guest": "Rekha Yadav",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:\nToday’s guest is Rekha Yadav , She had a double degree in Economics and Finance, a stable job at Siddhartha Bank — and she walked away from it all to bet on herself.\n\n- In this episode of Thinking Beyond, we sit down with a young entrepreneur from Janakpur who turned financial uncertainty into financial freedom. From learning to trade on NEPSE to building a personal brand around financial awareness, her journey is proof that small-town beginnings don't limit big ambitions.\n\nToday, she is a stock market trader and financial awareness content creator, brand ambassador for three national and international companies, founder of her own IT company, and owner of her own clothing brand — living proof that leaving the \"safe path\" can lead somewhere far bigger. \n        In this conversation, we talk about the fear of quitting a secure job, learning to trade from scratch, building multiple businesses at once, and what it really takes to go from a small town in Janakpur to national recognition. If you've ever doubted whether you can build something of your own, this episode is for you.\n\n     Host: Manisha Neupane\n🎧 Guest:Rekha Yadav\n📍 Thinking Beyond\n\nTHINKING BEYOND\nConversations that make you think deeper.\n\n\n\n\nChapters: \n   00:00 → NIFRA IPO: How Radha Started Investing\n   01:43 - Double Degree on Economics and Finance \n04:20 —When Content Creation Journey Begins \n14:00 → Money: How Does It Shape Our Life?\n14:19 → Why You Must Keep Learning & Upgrading Yourself\n15:00 →Scarifice and Upgrade ? \n18:00 → What Would You Do Differently?\n19:00 - Ultra successful people are wounded  ? \n22:00 → Why Change Is Important in Life\n23:00 → The Creator Economy in Nepal\n24:00 → What Is the Future of Content Creator?\n25:00 - Biggest challenge for Creators ? \n40:00 - Biggest Sacrifice ?\n42:00 -Self driven Mindset ? Fuel ?\n44:00 - Why Double Degree ?\n1:04:00 → How Money Shapes Life: Her Upcoming Book\n1:08:50 → Content Creation, Authenticity & Personal Brand\n1:15:21 → Career Transition: Why Sh",
+      "transcriptChars": 2479,
+      "summary": "Rekha Yadav shares her journey from a bank job to becoming a finance awareness creator, stock trader, and entrepreneur.",
+      "primaryTopic": "Finance awareness and entrepreneurship",
+      "updatedAt": "2026-11-12T09:56:51.178Z",
+      "tags": [
+        {
+          "name": "Rekha Yadav",
+          "slug": "rekha-yadav",
+          "type": "entity",
+          "relevanceScore": 100,
+          "evidence": "",
+          "reason": "Guest and central figure",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Finance awareness creator",
+          "slug": "finance-awareness-creator",
+          "type": "concept",
+          "relevanceScore": 95,
+          "evidence": "",
+          "reason": "Title and description highlight her role",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Stock market trading",
+          "slug": "stock-market-trading",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "She is a stock market trader and discusses trading",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Entrepreneur",
+          "slug": "entrepreneur",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Founder of IT and clothing brands",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "NEPSE",
+          "slug": "nepse",
+          "type": "entity",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "She learned to trade on NEPSE",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Content creation",
+          "slug": "content-creation",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "She builds a personal brand and creates content",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Siddhartha Bank",
+          "reason": "Mentioned but not central to episode focus"
+        },
+        {
+          "name": "Janakpur",
+          "reason": "Location mentioned but not a core subject"
+        },
+        {
+          "name": "Double degree in Economics and Finance",
+          "reason": "Education detail not central to main topics"
+        },
+        {
+          "name": "Career transition",
+          "reason": "Covered under entrepreneur and finance awareness"
+        }
+      ],
+      "warnings": [],
+      "lastAttempt": {
+        "at": "2026-11-12T09:56:51.178Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "ep-6-ff80de": {
+      "episodeId": "ep-6-ff80de",
+      "title": "Why Are Young People Stuck? | Shaurab Lohani |Expectations | PURPOSE | FAILURE | LIFE | ",
+      "guest": "Shaurab Lohani",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:\nSaurabh Lohani is a passionate entrepreneur,  avid book reader, focused trainer and impactful motivator. Coming from a humble background, his journey has been shaped by the people, experiences and lessons he has encountered throughout his life.\n\nThrough entrepreneurship, teaching, training and motivational speaking, Saurabh works to help people learn, grow and see possibilities beyond their circumstances. He believes in continuous learning, finding joy in everyday work and creating a positive impact through his actions.\n\nA Motivational / TEDx Speaker, Entrepreneur, Teacher and Trainer, Saurabh continues to share his experiences and perspectives to inspire people to think differently, grow consciously and build a more meaningful life.\n\n\n🎙️ Host: Manisha Neupane\n🎧 Guest: Shaurab Lohani\n📍 Thinking Beyond\n\nThinking Beyond\nConversations that make you question the Status Quo. \n\n\n\n \nChapters:\n\n00:00 Intro\n02:30 Who is Shaurab Lohani ? \n04:50 Purpose And Passion ? \n06:18 Any Suggestions to Youngsters? \n10:35 How to Track Yourself and Stay on the Right Track\n17:50 When Does Figuring Out Become Easier?\n22:41 Why Are Some Amazing People Stuck While Less-Talented People Are Doing Amazing?\n25:00 Does Studying Here Bring Confusion?\n35:36 Youth Who Have Resources but Are Lost\n36:48 Either sweat on practice field or bleed in battle field \n40:12 If You Cannot Trust Your Parent/Family, How Do You Make the Right Decision?\n42:31  Chasing Scooe — ? \n45:21 If Someone Is 20 Years Old, What Should They Focus on in Learning?\n47:10 What Should Young People Be Willing to Sacrifice at This Young Age?\n50:21 What Is the Challenge for Young People to Take the Risk?\n55:17 How Do the Top 10% Think?\n01:01:10 —-90% Mindet and 10% mindset difference \n1:03:40 How to Be in the Top 1%\n1:05:00 Everything = Nothing\n1:08:10 Overthinking: How to Deal With It?\n1:12:10 Why Does Subway Copy the Same Business Model?\n1:12:30 Starbucks vs. Luckin Coffee\n1:16:50 Lack of Market Research — or a Highly Manipulated",
+      "transcriptChars": 2479,
+      "summary": "Shaurab Lohani discusses why young people feel stuck, exploring purpose, expectations, mindset, and risk-taking to foster growth.",
+      "primaryTopic": "Youth challenges",
+      "updatedAt": "2026-11-12T09:57:42.938Z",
+      "tags": [
+        {
+          "name": "Shaurab Lohani",
+          "slug": "shaurab-lohani",
+          "type": "entity",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Guest explicitly named in title and description",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Entrepreneur",
+          "slug": "entrepreneur",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Guest described as entrepreneur in description",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Purpose",
+          "slug": "purpose",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Core topic in title and description",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Youth challenges",
+          "slug": "youth-challenges",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Title and chapters focus on young people stuck",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Risk taking",
+          "slug": "risk-taking",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Episode covers risk challenges for young people",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Mindset",
+          "reason": "Generic tag — channel-level geo provides no episode distinction."
+        }
+      ],
+      "warnings": [],
+      "lastAttempt": {
+        "at": "2026-11-12T09:57:42.938Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "ep-8-8e3931": {
+      "episodeId": "ep-8-8e3931",
+      "lastAttempt": {
+        "at": "2026-11-12T09:58:34.784Z",
+        "reason": "validation-empty"
+      },
+      "warnings": [
+        "The AI response was not valid JSON. Re-run the request or paste a corrected response — nothing was stored.",
+        "The AI response produced no valid tags — will retry next cron."
+      ]
+    },
+    "ep-7-655da0": {
+      "episodeId": "ep-7-655da0",
+      "lastAttempt": {
+        "at": "2026-11-12T09:59:26.543Z",
+        "reason": "validation-empty"
+      },
+      "warnings": [
+        "The AI response was not valid JSON. Re-run the request or paste a corrected response — nothing was stored.",
+        "The AI response produced no valid tags — will retry next cron."
+      ]
+    },
+    "ep-1-bdf430": {
+      "episodeId": "ep-1-bdf430",
+      "lastAttempt": {
+        "at": "2026-11-12T10:00:42.976Z",
+        "reason": "validation-empty"
+      },
+      "warnings": [
+        "The AI response was not valid JSON. Re-run the request or paste a corrected response — nothing was stored.",
+        "The AI response produced no valid tags — will retry next cron."
+      ]
     }
   }
 }
