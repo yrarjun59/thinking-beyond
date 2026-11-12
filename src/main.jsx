@@ -66,7 +66,7 @@ function getPodcastEpisodes(allVideos) {
 
 function useEpisodes(){
   const [eps,setEps]=useState(getPodcastEpisodes([...channelVideos].sort((a,b)=>String(b.publishedAt||'').localeCompare(String(a.publishedAt||'')))));
-  useEffect(()=>{let cancelled=false;const load=()=>fetch(`${API}/episodes?sort=new`).then(r=>r.ok?r.json():Promise.reject()).then(d=>{if(cancelled)return;const rawEpisodes=Array.isArray(d.episodes)?d.episodes:(d.months||[]).flatMap(m=>m.episodes||[]);if(!rawEpisodes.length)return;const validEpisodes=rawEpisodes.filter(e=>e.youtubeId?.startsWith('yt-')||/^[A-Za-z0-9_-]{11}$/.test(e.youtubeId));if(validEpisodes.length<rawEpisodes.length*0.5)return;const liveEpisodes=validEpisodes;setEps(getPodcastEpisodes(mergeEpisodeData(channelVideos,liveEpisodes)))}).catch(()=>{});load();const timer=window.setInterval(load,5*60*1000);return()=>{cancelled=true;window.clearInterval(timer)}},[]);return eps}
+  useEffect(()=>{let cancelled=false;const load=()=>fetch(`${API}/episodes?sort=new`).then(r=>r.ok?r.json():Promise.reject()).then(d=>{if(cancelled)return;const rawEpisodes=Array.isArray(d.episodes)?d.episodes:(d.months||[]).flatMap(m=>m.episodes||[]);if(!rawEpisodes.length)return;const validEpisodes=rawEpisodes.filter(e=>{const ytOk=e.youtubeId?.startsWith('yt-')||/^[A-Za-z0-9_-]{11}$/.test(e.youtubeId);const idOk=e.id?.startsWith('yt-')||e.id?.startsWith('ep-');return ytOk&&idOk;});if(validEpisodes.length<rawEpisodes.length*0.5)return;const liveEpisodes=validEpisodes;setEps(getPodcastEpisodes(mergeEpisodeData(channelVideos,liveEpisodes)))}).catch(()=>{});load();const timer=window.setInterval(load,5*60*1000);return()=>{cancelled=true;window.clearInterval(timer)}},[]);return eps}
 function VideoThumbnail({episode,loading='lazy'}){const id=episode.youtubeId;const local=`${BASE_PATH}images/youtube-thumbnails/${id}.jpg`;return <img loading={loading} src={`https://i.ytimg.com/vi/${id}/maxresdefault.jpg`} onError={event=>{if(event.currentTarget.dataset.fallback==='local'){event.currentTarget.src=`https://i.ytimg.com/vi/${id}/hqdefault.jpg`;return}event.currentTarget.dataset.fallback='local';event.currentTarget.src=local}} alt=""/>}
 function formatDuration(episode){let seconds=Number(episode?.durationSec??episode?.durationSeconds);if(!Number.isFinite(seconds)||seconds<=0){const minutes=Number(episode?.durationMin);seconds=Number.isFinite(minutes)&&minutes>0?Math.round(minutes*60):0}if(!seconds)return '';const total=Math.floor(seconds),hours=Math.floor(total/3600),minutes=Math.floor((total%3600)/60),remainder=total%60;return hours?`${hours}:${String(minutes).padStart(2,'0')}:${String(remainder).padStart(2,'0')}`:`${minutes}:${String(remainder).padStart(2,'0')}`}
 function formatCompactViews(value){const count=normalizeViewCount(value);return count===null?'':new Intl.NumberFormat('en',{notation:'compact',maximumFractionDigits:1}).format(count)}
@@ -133,9 +133,11 @@ function Home(){
 }
 function Episodes(){
   const eps=useEpisodes();
-  const [query,setQuery]=useState(''),[sort,setSort]=useState('newest'),[page,setPage]=useState(1),[selected,setSelected]=useState(null),[playing,setPlaying]=useState(false);
+  const [query,setQuery]=useState(''),[page,setPage]=useState(1),[selected,setSelected]=useState(null),[playing,setPlaying]=useState(false);
   const [searchParams,setSearchParams]=useSearchParams();
   const tagFilter=(searchParams.get('tag')||'').trim().toLowerCase();
+  const sort=new URLSearchParams(window.location.search).get('sort')||'newest';
+  function setSort(next){setSearchParams({...Object.fromEntries(searchParams),sort:next,page:undefined});setPage(1)}
   const filterTokens=tagFilter?tagFilter.split(/[^a-z0-9]+/).filter(t=>t.length>=3):[];
   useEffect(()=>{
     if(!selected)return;
@@ -158,11 +160,12 @@ function Episodes(){
   const currentPage=Math.min(page,pages);
   const shown=visible.slice((currentPage-1)*9,currentPage*9);
   function changePage(next){setPage(next);window.scrollTo({top:0,behavior:'smooth'})}
+  function setSort(next){setSearchParams({...Object.fromEntries(searchParams),sort:next,page:undefined});setPage(1)}
   function choose(episode){setSelected(episode);setPlaying(true)}
   const sortOptions=[['newest','Recent'],['most-viewed','Most watched'],['longest','Longest'],['oldest','Oldest']];
   return <main className="inner episodes-page">
     <div className="inner-intro"><span className="eyebrow">THE THINKING BEYOND ARCHIVE</span><h1>All conversations.</h1><p>Every video from the Thinking Beyond YouTube channel, together in one place.</p></div>
-    <div className="archive-tools"><label className="search">SEARCH <input value={query} onChange={event=>{setQuery(event.target.value);setPage(1)}} placeholder="Episode, guest, or topic"/></label><div className="sort-label"><span>FILTER EPISODES</span><div className="sort-toggle" role="group" aria-label="Sort episodes">{sortOptions.map(([value,label])=><button type="button" key={value} className={sort===value?'active':''} aria-pressed={sort===value} onClick={()=>{setSort(value);setPage(1)}}>{label}</button>)}</div></div></div>
+    <div className="archive-tools"><label className="search">SEARCH <input value={query} onChange={event=>{setQuery(event.target.value);setPage(1)}} placeholder="Episode, guest, or topic"/></label><div className="sort-label"><span>FILTER EPISODES</span><div className="sort-toggle" role="group" aria-label="Sort episodes">{sortOptions.map(([value,label])=><button type="button" key={value} className={sort===value?'active':''} aria-pressed={sort===value} onClick={()=>setSort(value)}>{label}</button>)}</div></div></div>
     {tagFilter&&<div className="tag-filter-bar" role="status"><span className="tag-filter-label">FILTERED BY TAG</span><span className="tag-filter-value">{tagFilter.replace(/-/g,' ')}</span><span className="tag-filter-count">{visible.length} EPISODE{visible.length===1?'':'S'}</span><button type="button" className="tag-filter-clear" onClick={()=>{setSearchParams({});setPage(1)}} aria-label="Clear tag filter">CLEAR ✕</button></div>}
     <div className="archive-head"><span>ALL VIDEOS</span><span>{visible.length} VIDEOS · PAGE {currentPage} OF {pages}</span></div>
     <div className="archive-grid">{shown.map(episode=><article className="archive-item" key={episode.youtubeId}><button className="archive-thumb" onClick={()=>choose(episode)} aria-label={`Watch ${episode.title}`}><VideoThumbnail episode={episode}/><DurationBadge episode={episode}/><ViewBadge episode={episode}/><span className="archive-play"><Play size={18} fill="currentColor"/></span></button><div className="archive-item-body"><div className="archive-item-meta"><span>{episode.publishedAt?.slice(0,10)||'VIDEO'}</span><RankMeta rank={rankById.get(episode.youtubeId)}/></div><TagPills tags={resolveEpisodeTags(episode)}/><Link className="archive-title-link" to={`/episode/${episode.id}`}><h3>{episode.title}</h3></Link><p>{episode.guest&&episode.guest!=='Thinking Beyond'?`WITH ${episode.guest}`:'THINKING BEYOND'}</p></div></article>)}</div>
