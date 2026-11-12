@@ -4,6 +4,8 @@ const config=await readFile(new URL('../src/channel-config.json',import.meta.url
 const channelId=process.env.YOUTUBE_CHANNEL_ID||config.channelId||'UCUbXuNfuebW0MEfX4kouqHA';
 const channelHandle=process.env.YOUTUBE_CHANNEL_HANDLE||config.handle||'@manishaneupane';
 const target=new URL('../public/data/channel-stats.json',import.meta.url);
+// Second copy inside src/ so the app can import build-time values (Vite convention: no JS imports from public/)
+const srcTarget=new URL('../src/data/channel-stats.json',import.meta.url);
 const number = text => {const m=String(text).replaceAll(',','').match(/([\d.]+)\s*([KMB])?/i);return m?Math.round(Number(m[1])*({K:1e3,M:1e6,B:1e9}[m[2]?.toUpperCase()]||1)):null};
 function findAbout(node){if(!node||typeof node!=='object')return null;if(node.aboutChannelViewModel?.channelId===channelId)return node.aboutChannelViewModel;for(const child of Object.values(node)){const found=findAbout(child);if(found)return found}return null}
 let cache;
@@ -29,5 +31,5 @@ export async function getChannelStats(){
 }
 export function channelStatsPlugin(){const configure=server=>{server.middlewares.use(async(req,res,next)=>{if(!req.url?.split('?')[0].endsWith('/api/channel-stats'))return next();try{res.setHeader('Content-Type','application/json');res.setHeader('Cache-Control','no-store');res.end(JSON.stringify(await getChannelStats()))}catch{res.statusCode=503;res.setHeader('Content-Type','application/json');res.end(JSON.stringify({error:'Statistics temporarily unavailable'}))}})};return {name:'channel-statistics',configureServer:configure,configurePreviewServer:configure}}
 if(process.argv[1]===fileURLToPath(import.meta.url)){
- try{const stats=await getChannelStats();await writeFile(target,JSON.stringify(stats,null,2)+'\n');console.log('Updated public channel statistics at '+stats.fetchedAt)}catch(error){console.error(error.message);process.exitCode=1}
+ try{const stats=await getChannelStats();await writeFile(target,JSON.stringify(stats,null,2)+'\n');await writeFile(srcTarget,JSON.stringify(stats,null,2)+'\n');console.log('Updated public channel statistics at '+stats.fetchedAt)}catch(error){console.error(error.message);process.exitCode=1}
 }

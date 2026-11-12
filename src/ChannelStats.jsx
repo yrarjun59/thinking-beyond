@@ -2,7 +2,7 @@ import {useEffect,useState} from 'react';
 import config from './channel-config.json';
 // Build-time snapshot: real numbers paint on first render (no "—" → value flash),
 // then the runtime fetch only updates them when the figures actually change.
-import initialStats from '../public/data/channel-stats.json';
+import initialStats from './data/channel-stats.json';
 const base=import.meta.env.BASE_URL;
 const compact=n=>n==null?'—':new Intl.NumberFormat('en',{notation:'compact',maximumFractionDigits:2}).format(n);
 const valid=d=>!!d&&d.channelId===config.channelId&&Number.isFinite(d.views)&&Number.isFinite(d.episodes)&&Number.isFinite(Date.parse(d.fetchedAt));
