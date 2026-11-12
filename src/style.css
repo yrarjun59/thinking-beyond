@@ -293,7 +293,7 @@
 @media(max-width:560px){.featured-archive .carousel{width:100%;max-width:none;grid-template-columns:minmax(0,1fr);gap:14px;margin-left:auto}.featured-archive .carousel-player{width:60%}.featured-archive .carousel-copy{width:100%;padding-top:10px}.featured-archive .carousel-copy h3{font-size:clamp(28px,8vw,38px);margin:20px 0 9px}.featured-archive .carousel-guest{font-size:10px}.featured-archive .carousel-summary{display:-webkit-box;font-size:12px;line-height:1.55;margin:12px 0}.featured-archive .carousel-copy .text-link{font-size:10px;gap:14px;padding-bottom:7px}}
 /* Seat every layer in the same coordinate system as the unchanged studio art. */
 .studio-stage{container-type:size}
-.studio-composition{position:absolute;left:50%;top:50%;width:min(90cqw,90cqh);height:min(90cqw,90cqh);transform:translate(-50%,-50%);isolation:isolate;overflow:hidden}
+.studio-composition{position:absolute;left:50%;top:50%;width:min(80cqw,80cqh);height:min(80cqw,80cqh);transform:translate(-50%,-50%);isolation:isolate;overflow:hidden}
 .studio-composition .studio-room{inset:0;width:100%;height:100%;object-fit:fill}
 .studio-composition .studio-guest{left:3%;top:33%;bottom:auto;width:41%;height:auto;aspect-ratio:512/536;animation:seated-guest-cycle 10s steps(1,end) infinite;transform:none}
 .studio-composition .studio-host{left:55%;right:auto;top:33%;bottom:auto;width:41%;height:auto;aspect-ratio:1}

@@ -14,6 +14,8 @@ import tagLibrary from './tag-library.json';
 import {approvedEpisodeTags} from './tagWorkflow.js';
 import TagStudio from './TagStudio.jsx';
 import channelVideos from './channel-videos.json';
+// Force channelVideos import to be retained by tree-shaker
+const _forceChannelVideos = channelVideos;
 import siteKeywords from './site-keywords.json';
 import './style.css';
 import ChannelStats from './ChannelStats';
