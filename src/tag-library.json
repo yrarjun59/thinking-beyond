@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-13T06:14:57.590Z",
+  "generatedAt": "2026-11-13T09:36:20.298Z",
   "canonicalTags": [
     {
       "name": "Sanjib Subba",
@@ -1132,6 +1132,78 @@
       "slug": "video",
       "aliases": [],
       "type": "topic",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "20s",
+      "slug": "20s",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Confidence building",
+      "slug": "confidence-building",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Neplian",
+      "slug": "neplian",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Memorable conversation",
+      "slug": "memorable-conversation",
+      "aliases": [],
+      "type": "topic",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Communication skills",
+      "slug": "communication-skills",
+      "aliases": [],
+      "type": "topic",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Best 4 ways",
+      "slug": "best-4-ways",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Self-reminder",
+      "slug": "self-reminder",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Listening to dreams",
+      "slug": "listening-to-dreams",
+      "aliases": [],
+      "type": "concept",
       "description": "",
       "usageCount": 1,
       "status": "approved"
@@ -2913,7 +2985,7 @@
     "yt-WkQEfcUVsTA": {
       "episodeId": "yt-WkQEfcUVsTA",
       "lastAttempt": {
-        "at": "2026-11-13T06:07:02.073Z",
+        "at": "2026-11-13T09:29:04.100Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3332,7 +3404,7 @@
     "yt-Q8ODtJ3smzU": {
       "episodeId": "yt-Q8ODtJ3smzU",
       "lastAttempt": {
-        "at": "2026-11-12T17:02:24.756Z",
+        "at": "2026-11-13T09:29:55.962Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3873,6 +3945,203 @@
       ],
       "lastAttempt": {
         "at": "2026-11-13T06:14:57.589Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-3-uHuSeONYU": {
+      "episodeId": "yt-3-uHuSeONYU",
+      "title": "Are you 20's ? , Then watch this out !! 2 things to see in this age #manisharj",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Advice for people in their 20s.",
+      "primaryTopic": "20s",
+      "updatedAt": "2026-11-13T09:31:03.742Z",
+      "tags": [
+        {
+          "name": "20s",
+          "slug": "20s",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Explicitly mentioned age group in title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "life advice",
+          "reason": "Not explicitly named in title or description"
+        }
+      ],
+      "warnings": [
+        "Unknown tag type \"demographic\" on \"20s\" — stored as concept.",
+        "Only 1 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-13T09:31:03.742Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-fd3H6ZPI2fA": {
+      "episodeId": "yt-fd3H6ZPI2fA",
+      "title": "How to build confident ? #nepali #manisharj",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Exploring ways to build confidence in a Nepali context.",
+      "primaryTopic": "Confidence building",
+      "updatedAt": "2026-11-13T09:33:08.699Z",
+      "tags": [
+        {
+          "name": "Confidence building",
+          "slug": "confidence-building",
+          "type": "concept",
+          "relevanceScore": 100,
+          "evidence": "",
+          "reason": "Central theme of episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Neplian",
+          "slug": "neplian",
+          "type": "entity",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Contextual demographic focus",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Self-confidence",
+          "reason": "Duplicate of Confidence building"
+        }
+      ],
+      "warnings": [
+        "Only 2 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-13T09:33:08.699Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-ZP8OJ1pMVwM": {
+      "episodeId": "yt-ZP8OJ1pMVwM",
+      "title": "कुनै पनि Conversation लाई यादगार बनाउने Best 4 तरिका #manisharj #nepali",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Explores four effective techniques to make any conversation memorable.",
+      "primaryTopic": "Conversation memorability",
+      "updatedAt": "2026-11-13T09:34:38.535Z",
+      "tags": [
+        {
+          "name": "Memorable conversation",
+          "slug": "memorable-conversation",
+          "type": "topic",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Four ways to make conversations memorable",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Communication skills",
+          "slug": "communication-skills",
+          "type": "topic",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Enhancing interpersonal interaction",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Best 4 ways",
+          "slug": "best-4-ways",
+          "type": "concept",
+          "relevanceScore": 75,
+          "evidence": "",
+          "reason": "Core structure of the episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Conversation",
+          "reason": "Too generic, lacks specificity"
+        },
+        {
+          "name": "Conversation techniques",
+          "reason": "Repetitive — overlaps \"Memorable conversation\"; the more precise label was kept."
+        }
+      ],
+      "warnings": [
+        "Only 3 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-13T09:34:38.535Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-0hue1D1CSrc": {
+      "episodeId": "yt-0hue1D1CSrc",
+      "title": "Remind yourself that you are doing to do and you can #Listen to your dreams not people",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "An introspective reminder to prioritize personal dreams over external expectations.",
+      "primaryTopic": "Personal dreams",
+      "updatedAt": "2026-11-13T09:36:20.298Z",
+      "tags": [
+        {
+          "name": "Self-reminder",
+          "slug": "self-reminder",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Encourages personal self-encouragement",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Listening to dreams",
+          "slug": "listening-to-dreams",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Focus on following one's own aspirations",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Dreams over people",
+          "reason": "Repetitive — overlaps \"Listening to dreams\"; the more precise label was kept."
+        }
+      ],
+      "warnings": [
+        "Only 2 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-13T09:36:20.298Z",
         "reason": "ok"
       },
       "transcriptSource": "metadata"
