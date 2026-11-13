@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-13T06:01:57.058Z",
+  "generatedAt": "2026-11-13T06:14:57.590Z",
   "canonicalTags": [
     {
       "name": "Sanjib Subba",
@@ -863,7 +863,7 @@
       "aliases": [],
       "type": "concept",
       "description": "",
-      "usageCount": 2,
+      "usageCount": 5,
       "status": "approved"
     },
     {
@@ -944,7 +944,7 @@
       "aliases": [],
       "type": "entity",
       "description": "",
-      "usageCount": 1,
+      "usageCount": 2,
       "status": "approved"
     },
     {
@@ -1043,7 +1043,7 @@
       "aliases": [],
       "type": "concept",
       "description": "",
-      "usageCount": 1,
+      "usageCount": 2,
       "status": "approved"
     },
     {
@@ -1069,6 +1069,69 @@
       "slug": "opportunities",
       "aliases": [],
       "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Book recommendation",
+      "slug": "book-recommendation",
+      "aliases": [],
+      "type": "topic",
+      "description": "",
+      "usageCount": 2,
+      "status": "approved"
+    },
+    {
+      "name": "Professional development",
+      "slug": "professional-development",
+      "aliases": [],
+      "type": "topic",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Mindset change",
+      "slug": "mindset-change",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "letsgrowtogether",
+      "slug": "letsgrowtogether",
+      "aliases": [],
+      "type": "topic",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Power of Thoughts",
+      "slug": "power-of-thoughts",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "English learning",
+      "slug": "english-learning",
+      "aliases": [],
+      "type": "topic",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Video",
+      "slug": "video",
+      "aliases": [],
+      "type": "topic",
       "description": "",
       "usageCount": 1,
       "status": "approved"
@@ -2850,7 +2913,7 @@
     "yt-WkQEfcUVsTA": {
       "episodeId": "yt-WkQEfcUVsTA",
       "lastAttempt": {
-        "at": "2026-11-13T05:55:06.840Z",
+        "at": "2026-11-13T06:07:02.073Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3537,6 +3600,279 @@
       ],
       "lastAttempt": {
         "at": "2026-11-13T06:01:57.058Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-xxICSu3dk_g": {
+      "episodeId": "yt-xxICSu3dk_g",
+      "title": "A highly recommended book for personal and professional growth #letsgrowtogether",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "A recommendation of a book aimed at fostering personal and professional growth.",
+      "primaryTopic": "Book recommendation",
+      "updatedAt": "2026-11-13T06:08:23.971Z",
+      "tags": [
+        {
+          "name": "Book recommendation",
+          "slug": "book-recommendation",
+          "type": "topic",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Central to episode title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Personal growth",
+          "slug": "personal-growth",
+          "type": "topic",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Explicitly mentioned in title",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Professional development",
+          "slug": "professional-development",
+          "type": "topic",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Explicitly mentioned in title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "letsgrowtogether",
+          "reason": "Hashtag, not a distinct subject"
+        }
+      ],
+      "warnings": [
+        "Only 3 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-13T06:08:23.971Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-7wdpeegBI9s": {
+      "episodeId": "yt-7wdpeegBI9s",
+      "title": "A highly suggested book to change the mindset #letsgrowtogether",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "A discussion on a highly recommended book that encourages a mindset shift toward growth.",
+      "primaryTopic": "Book recommendation",
+      "updatedAt": "2026-11-13T06:09:44.728Z",
+      "tags": [
+        {
+          "name": "Book recommendation",
+          "slug": "book-recommendation",
+          "type": "topic",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Explicitly mentioned in title",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Mindset change",
+          "slug": "mindset-change",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Central theme of title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Let’s Grow Together",
+          "slug": "lets-grow-together",
+          "type": "concept",
+          "relevanceScore": 78,
+          "evidence": "",
+          "reason": "Hashtag in title, distinct phrase",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Growth mindset",
+          "reason": "Repetitive — overlaps \"Mindset change\"; the more precise label was kept."
+        }
+      ],
+      "warnings": [
+        "Only 3 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-13T06:09:44.728Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-0MgzA9XTKRM": {
+      "episodeId": "yt-0MgzA9XTKRM",
+      "title": "A vedio for students #letsgrowtogether #nepali",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Video aimed at students encouraging collective growth in Nepali context",
+      "primaryTopic": "students",
+      "updatedAt": "2026-11-13T06:11:01.944Z",
+      "tags": [
+        {
+          "name": "Students",
+          "slug": "students",
+          "type": "topic",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Central audience of the episode",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "letsgrowtogether",
+          "slug": "letsgrowtogether",
+          "type": "topic",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Hashtag indicating collaborative growth theme",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "nepali",
+          "reason": "Generic tag — channel-level geo provides no episode distinction."
+        }
+      ],
+      "warnings": [
+        "Only 2 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-13T06:11:01.944Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-YsFDI8aEY0M": {
+      "episodeId": "yt-YsFDI8aEY0M",
+      "title": "Story of THE POWER OF YOUR thoughts  #letsgrowtogether #nepali",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Explores how the power of thoughts shapes personal growth.",
+      "primaryTopic": "Power of Thoughts",
+      "updatedAt": "2026-11-13T06:12:58.361Z",
+      "tags": [
+        {
+          "name": "Power of Thoughts",
+          "slug": "power-of-thoughts",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central theme of episode title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Let’s Grow Together",
+          "slug": "lets-grow-together",
+          "type": "concept",
+          "relevanceScore": 78,
+          "evidence": "",
+          "reason": "Hashtag in title signals theme",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "NePali",
+          "reason": "Generic tag — channel-level geo provides no episode distinction."
+        }
+      ],
+      "warnings": [
+        "Only 2 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-13T06:12:58.361Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-0TvJ0jQk3Ws": {
+      "episodeId": "yt-0TvJ0jQk3Ws",
+      "title": "सबै नेपालीले हेर्नु पर्ने  Vedio for English learning #letsgrowtogether",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "An English learning video aimed at Nepali viewers, encouraging collective growth.",
+      "primaryTopic": "English learning",
+      "updatedAt": "2026-11-13T06:14:57.589Z",
+      "tags": [
+        {
+          "name": "English learning",
+          "slug": "english-learning",
+          "type": "topic",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Explicitly stated in title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Video",
+          "slug": "video",
+          "type": "topic",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Explicitly stated as Vedio in title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Let’s Grow Together",
+          "slug": "lets-grow-together",
+          "type": "topic",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Hashtag in title signals central theme",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "English education",
+          "reason": "Redundant with English learning"
+        }
+      ],
+      "warnings": [
+        "Only 3 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-13T06:14:57.589Z",
         "reason": "ok"
       },
       "transcriptSource": "metadata"
