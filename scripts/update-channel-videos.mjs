@@ -214,7 +214,17 @@ async function fetchWatchPage(videoId) {
   const page = await fetch(`https://www.youtube.com/watch?v=${videoId}`, {headers: {accept: 'text/html', 'user-agent': UA}, signal: AbortSignal.timeout(12000)});
   if (!page.ok) return null;
   const html = await page.text();
-  const views = Number(/"viewCount":"?(\d+)"?/.exec(html)?.[1]) || null;
+  // YouTube exposes the view count in several shapes on the same page, e.g.
+  //   "viewCount":"3259"            (videoDetails JSON — no separator)
+  //   "viewCount":"3,259"           (listItemViewCountViewModel — commas!)
+  // A naive /\d+/ capture stops at the comma and turns 47,788 into 47, which is
+  // exactly how live counts got truncated to "48" / "3" / "10". Strip separators
+  // from every candidate and take the largest, since they all describe the same
+  // total and any unrelated "viewCount" field is always smaller.
+  const viewCandidates = [...html.matchAll(/"viewCount":"?([\d.,\s]+)"?/g)]
+    .map(match => Number(match[1].replace(/[^\d]/g, '')))
+    .filter(count => Number.isFinite(count) && count > 0);
+  const views = viewCandidates.length ? Math.max(...viewCandidates) : null;
   let description = null;
   const descMatch = /"shortDescription":"((?:[^"\\]|\\.)*)"/.exec(html);
   if (descMatch) {try {description = JSON.parse(`"${descMatch[1]}"`)} catch {description = descMatch[1]}}
@@ -278,6 +288,14 @@ const rows = fetched.map((row, index) => {
   const exact = watch.views;
   let views = Number.isFinite(exact) ? exact : compact(row.viewsLabel);
   let viewsSource = Number.isFinite(exact) ? (apiKey ? 'youtube-data-api' : rssById.has(row.videoId) ? 'youtube-rss' : 'youtube-watch-page') : 'youtube-channel-label';
+  // Safety net against truncated scrapes: the rounded channel label ("49.6K")
+  // is accurate to ~3 significant digits, so an exact count that is orders of
+  // magnitude below it means the watch page was parsed badly. Trust the label.
+  const labelViews = compact(row.viewsLabel);
+  if (Number.isFinite(views) && Number.isFinite(labelViews) && labelViews > 0 && views > 0 && views < labelViews * 0.9) {
+    views = labelViews;
+    viewsSource = 'youtube-channel-label';
+  }
   if (!Number.isFinite(views) && Number.isFinite(Number(previousRow.views))) {
     views = Number(previousRow.views);
     viewsSource = previousRow.viewsSource || 'previous-refresh';
