@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-12T17:02:24.756Z",
+  "generatedAt": "2026-11-13T06:01:57.058Z",
   "canonicalTags": [
     {
       "name": "Sanjib Subba",
@@ -863,7 +863,7 @@
       "aliases": [],
       "type": "concept",
       "description": "",
-      "usageCount": 1,
+      "usageCount": 2,
       "status": "approved"
     },
     {
@@ -961,6 +961,114 @@
       "slug": "enemies",
       "aliases": [],
       "type": "problem",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Life-changing books",
+      "slug": "life-changing-books",
+      "aliases": [],
+      "type": "topic",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Personal development",
+      "slug": "personal-development",
+      "aliases": [],
+      "type": "topic",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Reading recommendations",
+      "slug": "reading-recommendations",
+      "aliases": [],
+      "type": "topic",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Self-help literature",
+      "slug": "self-help-literature",
+      "aliases": [],
+      "type": "topic",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Women’s empowerment",
+      "slug": "women-empowerment",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Future readiness",
+      "slug": "future-readiness",
+      "aliases": [],
+      "type": "topic",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Goal setting",
+      "slug": "goal-setting",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Life obstacles",
+      "slug": "life-obstacles",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Personal growth",
+      "slug": "personal-growth",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Life perspective",
+      "slug": "life-perspective",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Problems",
+      "slug": "problems",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Opportunities",
+      "slug": "opportunities",
+      "aliases": [],
+      "type": "concept",
       "description": "",
       "usageCount": 1,
       "status": "approved"
@@ -2742,7 +2850,7 @@
     "yt-WkQEfcUVsTA": {
       "episodeId": "yt-WkQEfcUVsTA",
       "lastAttempt": {
-        "at": "2026-11-12T16:55:59.740Z",
+        "at": "2026-11-13T05:55:06.840Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3168,6 +3276,270 @@
         "No tags passed validation — review the response or regenerate rather than guessing.",
         "The AI response produced no valid tags — will retry next cron."
       ]
+    },
+    "yt-hK31BgEYP_U": {
+      "episodeId": "yt-hK31BgEYP_U",
+      "title": "तपाइको जीवन बदल्ने ५ वटा किताब हरु  ! प्रतेक नेपालीले हेर्ने पर्ने भिडियो 🔥🔥#letsgrowtogether",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "A list of five books recommended to transform listeners’ lives.",
+      "primaryTopic": "Life-changing books",
+      "updatedAt": "2026-11-13T05:56:26.838Z",
+      "tags": [
+        {
+          "name": "Life-changing books",
+          "slug": "life-changing-books",
+          "type": "topic",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central to episode title and description",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Personal development",
+          "slug": "personal-development",
+          "type": "topic",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Implied by life-changing books theme",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Reading recommendations",
+          "slug": "reading-recommendations",
+          "type": "topic",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Episode offers a curated list of books",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Self-help literature",
+          "slug": "self-help-literature",
+          "type": "topic",
+          "relevanceScore": 78,
+          "evidence": "",
+          "reason": "Books likely in self-help genre",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [],
+      "lastAttempt": {
+        "at": "2026-11-13T05:56:26.838Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-S9hDStLorXc": {
+      "episodeId": "yt-S9hDStLorXc",
+      "title": "Women Empowerment? 🤔",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Exploring the concept of women empowerment in Nepal.",
+      "primaryTopic": "Women empowerment",
+      "updatedAt": "2026-11-13T05:57:36.505Z",
+      "tags": [
+        {
+          "name": "Women’s empowerment",
+          "slug": "women-empowerment",
+          "type": "concept",
+          "relevanceScore": 100,
+          "evidence": "",
+          "reason": "Central theme of episode",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [
+        "Only 1 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-13T05:57:36.505Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-96GvIr3jvFM": {
+      "episodeId": "yt-96GvIr3jvFM",
+      "title": "#Be ready for future by setting goals for it #nepali #mindsetiseverything",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Discussion on preparing for the future through goal setting and cultivating a strong mindset.",
+      "primaryTopic": "Future readiness",
+      "updatedAt": "2026-11-13T05:59:15.423Z",
+      "tags": [
+        {
+          "name": "Future readiness",
+          "slug": "future-readiness",
+          "type": "topic",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central theme of preparing for the future",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Goal setting",
+          "slug": "goal-setting",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Key method discussed for future preparation",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Future",
+          "reason": "Redundant with Future readiness"
+        },
+        {
+          "name": "Mindset",
+          "reason": "Generic tag — channel-level geo provides no episode distinction."
+        },
+        {
+          "name": "NePali",
+          "reason": "Generic tag — channel-level geo provides no episode distinction."
+        }
+      ],
+      "warnings": [
+        "Only 2 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-13T05:59:15.423Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-d-9hSexHbR8": {
+      "episodeId": "yt-d-9hSexHbR8",
+      "title": "What is holding you back in life?  #letsgrowtogether",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Exploring what holds people back in life and how to overcome those barriers.",
+      "primaryTopic": "Personal growth obstacles",
+      "updatedAt": "2026-11-13T06:00:40.568Z",
+      "tags": [
+        {
+          "name": "Life obstacles",
+          "slug": "life-obstacles",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Explicitly referenced in title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Personal growth",
+          "slug": "personal-growth",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Central theme of overcoming barriers",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Let’s Grow Together",
+          "slug": "lets-grow-together",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Hashtag signals collective growth focus",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Growth",
+          "reason": "Generic, not explicitly named"
+        }
+      ],
+      "warnings": [
+        "Only 3 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-13T06:00:40.568Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-_1avWrNtzFQ": {
+      "episodeId": "yt-_1avWrNtzFQ",
+      "title": "is life all about problems ? or about opportunities?",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Exploring whether life revolves around problems or opportunities.",
+      "primaryTopic": "Life perspective",
+      "updatedAt": "2026-11-13T06:01:57.058Z",
+      "tags": [
+        {
+          "name": "Life perspective",
+          "slug": "life-perspective",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Central theme of episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Problems",
+          "slug": "problems",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Key contrasting element",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Opportunities",
+          "slug": "opportunities",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Key contrasting element",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [
+        "Only 3 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-13T06:01:57.058Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
     }
   }
 }
