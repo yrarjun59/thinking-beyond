@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-14T05:08:56.123Z",
+  "generatedAt": "2026-11-14T05:18:14.596Z",
   "canonicalTags": [
     {
       "name": "Sanjib Subba",
@@ -1466,7 +1466,7 @@
       "aliases": [],
       "type": "concept",
       "description": "",
-      "usageCount": 1,
+      "usageCount": 2,
       "status": "approved"
     },
     {
@@ -1474,6 +1474,33 @@
       "slug": "storytelling",
       "aliases": [],
       "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Frank William Abagnale",
+      "slug": "frank-william-abagnale",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Catch Me If You Can",
+      "slug": "catch-me-if-you-can",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Swami Vivekananda",
+      "slug": "swami-vivekananda",
+      "aliases": [],
+      "type": "entity",
       "description": "",
       "usageCount": 1,
       "status": "approved"
@@ -3255,7 +3282,7 @@
     "yt-WkQEfcUVsTA": {
       "episodeId": "yt-WkQEfcUVsTA",
       "lastAttempt": {
-        "at": "2026-11-14T05:01:55.515Z",
+        "at": "2026-11-14T05:12:52.030Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3266,7 +3293,7 @@
     "yt-o2FiUUQqoK0": {
       "episodeId": "yt-o2FiUUQqoK0",
       "lastAttempt": {
-        "at": "2026-11-14T05:03:38.842Z",
+        "at": "2026-11-14T05:14:35.345Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3674,7 +3701,7 @@
     "yt-Q8ODtJ3smzU": {
       "episodeId": "yt-Q8ODtJ3smzU",
       "lastAttempt": {
-        "at": "2026-11-14T05:02:47.179Z",
+        "at": "2026-11-14T05:13:43.687Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -5259,6 +5286,119 @@
       ],
       "lastAttempt": {
         "at": "2026-11-14T05:08:56.123Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-jCaJz67V1aw": {
+      "episodeId": "yt-jCaJz67V1aw",
+      "title": "Best 3 lesson from Catch me If You Can |Explained In Nepali/ Frank William abagnale",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Explores three key lessons from the film Catch Me If You Can featuring Frank William Abagnale.",
+      "primaryTopic": "Catch Me If You Can lessons",
+      "updatedAt": "2026-11-14T05:15:52.394Z",
+      "tags": [
+        {
+          "name": "Frank William Abagnale",
+          "slug": "frank-william-abagnale",
+          "type": "entity",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central figure discussed",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Catch Me If You Can",
+          "slug": "catch-me-if-you-can",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Primary subject of episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Catch Me If You Can lessons",
+          "reason": "Repetitive — overlaps \"Catch Me If You Can\"; the more precise label was kept."
+        }
+      ],
+      "warnings": [
+        "Unknown tag type \"film\" on \"Catch Me If You Can\" — stored as concept.",
+        "Only 2 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T05:15:52.394Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-0bndUoAwZUM": {
+      "episodeId": "yt-0bndUoAwZUM",
+      "title": "Learn from Swami Vivekananda",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "A discussion on learning from Swami Vivekananda.",
+      "primaryTopic": "Swami Vivekananda",
+      "updatedAt": "2026-11-14T05:16:58.101Z",
+      "tags": [
+        {
+          "name": "Swami Vivekananda",
+          "slug": "swami-vivekananda",
+          "type": "entity",
+          "relevanceScore": 100,
+          "evidence": "",
+          "reason": "Central figure of episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [
+        "Only 1 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T05:16:58.102Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-mf-m_0c67AU": {
+      "episodeId": "yt-mf-m_0c67AU",
+      "title": "Motivational story",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "A brief motivational story shared on the podcast.",
+      "primaryTopic": "Motivational story",
+      "updatedAt": "2026-11-14T05:18:14.596Z",
+      "tags": [
+        {
+          "name": "Motivational story",
+          "slug": "motivational-story",
+          "type": "concept",
+          "relevanceScore": 100,
+          "evidence": "",
+          "reason": "Central theme of episode",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [
+        "Only 1 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T05:18:14.596Z",
         "reason": "ok"
       },
       "transcriptSource": "metadata"
