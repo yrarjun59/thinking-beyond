@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-14T04:55:52.487Z",
+  "generatedAt": "2026-11-14T05:08:56.123Z",
   "canonicalTags": [
     {
       "name": "Sanjib Subba",
@@ -1418,6 +1418,60 @@
     {
       "name": "Story",
       "slug": "story",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Poor Boy",
+      "slug": "poor-boy",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Wealth",
+      "slug": "wealth",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Destination",
+      "slug": "destination",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "जिन्दगी बदल्ने मुभि",
+      "slug": "jindagi-badalne-mubhi",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Motivational story",
+      "slug": "motivational-story",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Storytelling",
+      "slug": "storytelling",
       "aliases": [],
       "type": "concept",
       "description": "",
@@ -3201,7 +3255,7 @@
     "yt-WkQEfcUVsTA": {
       "episodeId": "yt-WkQEfcUVsTA",
       "lastAttempt": {
-        "at": "2026-11-14T04:50:15.296Z",
+        "at": "2026-11-14T05:01:55.515Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3212,7 +3266,7 @@
     "yt-o2FiUUQqoK0": {
       "episodeId": "yt-o2FiUUQqoK0",
       "lastAttempt": {
-        "at": "2026-11-14T04:53:53.914Z",
+        "at": "2026-11-14T05:03:38.842Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3620,7 +3674,7 @@
     "yt-Q8ODtJ3smzU": {
       "episodeId": "yt-Q8ODtJ3smzU",
       "lastAttempt": {
-        "at": "2026-11-14T04:54:45.597Z",
+        "at": "2026-11-14T05:02:47.179Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -5062,6 +5116,149 @@
       ],
       "lastAttempt": {
         "at": "2026-11-14T04:55:52.487Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-T6bxgxYmxoQ": {
+      "episodeId": "yt-T6bxgxYmxoQ",
+      "title": "A story of a little poor boy ...How can I man rich his destination ?",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "A narrative about a poor boy's journey toward wealth.",
+      "primaryTopic": "Wealth journey",
+      "updatedAt": "2026-11-14T05:06:36.382Z",
+      "tags": [
+        {
+          "name": "Poor Boy",
+          "slug": "poor-boy",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Central character in title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Wealth",
+          "slug": "wealth",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Goal mentioned in title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Destination",
+          "slug": "destination",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Key word in title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [
+        "Only 3 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T05:06:36.382Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-UNAm0q85mbE": {
+      "episodeId": "yt-UNAm0q85mbE",
+      "title": "जिन्दगी बदल्ने मुभि ?? how amazing is this ? is this possible ?",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Exploring the drive to transform one's life and questioning its feasibility.",
+      "primaryTopic": "जिन्दगी बदल्ने मुभि",
+      "updatedAt": "2026-11-14T05:07:52.159Z",
+      "tags": [
+        {
+          "name": "जिन्दगी बदल्ने मुभि",
+          "slug": "jindagi-badalne-mubhi",
+          "type": "concept",
+          "relevanceScore": 100,
+          "evidence": "",
+          "reason": "Central theme of the episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Amazing",
+          "reason": "Not explicitly named as a subject in the title or description."
+        },
+        {
+          "name": "Possible",
+          "reason": "Generic question, not a distinct subject."
+        }
+      ],
+      "warnings": [
+        "Only 1 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T05:07:52.159Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-CVjN5ZCyFoI": {
+      "episodeId": "yt-CVjN5ZCyFoI",
+      "title": "Motivational story in Nepali",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "A motivational story told in Nepali language.",
+      "primaryTopic": "Motivational story",
+      "updatedAt": "2026-11-14T05:08:56.123Z",
+      "tags": [
+        {
+          "name": "Motivational story",
+          "slug": "motivational-story",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Explicitly stated in title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Storytelling",
+          "slug": "storytelling",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Narrative format implied by title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Motivation",
+          "reason": "Generic tag — channel-level geo provides no episode distinction."
+        }
+      ],
+      "warnings": [
+        "Only 2 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T05:08:56.123Z",
         "reason": "ok"
       },
       "transcriptSource": "metadata"
