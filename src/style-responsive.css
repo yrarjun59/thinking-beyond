@@ -1607,3 +1607,11 @@ input, textarea, select {
   .archive-tools .search { width: 100%; }
   .archive-tools .sort-label { width: 100%; }
 }
+
+/* Hero illustration: 10% smaller than the column it used to fill, so the
+   studio art sits inside the hero instead of running to the edge. */
+.show-hero-visual { width: 90%; justify-self: end; }
+
+@media (max-width: 900px) {
+  .show-hero-visual { width: 90%; justify-self: center; }
+}
