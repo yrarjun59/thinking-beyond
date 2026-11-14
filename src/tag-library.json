@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-14T04:44:31.260Z",
+  "generatedAt": "2026-11-14T04:55:52.487Z",
   "canonicalTags": [
     {
       "name": "Sanjib Subba",
@@ -512,7 +512,7 @@
       "aliases": [],
       "type": "entity",
       "description": "",
-      "usageCount": 2,
+      "usageCount": 3,
       "status": "approved"
     },
     {
@@ -863,7 +863,7 @@
       "aliases": [],
       "type": "concept",
       "description": "",
-      "usageCount": 8,
+      "usageCount": 9,
       "status": "approved"
     },
     {
@@ -890,7 +890,7 @@
       "aliases": [],
       "type": "concept",
       "description": "",
-      "usageCount": 4,
+      "usageCount": 5,
       "status": "approved"
     },
     {
@@ -1375,6 +1375,51 @@
       "slug": "millionaire-mind-book",
       "aliases": [],
       "type": "topic",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Blue chips",
+      "slug": "blue-chips",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Stock market",
+      "slug": "stock-market",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Famous quotes",
+      "slug": "famous-quotes",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Family",
+      "slug": "family",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Story",
+      "slug": "story",
+      "aliases": [],
+      "type": "concept",
       "description": "",
       "usageCount": 1,
       "status": "approved"
@@ -3156,7 +3201,7 @@
     "yt-WkQEfcUVsTA": {
       "episodeId": "yt-WkQEfcUVsTA",
       "lastAttempt": {
-        "at": "2026-11-14T04:38:57.880Z",
+        "at": "2026-11-14T04:50:15.296Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3167,7 +3212,7 @@
     "yt-o2FiUUQqoK0": {
       "episodeId": "yt-o2FiUUQqoK0",
       "lastAttempt": {
-        "at": "2026-11-14T04:39:49.674Z",
+        "at": "2026-11-14T04:53:53.914Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3575,7 +3620,7 @@
     "yt-Q8ODtJ3smzU": {
       "episodeId": "yt-Q8ODtJ3smzU",
       "lastAttempt": {
-        "at": "2026-11-14T04:40:41.337Z",
+        "at": "2026-11-14T04:54:45.597Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -4856,6 +4901,167 @@
       ],
       "lastAttempt": {
         "at": "2026-11-14T04:44:31.260Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-5E48F5mcVEs": {
+      "episodeId": "yt-5E48F5mcVEs",
+      "title": "Blue-chips share of Nepal...#letsgrowtogether #nepalishorts",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Discussion on Nepal's blue‑chip stocks and growth prospects.",
+      "primaryTopic": "Blue‑chip stocks in Nepal",
+      "updatedAt": "2026-11-14T04:51:33.190Z",
+      "tags": [
+        {
+          "name": "Blue chips",
+          "slug": "blue-chips",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Explicitly mentioned in title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Stock market",
+          "slug": "stock-market",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Implied by 'share' context",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Growth",
+          "slug": "growth",
+          "type": "concept",
+          "relevanceScore": 75,
+          "evidence": "",
+          "reason": "Suggested by hashtag #letsgrowtogether",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [
+        "Only 3 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T04:51:33.191Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-LQV9i3JSqck": {
+      "episodeId": "yt-LQV9i3JSqck",
+      "title": "Famous quotes of Great legendary man steve jobs #letsgrowtogether #nepali",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "A discussion of Steve Jobs' famous quotes.",
+      "primaryTopic": "Steve Jobs quotes",
+      "updatedAt": "2026-11-14T04:53:02.324Z",
+      "tags": [
+        {
+          "name": "Steve Jobs",
+          "slug": "steve-jobs",
+          "type": "entity",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Central figure of episode",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Famous quotes",
+          "slug": "famous-quotes",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Core content of episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Let’s Grow Together",
+          "slug": "lets-grow-together",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Hashtag indicating episode theme",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Nepali",
+          "reason": "Generic tag — channel-level geo provides no episode distinction."
+        }
+      ],
+      "warnings": [
+        "Only 3 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T04:53:02.324Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-GV6PU4BpwHk": {
+      "episodeId": "yt-GV6PU4BpwHk",
+      "title": "A story of a family ❤#परिवारको महत्व",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "A heartfelt narrative exploring the significance of family.",
+      "primaryTopic": "Family importance",
+      "updatedAt": "2026-11-14T04:55:52.487Z",
+      "tags": [
+        {
+          "name": "Family",
+          "slug": "family",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central to episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Story",
+          "slug": "story",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Narrative format",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Family importance",
+          "reason": "Duplicate of Family"
+        }
+      ],
+      "warnings": [
+        "Only 2 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T04:55:52.487Z",
         "reason": "ok"
       },
       "transcriptSource": "metadata"
