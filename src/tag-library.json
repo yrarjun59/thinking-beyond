@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-14T05:32:23.011Z",
+  "generatedAt": "2026-11-14T09:01:20.313Z",
   "canonicalTags": [
     {
       "name": "Sanjib Subba",
@@ -440,7 +440,7 @@
       "aliases": [],
       "type": "concept",
       "description": "",
-      "usageCount": 1,
+      "usageCount": 2,
       "status": "approved"
     },
     {
@@ -1528,6 +1528,33 @@
       "slug": "highly-effective-people",
       "aliases": [],
       "type": "topic",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Follow your passion",
+      "slug": "follow-your-passion",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Investment advice",
+      "slug": "investment-advice",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Warren Buffet",
+      "slug": "warren-buffet",
+      "aliases": [],
+      "type": "entity",
       "description": "",
       "usageCount": 1,
       "status": "approved"
@@ -3309,7 +3336,7 @@
     "yt-WkQEfcUVsTA": {
       "episodeId": "yt-WkQEfcUVsTA",
       "lastAttempt": {
-        "at": "2026-11-14T05:27:09.792Z",
+        "at": "2026-11-14T08:56:43.145Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3320,7 +3347,7 @@
     "yt-o2FiUUQqoK0": {
       "episodeId": "yt-o2FiUUQqoK0",
       "lastAttempt": {
-        "at": "2026-11-14T05:28:01.452Z",
+        "at": "2026-11-14T08:57:35.109Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3728,7 +3755,7 @@
     "yt-Q8ODtJ3smzU": {
       "episodeId": "yt-Q8ODtJ3smzU",
       "lastAttempt": {
-        "at": "2026-11-14T05:28:53.100Z",
+        "at": "2026-11-14T08:58:26.856Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -5571,6 +5598,92 @@
       ],
       "lastAttempt": {
         "at": "2026-11-14T05:32:23.011Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-SToeJ_IdSHw": {
+      "episodeId": "yt-SToeJ_IdSHw",
+      "title": "Follow your passion ; it will leade you to your purpose",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Exploring how following one's passion leads to purpose.",
+      "primaryTopic": "Purpose",
+      "updatedAt": "2026-11-14T08:59:37.551Z",
+      "tags": [
+        {
+          "name": "Purpose",
+          "slug": "purpose",
+          "type": "concept",
+          "relevanceScore": 95,
+          "evidence": "",
+          "reason": "Explicitly mentioned as the outcome",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Follow your passion",
+          "slug": "follow-your-passion",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central theme of the episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [
+        "Only 2 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T08:59:37.551Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-5goNq6yNtZo": {
+      "episodeId": "yt-5goNq6yNtZo",
+      "title": "The Best Investment advice from Warren Buffet to us",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Discussion on Warren Buffet's top investment advice.",
+      "primaryTopic": "Investment advice",
+      "updatedAt": "2026-11-14T09:00:42.430Z",
+      "tags": [
+        {
+          "name": "Investment advice",
+          "slug": "investment-advice",
+          "type": "concept",
+          "relevanceScore": 100,
+          "evidence": "",
+          "reason": "Central topic of the episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Warren Buffet",
+          "slug": "warren-buffet",
+          "type": "entity",
+          "relevanceScore": 100,
+          "evidence": "",
+          "reason": "Named individual providing advice",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [
+        "Only 2 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T09:00:42.430Z",
         "reason": "ok"
       },
       "transcriptSource": "metadata"
