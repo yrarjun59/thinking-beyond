@@ -1582,3 +1582,28 @@ input, textarea, select {
 .sponsor-settings-card .admin-card-copy{color:var(--color-muted,#9a9a9a)}
 .guest-slot{position:absolute;inset:0}
 .host-frame-1,.host-frame-2,.host-frame-3,.host-frame-4,.host-frame-5{position:absolute;inset:0}
+
+/* ===== Header fit =====
+   The brand sat in a minmax(0,1fr) track, so a wide stats block squeezed it to
+   0px and the two overlapped. Give the brand its intrinsic width, let the nav
+   absorb the free space, and drop the stats before they can collide. */
+.header { grid-template-columns: auto minmax(0, 1fr) auto; }
+.brand { min-width: max-content; flex: none; }
+
+@media (max-width: 1200px) {
+  .header-stats { display: none; }
+}
+
+@media (max-width: 900px) {
+  .header { grid-template-columns: auto 1fr; }
+}
+
+/* Sort control: four options must stay on one row instead of wrapping. */
+.sort-toggle { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.sort-toggle button { white-space: nowrap; padding-inline: var(--space-2); }
+
+@media (max-width: 1100px) {
+  .archive-tools { flex-direction: column; align-items: stretch; }
+  .archive-tools .search { width: 100%; }
+  .archive-tools .sort-label { width: 100%; }
+}
