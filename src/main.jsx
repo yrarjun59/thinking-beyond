@@ -16,6 +16,9 @@ import channelVideos from './channel-videos.json';
 // Force channelVideos import to be retained by tree-shaker - use in side-effect
 if (typeof window !== 'undefined' && channelVideos.length > 0) console.debug('[TB] channelVideos loaded:', channelVideos.length);
 import siteKeywords from './site-keywords.json';
+// Base: the original complete stylesheet (every component class).
+// Override layer: the responsive design system, which wins on conflicts.
+import './style.css';
 import './style-responsive.css';
 import ChannelStats from './ChannelStats';
 import AdminPanel from './AdminPanel';
@@ -82,8 +85,16 @@ function getPodcastEpisodes(allVideos) {
 
 function useEpisodes(){
   // channelVideos is the sole source of truth for episodes & view counts
-  // Updated daily by cron job (generates channel-videos.json from YouTube API)
-  return getPodcastEpisodes([...channelVideos].sort((a,b)=>String(b.publishedAt||'').localeCompare(String(a.publishedAt||''))));
+  // Updated daily by cron job (generates channel-videos.json from YouTube API).
+  // Use the channel's own newest-first order (channelOrder). Sorting by
+  // publishedAt is wrong here: many uploads share the same date, so equal-date
+  // entries reorder and episode 2 can slip below episode 1, past the boundary.
+  const ordered=[...channelVideos].sort((a,b)=>{
+    const ao=Number(a.channelOrder),bo=Number(b.channelOrder);
+    if(Number.isFinite(ao)&&Number.isFinite(bo))return ao-bo;
+    return String(b.publishedAt||'').localeCompare(String(a.publishedAt||''));
+  });
+  return getPodcastEpisodes(ordered);
 }
 function VideoThumbnail({episode,loading='lazy'}){const id=episode.youtubeId;const local=`${BASE_PATH}images/youtube-thumbnails/${id}.jpg`;return <img loading={loading} src={`https://i.ytimg.com/vi/${id}/maxresdefault.jpg`} onError={event=>{if(event.currentTarget.dataset.fallback==='local'){event.currentTarget.src=`https://i.ytimg.com/vi/${id}/hqdefault.jpg`;return}event.currentTarget.dataset.fallback='local';event.currentTarget.src=local}} alt=""/>}
 function formatDuration(episode){let seconds=Number(episode?.durationSec??episode?.durationSeconds);if(!Number.isFinite(seconds)||seconds<=0){const minutes=Number(episode?.durationMin);seconds=Number.isFinite(minutes)&&minutes>0?Math.round(minutes*60):0}if(!seconds)return '';const total=Math.floor(seconds),hours=Math.floor(total/3600),minutes=Math.floor((total%3600)/60),remainder=total%60;return hours?`${hours}:${String(minutes).padStart(2,'0')}:${String(remainder).padStart(2,'0')}`:`${minutes}:${String(remainder).padStart(2,'0')}`}
