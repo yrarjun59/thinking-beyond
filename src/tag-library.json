@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-14T04:27:29.877Z",
+  "generatedAt": "2026-11-14T04:44:31.260Z",
   "canonicalTags": [
     {
       "name": "Sanjib Subba",
@@ -863,7 +863,7 @@
       "aliases": [],
       "type": "concept",
       "description": "",
-      "usageCount": 7,
+      "usageCount": 8,
       "status": "approved"
     },
     {
@@ -890,7 +890,7 @@
       "aliases": [],
       "type": "concept",
       "description": "",
-      "usageCount": 3,
+      "usageCount": 4,
       "status": "approved"
     },
     {
@@ -953,7 +953,7 @@
       "aliases": [],
       "type": "entity",
       "description": "",
-      "usageCount": 3,
+      "usageCount": 4,
       "status": "approved"
     },
     {
@@ -1160,7 +1160,7 @@
       "aliases": [],
       "type": "entity",
       "description": "",
-      "usageCount": 1,
+      "usageCount": 2,
       "status": "approved"
     },
     {
@@ -1339,6 +1339,42 @@
       "slug": "rate-experiments",
       "aliases": [],
       "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Overthinking",
+      "slug": "overthinking",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Secret of Millionaire Mind",
+      "slug": "secret-of-millionaire-mind",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Money Management",
+      "slug": "money-management",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Millionaire Mind Book",
+      "slug": "millionaire-mind-book",
+      "aliases": [],
+      "type": "topic",
       "description": "",
       "usageCount": 1,
       "status": "approved"
@@ -3120,7 +3156,7 @@
     "yt-WkQEfcUVsTA": {
       "episodeId": "yt-WkQEfcUVsTA",
       "lastAttempt": {
-        "at": "2026-11-14T04:21:44.788Z",
+        "at": "2026-11-14T04:38:57.880Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3131,7 +3167,7 @@
     "yt-o2FiUUQqoK0": {
       "episodeId": "yt-o2FiUUQqoK0",
       "lastAttempt": {
-        "at": "2026-11-14T04:13:39.821Z",
+        "at": "2026-11-14T04:39:49.674Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3539,7 +3575,7 @@
     "yt-Q8ODtJ3smzU": {
       "episodeId": "yt-Q8ODtJ3smzU",
       "lastAttempt": {
-        "at": "2026-11-14T04:22:36.797Z",
+        "at": "2026-11-14T04:40:41.337Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -4647,6 +4683,179 @@
       "warnings": [],
       "lastAttempt": {
         "at": "2026-11-14T04:27:29.876Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-KS2QCf4SYR4": {
+      "episodeId": "yt-KS2QCf4SYR4",
+      "title": "How to get rid of Over thinking? 🤔#letsgrowtogether  #youths",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Exploring ways to overcome overthinking, especially for youth.",
+      "primaryTopic": "Overthinking",
+      "updatedAt": "2026-11-14T04:41:46.583Z",
+      "tags": [
+        {
+          "name": "Overthinking",
+          "slug": "overthinking",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Central to episode title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Youth",
+          "slug": "youth",
+          "type": "entity",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Explicitly mentioned in hashtag",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Growth",
+          "slug": "growth",
+          "type": "concept",
+          "relevanceScore": 75,
+          "evidence": "",
+          "reason": "Implied by hashtag #letsgrowtogether",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [
+        "Only 3 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T04:41:46.583Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-ej3ZYuERkrY": {
+      "episodeId": "yt-ej3ZYuERkrY",
+      "title": "Secret of millionaire mind book  #letsgrowtogether #moneymanagement",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Exploring the secrets behind a millionaire’s mindset and money management strategies from the book \"Secret of Millionaire Mind\".",
+      "primaryTopic": "Millionaire Mindset",
+      "updatedAt": "2026-11-14T04:43:01.884Z",
+      "tags": [
+        {
+          "name": "Secret of Millionaire Mind",
+          "slug": "secret-of-millionaire-mind",
+          "type": "entity",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Explicit book title in episode title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Money Management",
+          "slug": "money-management",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Explicit hashtag and topic",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Let’s Grow Together",
+          "slug": "lets-grow-together",
+          "type": "concept",
+          "relevanceScore": 78,
+          "evidence": "",
+          "reason": "Explicit hashtag indicating growth theme",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Growth",
+          "reason": "Not explicitly named in title or description"
+        },
+        {
+          "name": "Millionaire Mindset",
+          "reason": "Repetitive — overlaps \"Secret of Millionaire Mind\"; the more precise label was kept."
+        }
+      ],
+      "warnings": [
+        "Only 3 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T04:43:01.884Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-sPhZAdYj1_M": {
+      "episodeId": "yt-sPhZAdYj1_M",
+      "title": "Secret of millionaire mind book in Nepali Explanation #Part 1 #letsgrowtogether",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Explanation of the \"Secret of Millionaire Mind\" book in Nepali, first part of a series.",
+      "primaryTopic": "Millionaire Mind Book",
+      "updatedAt": "2026-11-14T04:44:31.260Z",
+      "tags": [
+        {
+          "name": "Millionaire Mind Book",
+          "slug": "millionaire-mind-book",
+          "type": "topic",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central subject of the episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Neplian",
+          "slug": "neplian",
+          "type": "entity",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Language used for explanation",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Part 1",
+          "reason": "Not a distinct subject, only indicates episode sequence"
+        },
+        {
+          "name": "Let’s Grow Together",
+          "reason": "Hashtag phrase, not a central topic"
+        },
+        {
+          "name": "Book Explanation",
+          "reason": "Repetitive — overlaps \"Millionaire Mind Book\"; the more precise label was kept."
+        }
+      ],
+      "warnings": [
+        "Only 2 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T04:44:31.260Z",
         "reason": "ok"
       },
       "transcriptSource": "metadata"
