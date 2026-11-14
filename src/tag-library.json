@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-14T04:15:52.502Z",
+  "generatedAt": "2026-11-14T04:27:29.877Z",
   "canonicalTags": [
     {
       "name": "Sanjib Subba",
@@ -863,7 +863,7 @@
       "aliases": [],
       "type": "concept",
       "description": "",
-      "usageCount": 6,
+      "usageCount": 7,
       "status": "approved"
     },
     {
@@ -890,7 +890,7 @@
       "aliases": [],
       "type": "concept",
       "description": "",
-      "usageCount": 2,
+      "usageCount": 3,
       "status": "approved"
     },
     {
@@ -953,7 +953,7 @@
       "aliases": [],
       "type": "entity",
       "description": "",
-      "usageCount": 2,
+      "usageCount": 3,
       "status": "approved"
     },
     {
@@ -1265,6 +1265,78 @@
     {
       "name": "Three principles",
       "slug": "three-principles",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Game of claim and blaim",
+      "slug": "game-of-claim-and-blaim",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "blame",
+      "slug": "blame",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Online Media",
+      "slug": "online-media",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Self-Change",
+      "slug": "self-change",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Resilience",
+      "slug": "resilience",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Action",
+      "slug": "action",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Situational Acceptance",
+      "slug": "situational-acceptance",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Rate experiments",
+      "slug": "rate-experiments",
       "aliases": [],
       "type": "concept",
       "description": "",
@@ -3048,7 +3120,7 @@
     "yt-WkQEfcUVsTA": {
       "episodeId": "yt-WkQEfcUVsTA",
       "lastAttempt": {
-        "at": "2026-11-14T04:10:31.343Z",
+        "at": "2026-11-14T04:21:44.788Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3467,7 +3539,7 @@
     "yt-Q8ODtJ3smzU": {
       "episodeId": "yt-Q8ODtJ3smzU",
       "lastAttempt": {
-        "at": "2026-11-14T04:14:31.323Z",
+        "at": "2026-11-14T04:22:36.797Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -4365,6 +4437,216 @@
       ],
       "lastAttempt": {
         "at": "2026-11-14T04:15:52.502Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-WdGg5KOKzUQ": {
+      "episodeId": "yt-WdGg5KOKzUQ",
+      "title": "**Game of claim and blaim** #letsgrowtogether #shorts #nepalishorts",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Explores the dynamics of claiming and blaming in a playful context.",
+      "primaryTopic": "claim and blame",
+      "updatedAt": "2026-11-14T04:23:48.212Z",
+      "tags": [
+        {
+          "name": "Game of claim and blaim",
+          "slug": "game-of-claim-and-blaim",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central to episode title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "blame",
+          "slug": "blame",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Key word in title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "letsgrowtogether",
+          "reason": "Not a central topic"
+        },
+        {
+          "name": "claim",
+          "reason": "Repetitive — overlaps \"Game of claim and blaim\"; the more precise label was kept."
+        }
+      ],
+      "warnings": [
+        "Only 2 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T04:23:48.212Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-78UAUHqrJjY": {
+      "episodeId": "yt-78UAUHqrJjY",
+      "title": "The power and Important of Online Media , Must watch",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Explores the influence and significance of online media.",
+      "primaryTopic": "Online Media",
+      "updatedAt": "2026-11-14T04:25:04.727Z",
+      "tags": [
+        {
+          "name": "Online Media",
+          "slug": "online-media",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central topic of episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [
+        "Only 1 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T04:25:04.727Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-TuL8zEwZtoI": {
+      "episodeId": "yt-TuL8zEwZtoI",
+      "title": "**Although you can't change your situation but you can change yourself on it**..👊👍🤝So go and make it",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Exploring how to adapt and grow by changing oneself rather than circumstances.",
+      "primaryTopic": "Self-Change",
+      "updatedAt": "2026-11-14T04:26:19.078Z",
+      "tags": [
+        {
+          "name": "Self-Change",
+          "slug": "self-change",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central theme of altering oneself",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Resilience",
+          "slug": "resilience",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Key idea of enduring challenges",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Action",
+          "slug": "action",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Encouragement to act",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Situational Acceptance",
+          "slug": "situational-acceptance",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Implicit acceptance of unchangeable circumstances",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [],
+      "lastAttempt": {
+        "at": "2026-11-14T04:26:19.078Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-MEtDQQbjRCM": {
+      "episodeId": "yt-MEtDQQbjRCM",
+      "title": "A Story for YOU #letsgrowtogether #youths #ratexperiments",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "A conversation about growth and experimentation aimed at youth, encouraging collective progress.",
+      "primaryTopic": "Growth",
+      "updatedAt": "2026-11-14T04:27:29.876Z",
+      "tags": [
+        {
+          "name": "Youth",
+          "slug": "youth",
+          "type": "entity",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Explicitly mentioned in hashtag #youths",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Growth",
+          "slug": "growth",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Central theme in \"letsgrowtogether\"",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Rate experiments",
+          "slug": "rate-experiments",
+          "type": "concept",
+          "relevanceScore": 78,
+          "evidence": "",
+          "reason": "Explicit hashtag #ratexperiments",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Let’s Grow Together",
+          "slug": "lets-grow-together",
+          "type": "framework",
+          "relevanceScore": 77,
+          "evidence": "",
+          "reason": "Phrase in title and hashtag",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [],
+      "lastAttempt": {
+        "at": "2026-11-14T04:27:29.876Z",
         "reason": "ok"
       },
       "transcriptSource": "metadata"
