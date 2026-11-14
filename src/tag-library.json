@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-14T05:18:14.596Z",
+  "generatedAt": "2026-11-14T05:32:23.011Z",
   "canonicalTags": [
     {
       "name": "Sanjib Subba",
@@ -1160,7 +1160,7 @@
       "aliases": [],
       "type": "entity",
       "description": "",
-      "usageCount": 2,
+      "usageCount": 3,
       "status": "approved"
     },
     {
@@ -1466,7 +1466,7 @@
       "aliases": [],
       "type": "concept",
       "description": "",
-      "usageCount": 2,
+      "usageCount": 3,
       "status": "approved"
     },
     {
@@ -1475,7 +1475,7 @@
       "aliases": [],
       "type": "concept",
       "description": "",
-      "usageCount": 1,
+      "usageCount": 2,
       "status": "approved"
     },
     {
@@ -1501,6 +1501,33 @@
       "slug": "swami-vivekananda",
       "aliases": [],
       "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Focus",
+      "slug": "focus",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Seven Habits",
+      "slug": "seven-habits",
+      "aliases": [],
+      "type": "topic",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Highly Effective People",
+      "slug": "highly-effective-people",
+      "aliases": [],
+      "type": "topic",
       "description": "",
       "usageCount": 1,
       "status": "approved"
@@ -3282,7 +3309,7 @@
     "yt-WkQEfcUVsTA": {
       "episodeId": "yt-WkQEfcUVsTA",
       "lastAttempt": {
-        "at": "2026-11-14T05:12:52.030Z",
+        "at": "2026-11-14T05:27:09.792Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3293,7 +3320,7 @@
     "yt-o2FiUUQqoK0": {
       "episodeId": "yt-o2FiUUQqoK0",
       "lastAttempt": {
-        "at": "2026-11-14T05:14:35.345Z",
+        "at": "2026-11-14T05:28:01.452Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3701,7 +3728,7 @@
     "yt-Q8ODtJ3smzU": {
       "episodeId": "yt-Q8ODtJ3smzU",
       "lastAttempt": {
-        "at": "2026-11-14T05:13:43.687Z",
+        "at": "2026-11-14T05:28:53.100Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -5399,6 +5426,151 @@
       ],
       "lastAttempt": {
         "at": "2026-11-14T05:18:14.596Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-bFYoO0_4WKE": {
+      "episodeId": "yt-bFYoO0_4WKE",
+      "title": "The main key to success is Focus",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "The episode discusses how focus is the main key to achieving success.",
+      "primaryTopic": "Focus",
+      "updatedAt": "2026-11-14T05:30:24.037Z",
+      "tags": [
+        {
+          "name": "Focus",
+          "slug": "focus",
+          "type": "concept",
+          "relevanceScore": 100,
+          "evidence": "",
+          "reason": "central theme of episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Success",
+          "reason": "generic label, not allowed"
+        }
+      ],
+      "warnings": [
+        "Only 1 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T05:30:24.037Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-lmRXJMlCwDY": {
+      "episodeId": "yt-lmRXJMlCwDY",
+      "title": "Motivational story in Nepali",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "A motivational story told in Nepali language.",
+      "primaryTopic": "Motivational story",
+      "updatedAt": "2026-11-14T05:31:15.773Z",
+      "tags": [
+        {
+          "name": "Motivational story",
+          "slug": "motivational-story",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Explicitly stated in title",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Storytelling",
+          "slug": "storytelling",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Narrative format implied by title",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Motivation",
+          "reason": "Generic tag — channel-level geo provides no episode distinction."
+        }
+      ],
+      "warnings": [
+        "Only 2 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T05:31:15.773Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-ljeolI31fac": {
+      "episodeId": "yt-ljeolI31fac",
+      "title": "The Seven Habits of Highly Effective People in Nepali",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Explores the seven habits that make people highly effective, presented in Nepali.",
+      "primaryTopic": "Seven Habits of Highly Effective People",
+      "updatedAt": "2026-11-14T05:32:23.011Z",
+      "tags": [
+        {
+          "name": "Seven Habits",
+          "slug": "seven-habits",
+          "type": "topic",
+          "relevanceScore": 100,
+          "evidence": "",
+          "reason": "core concept from title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Highly Effective People",
+          "slug": "highly-effective-people",
+          "type": "topic",
+          "relevanceScore": 100,
+          "evidence": "",
+          "reason": "core concept from title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Neplian",
+          "slug": "neplian",
+          "type": "concept",
+          "relevanceScore": 100,
+          "evidence": "",
+          "reason": "language specified in title",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Effective habits",
+          "reason": "redundant with Seven Habits"
+        }
+      ],
+      "warnings": [
+        "Unknown tag type \"language\" on \"Neplian\" — stored as concept.",
+        "Only 3 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T05:32:23.011Z",
         "reason": "ok"
       },
       "transcriptSource": "metadata"
