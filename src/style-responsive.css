@@ -276,8 +276,9 @@ input, textarea, select {
    -------------------------------------------------------------------------- */
 
 :root {
-  --font-display: var(--font-display);
-  --font-sans: var(--font-sans);
+  /* Font tokens are declared once at the top of this file. Re-declaring them
+     here as self-references made the custom properties cyclic, which silently
+     invalidated var(--font-sans) and dropped body text back to Times New Roman. */
 }
 
 .display-xl { font-size: var(--display-xl); font-weight: var(--weight-black); line-height: var(--leading-tight); font-family: var(--font-display); letter-spacing: -0.05em; text-transform: uppercase; }
