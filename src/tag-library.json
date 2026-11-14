@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-13T09:36:20.298Z",
+  "generatedAt": "2026-11-14T04:15:52.502Z",
   "canonicalTags": [
     {
       "name": "Sanjib Subba",
@@ -863,7 +863,7 @@
       "aliases": [],
       "type": "concept",
       "description": "",
-      "usageCount": 5,
+      "usageCount": 6,
       "status": "approved"
     },
     {
@@ -1202,6 +1202,69 @@
     {
       "name": "Listening to dreams",
       "slug": "listening-to-dreams",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Book-based learning",
+      "slug": "book-based-learning",
+      "aliases": [],
+      "type": "topic",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Knowledge acquisition",
+      "slug": "knowledge-acquisition",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Collaborative growth",
+      "slug": "collaborative-growth",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Confidence",
+      "slug": "confidence",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Public speaking",
+      "slug": "public-speaking",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Success journey",
+      "slug": "success-journey",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Three principles",
+      "slug": "three-principles",
       "aliases": [],
       "type": "concept",
       "description": "",
@@ -2985,7 +3048,7 @@
     "yt-WkQEfcUVsTA": {
       "episodeId": "yt-WkQEfcUVsTA",
       "lastAttempt": {
-        "at": "2026-11-13T09:29:04.100Z",
+        "at": "2026-11-14T04:10:31.343Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -2996,7 +3059,7 @@
     "yt-o2FiUUQqoK0": {
       "episodeId": "yt-o2FiUUQqoK0",
       "lastAttempt": {
-        "at": "2026-11-12T16:33:28.899Z",
+        "at": "2026-11-14T04:13:39.821Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3404,7 +3467,7 @@
     "yt-Q8ODtJ3smzU": {
       "episodeId": "yt-Q8ODtJ3smzU",
       "lastAttempt": {
-        "at": "2026-11-13T09:29:55.962Z",
+        "at": "2026-11-14T04:14:31.323Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -4142,6 +4205,166 @@
       ],
       "lastAttempt": {
         "at": "2026-11-13T09:36:20.298Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-AEgvgNPaq60": {
+      "episodeId": "yt-AEgvgNPaq60",
+      "title": "The way of gaining knowledge from the books...#letsgrowtogether",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Exploring effective ways to learn from books and grow together.",
+      "primaryTopic": "Book-based learning",
+      "updatedAt": "2026-11-14T04:11:41.685Z",
+      "tags": [
+        {
+          "name": "Book-based learning",
+          "slug": "book-based-learning",
+          "type": "topic",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central method of learning highlighted in title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Knowledge acquisition",
+          "slug": "knowledge-acquisition",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Explicitly mentioned as gaining knowledge from books",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Collaborative growth",
+          "slug": "collaborative-growth",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Hashtag suggests learning together for growth",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Reading",
+          "reason": "Too generic, not explicitly central in title or description"
+        },
+        {
+          "name": "Learning methods",
+          "reason": "Repetitive — overlaps \"Book-based learning\"; the more precise label was kept."
+        }
+      ],
+      "warnings": [
+        "Only 3 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T04:11:41.685Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-r933STP689E": {
+      "episodeId": "yt-r933STP689E",
+      "title": "How get confident in a  short way...#confident #speaking",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Episode explores quick ways to build confidence in speaking.",
+      "primaryTopic": "Confidence in speaking",
+      "updatedAt": "2026-11-14T04:12:48.297Z",
+      "tags": [
+        {
+          "name": "Confidence",
+          "slug": "confidence",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central to episode title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Public speaking",
+          "slug": "public-speaking",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central to episode title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [
+        "Only 2 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T04:12:48.297Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-Z01I3rA3IAw": {
+      "episodeId": "yt-Z01I3rA3IAw",
+      "title": "Three principles for success journey #SSC #letsgrowtogether  #nepali",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:",
+      "transcriptChars": 479,
+      "summary": "Exploring three core principles that guide a successful journey, encouraging collective growth.",
+      "primaryTopic": "Success journey",
+      "updatedAt": "2026-11-14T04:15:52.502Z",
+      "tags": [
+        {
+          "name": "Success journey",
+          "slug": "success-journey",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central theme of the episode",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Three principles",
+          "slug": "three-principles",
+          "type": "concept",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Explicitly mentioned in title",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Let’s Grow Together",
+          "slug": "lets-grow-together",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Hashtag indicates focus on collective growth",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [
+        "Only 3 meaningful subjects found — returning fewer tags rather than inventing more."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-14T04:15:52.502Z",
         "reason": "ok"
       },
       "transcriptSource": "metadata"
