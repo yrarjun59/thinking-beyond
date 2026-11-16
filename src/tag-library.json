@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-15T09:20:08.985Z",
+  "generatedAt": "2026-11-16T09:38:15.056Z",
   "canonicalTags": [
     {
       "name": "Sanjib Subba",
@@ -2497,7 +2497,7 @@
     "ep-8-8e3931": {
       "episodeId": "ep-8-8e3931",
       "lastAttempt": {
-        "at": "2026-11-12T16:01:47.117Z",
+        "at": "2026-11-16T09:35:33.951Z",
         "reason": "ai-unavailable"
       },
       "warnings": [
@@ -3336,7 +3336,7 @@
     "yt-WkQEfcUVsTA": {
       "episodeId": "yt-WkQEfcUVsTA",
       "lastAttempt": {
-        "at": "2026-11-15T09:18:16.540Z",
+        "at": "2026-11-16T09:36:25.490Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3347,7 +3347,7 @@
     "yt-o2FiUUQqoK0": {
       "episodeId": "yt-o2FiUUQqoK0",
       "lastAttempt": {
-        "at": "2026-11-15T09:19:07.959Z",
+        "at": "2026-11-16T09:37:17.014Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3755,7 +3755,7 @@
     "yt-Q8ODtJ3smzU": {
       "episodeId": "yt-Q8ODtJ3smzU",
       "lastAttempt": {
-        "at": "2026-11-15T09:19:59.407Z",
+        "at": "2026-11-16T09:38:08.566Z",
         "reason": "validation-empty"
       },
       "warnings": [
