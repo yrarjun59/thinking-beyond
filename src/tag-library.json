@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-17T10:42:32.317Z",
+  "generatedAt": "2026-11-18T10:09:53.419Z",
   "canonicalTags": [
     {
       "name": "Sanjib Subba",
@@ -674,7 +674,7 @@
       "aliases": [],
       "type": "problem",
       "description": "",
-      "usageCount": 1,
+      "usageCount": 2,
       "status": "approved"
     },
     {
@@ -1555,6 +1555,51 @@
       "slug": "warren-buffet",
       "aliases": [],
       "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Basu Acharya",
+      "slug": "basu-acharya",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Psychology",
+      "slug": "psychology",
+      "aliases": [],
+      "type": "concept",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Burnout",
+      "slug": "burnout",
+      "aliases": [],
+      "type": "problem",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Anxiety",
+      "slug": "anxiety",
+      "aliases": [],
+      "type": "problem",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Trauma",
+      "slug": "trauma",
+      "aliases": [],
+      "type": "problem",
       "description": "",
       "usageCount": 1,
       "status": "approved"
@@ -3336,7 +3381,7 @@
     "yt-WkQEfcUVsTA": {
       "episodeId": "yt-WkQEfcUVsTA",
       "lastAttempt": {
-        "at": "2026-11-17T10:40:39.492Z",
+        "at": "2026-11-18T10:06:36.602Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3347,7 +3392,7 @@
     "yt-o2FiUUQqoK0": {
       "episodeId": "yt-o2FiUUQqoK0",
       "lastAttempt": {
-        "at": "2026-11-17T10:41:30.986Z",
+        "at": "2026-11-18T10:07:28.039Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3755,7 +3800,7 @@
     "yt-Q8ODtJ3smzU": {
       "episodeId": "yt-Q8ODtJ3smzU",
       "lastAttempt": {
-        "at": "2026-11-17T10:42:22.693Z",
+        "at": "2026-11-18T10:08:19.514Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -5684,6 +5729,93 @@
       ],
       "lastAttempt": {
         "at": "2026-11-14T09:00:42.430Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-qpyDGvWSiE0": {
+      "episodeId": "yt-qpyDGvWSiE0",
+      "title": "How to deal with Toxic relationship, Anxiety and Loneliness ? Psychiatrist Basu Acharya  ",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:\nIn this episode of Thinking Beyond, we sit down with Basu Acharya, Psychologist and Lecturer, to explore human psychology, the relationship between the brain and mind, and how conscious and subconscious thoughts influence our behaviour. We also discuss burnout, anxiety, depression, self-doubt, insecurity and the mental struggles many young people face while chasing their dreams.\n\nComing from an arts background into psychology, Basu shares his journey and professional perspective on understanding human behaviour and mental health. From feeling stuck in life to dealing with uncertainty and comparison, this conversation explores what happens inside our minds and how better self-understanding can change the way we approach life.\n\n\n  \n🎙️ Host: Manisha Neupane\n🎧 Guest:Basu Acharya\n📍 Thinking Beyond\n\nThinking Beyond \nConversations that make you question the Status Quo. \n\nfollow Basu Acharya:\nhttps://www.facebook.com/share/1ETRRNHaWG/?mibextid=wwXIfr\n\n\n\nChapters :\n\n00:00 – Introduction\n01:28: – Video Landing\n01:30 – How Did You Land in Psychology from Arts College?\n04:18 – How Do You Feel When Coaching People?\n09:22 – How Does the Human Body Work? Understanding the Mechanism\n10:38 – Difference Between Brain and Mind\n11:57 – Difference Between Conscious and Subconscious Mind\n11:57 – Is the Subconscious Mind Really Powerful?\n13:55 – Where Does Burnout Begin in the Brain?\n16:46 – What If Your Work Is Important but You Still Feel Burned Out?\n18:30 – Why Do We Feel Inadequate When Others Are Successful?\n22:41 – How Can You Pursue Your Dreams Despite Insecurities?\n25:18 – Difference Between Anxiety and Depression\n27:08 – Does a Person with High EQ Become More Aware?\n30:23 – How to Become Strong Enough to Handle Every Situation?\n34:02 – How to Heal from Past Trauma?\n37:29 – How to Accept Your Present Life?\n40:56 – Can Childhood Trauma Be Healed? How?\n45:49 – How to Get Out of Trauma? Practical Steps\n49:43 – How Do Males and Females Handle Breakups?\n54:26 – How Can Men Handle Br",
+      "transcriptChars": 2479,
+      "summary": "A conversation with psychologist Basu Acharya about mental health challenges such as burnout, anxiety, depression, and trauma, and how conscious and subconscious processes shape behavior.",
+      "primaryTopic": "Mental health",
+      "updatedAt": "2026-11-18T10:05:45.211Z",
+      "tags": [
+        {
+          "name": "Basu Acharya",
+          "slug": "basu-acharya",
+          "type": "entity",
+          "relevanceScore": 95,
+          "evidence": "",
+          "reason": "Guest explicitly named in title and description",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Psychology",
+          "slug": "psychology",
+          "type": "concept",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Central discipline discussed",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Burnout",
+          "slug": "burnout",
+          "type": "problem",
+          "relevanceScore": 88,
+          "evidence": "",
+          "reason": "Explicitly mentioned and explored",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Anxiety",
+          "slug": "anxiety",
+          "type": "problem",
+          "relevanceScore": 87,
+          "evidence": "",
+          "reason": "Explicitly mentioned and explored",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Depression",
+          "slug": "depression",
+          "type": "problem",
+          "relevanceScore": 86,
+          "evidence": "",
+          "reason": "Explicitly mentioned and explored",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Trauma",
+          "slug": "trauma",
+          "type": "problem",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Explicitly mentioned and explored",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [],
+      "warnings": [
+        "Unknown tag type \"field\" on \"Psychology\" — stored as concept."
+      ],
+      "lastAttempt": {
+        "at": "2026-11-18T10:05:45.211Z",
         "reason": "ok"
       },
       "transcriptSource": "metadata"
