@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-23T10:44:25.732Z",
+  "generatedAt": "2026-11-24T12:29:05.687Z",
   "canonicalTags": [
     {
       "name": "Sanjib Subba",
@@ -1475,7 +1475,7 @@
       "aliases": [],
       "type": "concept",
       "description": "",
-      "usageCount": 2,
+      "usageCount": 3,
       "status": "approved"
     },
     {
@@ -1600,6 +1600,42 @@
       "slug": "trauma",
       "aliases": [],
       "type": "problem",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Prabodh Siwakoty",
+      "slug": "prabodh-siwakoty",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Marching Ants",
+      "slug": "marching-ants",
+      "aliases": [],
+      "type": "entity",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Digital Marketing",
+      "slug": "digital-marketing",
+      "aliases": [],
+      "type": "industry",
+      "description": "",
+      "usageCount": 1,
+      "status": "approved"
+    },
+    {
+      "name": "Personal Brand",
+      "slug": "personal-brand",
+      "aliases": [],
+      "type": "concept",
       "description": "",
       "usageCount": 1,
       "status": "approved"
@@ -3381,7 +3417,7 @@
     "yt-WkQEfcUVsTA": {
       "episodeId": "yt-WkQEfcUVsTA",
       "lastAttempt": {
-        "at": "2026-11-23T10:42:36.201Z",
+        "at": "2026-11-24T12:27:01.553Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3392,7 +3428,7 @@
     "yt-o2FiUUQqoK0": {
       "episodeId": "yt-o2FiUUQqoK0",
       "lastAttempt": {
-        "at": "2026-11-23T10:43:27.719Z",
+        "at": "2026-11-24T12:28:44.919Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -3800,7 +3836,7 @@
     "yt-Q8ODtJ3smzU": {
       "episodeId": "yt-Q8ODtJ3smzU",
       "lastAttempt": {
-        "at": "2026-11-23T10:44:19.254Z",
+        "at": "2026-11-24T12:27:53.176Z",
         "reason": "validation-empty"
       },
       "warnings": [
@@ -5816,6 +5852,93 @@
       ],
       "lastAttempt": {
         "at": "2026-11-18T10:05:45.211Z",
+        "reason": "ok"
+      },
+      "transcriptSource": "metadata"
+    },
+    "yt-iir2P3Mv8rg": {
+      "episodeId": "yt-iir2P3Mv8rg",
+      "title": "BUILD A BIG BRAND IN 2027 ? | Gen Z, Triggers & Communities | Prabodh Siwakoty |",
+      "guest": "",
+      "transcript": "(No captions are available for this video. Do NOT invent topics and do not rely on assumptions about the guest. Derive tags strictly by dissecting the episode title and description below: extract the guest name, the core topic words, and important subjects actually named there. Only include a tag when it is explicitly named or unambiguously central in those sources. Never assign two tags that repeat the same idea — each tag must be a distinct subject.)\n\nEpisode description:\nIn this episode of Thinking Beyond Podcast, we sit down with Prabodh Siwakoty, Co-founder and Managing Director of Marching Ants, a Nepal-based digital marketing and analytics agency.\n\nPrabodh is a modern marketer who combines design thinking, marketing, and analytics to create meaningful campaigns. We discuss the difference between marketing, branding, and advertising, why storytelling matters in brand building, and how content creators can differentiate themselves from influencers.\n\n\n🎙️ Host: Manisha Neupane\n🎧 Guest:Prabodh Siwakoty \n📍 Thinking Beyond\n\nThinking Beyond \nConversations that make you question the Status Quo. \n\nFollow Prabodh Siwakoty:\nhttps://www.instagram.com/siwakoty?lqvp=MWJhNXg4Nng2MHc3OA==\n\n\nChapters :\n\n00:00 Intro\n01:21 Video Landing\n01:33 You’ve Been Working in Marketing for 10 Years\n14:04 How Long Did It Take to Break Even?\n14:50 Difference Between Marketing, Branding &amp; Advertising?\n18:01 What Is ATL &amp; BTL\n19:42 How to Emotionally Connect with Humans?\n20:25 1 Strategy of Xtreme You Like?\n20:57 Virality vs. Branding: What’s the Difference?\n27:20 If Someone Wants to Build a Personal Brand, What Do They Have to Do?\n28:44 How Do You Identify If Your Business Will Not Work?\n32:14:26 How Can a Person Maintain Discipline &amp; Train Their Brain?\n37:17 Do You See the Content Creation Industry Growing?\n37:27 How to Stand Out to Become a Successful Content Creator?\n38:25 Who Is Your Role Model?\n39:21 What Should We Learn from Them?\n40:41 Elon Musk Knows How to Do Personal Branding?\n41:58 Is Storytelling the Most Important Component of Brand Building?\n50:32 Can You Differentiate a Content Creator &amp; Influencer in One Sentence?\n52:58 When Does an Influencer Become a Brand?\n55:32 Favorite Personal Brand?\n55:22 What Is One Thing You Like About Tanya Bhatt?\n59:56:00 When Personal Brand Starts or Builds a Business, How Powerful Does It Become?\n01:03:14 Why Do We See Businesses Failing After a Couple of Years?\n01:05:19: How Do You See Performance",
+      "transcriptChars": 2479,
+      "summary": "Prabodh Siwakoty discusses modern marketing, branding, storytelling, and personal brand strategies for Gen Z and content creators.",
+      "primaryTopic": "Brand Building",
+      "updatedAt": "2026-11-24T12:26:09.912Z",
+      "tags": [
+        {
+          "name": "Prabodh Siwakoty",
+          "slug": "prabodh-siwakoty",
+          "type": "entity",
+          "relevanceScore": 95,
+          "evidence": "",
+          "reason": "Guest explicitly named in title and description",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Marching Ants",
+          "slug": "marching-ants",
+          "type": "entity",
+          "relevanceScore": 90,
+          "evidence": "",
+          "reason": "Agency co-founded by guest, central to discussion",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Digital Marketing",
+          "slug": "digital-marketing",
+          "type": "industry",
+          "relevanceScore": 85,
+          "evidence": "",
+          "reason": "Core topic of guest’s expertise",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Storytelling",
+          "slug": "storytelling",
+          "type": "concept",
+          "relevanceScore": 80,
+          "evidence": "",
+          "reason": "Key element in brand building discussed",
+          "decision": "existing",
+          "status": "approved",
+          "source": "title-description"
+        },
+        {
+          "name": "Personal Brand",
+          "slug": "personal-brand",
+          "type": "concept",
+          "relevanceScore": 78,
+          "evidence": "",
+          "reason": "Central theme for content creators and influencers",
+          "decision": "new",
+          "status": "approved",
+          "source": "title-description"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "Gen Z",
+          "reason": "Mentioned in title but not central to episode content"
+        },
+        {
+          "name": "Triggers",
+          "reason": "Mentioned in title but not elaborated in description"
+        },
+        {
+          "name": "Communities",
+          "reason": "Mentioned in title but not elaborated in description"
+        }
+      ],
+      "warnings": [],
+      "lastAttempt": {
+        "at": "2026-11-24T12:26:09.912Z",
         "reason": "ok"
       },
       "transcriptSource": "metadata"
